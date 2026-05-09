@@ -1,5 +1,61 @@
 <div align="center">
 
+<style>
+@keyframes slide {
+  0% { transform: translateX(100%); opacity: 0; }
+  5% { transform: translateX(0); opacity: 1; }
+  25% { transform: translateX(0); opacity: 1; }
+  30% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(-100%); opacity: 0; }
+}
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  background: #000000;
+  border: 2px solid #FF0000;
+  box-shadow: 0 0 20px #FF0000, 0 0 40px #FF0000 inset;
+  margin: 20px auto;
+}
+.slider-track {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: 'Fira Code', monospace;
+  font-weight: 900;
+  font-size: 20px;
+  color: #FF0000;
+  text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 40px #FF0000;
+  animation: slide 12s infinite;
+}
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+.slide:nth-child(4) { animation-delay: 9s; }
+</style>
+
+<div class="slider-container">
+  <div class="slider-track">
+    <div class="slide">☠️ KERNEL COMPROMISED — ROOT ACCESS GRANTED ☠️</div>
+    <div class="slide">⚡ ASM → C → C++ → Rust → Go → C# → Java → Python → JS/TS ⚡</div>
+    <div class="slide">🔴 FULL-METAL STACK — ALL LAYERS OWNED 🔴</div>
+    <div class="slide">⚠️ THREAT LEVEL: CRITICAL — UNCONTAINED ⚠️</div>
+  </div>
+</div>
+
+<br>
+
+
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ C L A S S I F I E D O P E R A T O R ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ████████████████████████████████████████████████████████████████████████████████
 
