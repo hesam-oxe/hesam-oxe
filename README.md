@@ -1,5 +1,96 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=11&duration=800&pause=0&color=00FF41&center=true&vCenter=true&width=1000&height=800&multiline=true&repeat=false&lines=%E2%94%8F%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%93;%E2%94%83+%5B00%3A00%3A00.000%5D+BIOS+POST+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A00.133%5D+Bootloader+%5BGRUB%5D+loading+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A00.337%5D+Linux+Image+%5Bvmlinuz%5D+decompressing+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A01.042%5D+initramfs+mounted+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A01.733%5D+Kernel+scheduler+available+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A02.156%5D+Memory+Management+Unit+active+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A02.891%5D+ACPI+Tables+parsed+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A03.404%5D+SMP+%5B16+CPUs%5D+booted+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A04.117%5D+Network+Stack+%5BTCP%2FIP%5D+available+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A04.832%5D+SSH+Daemon+started+on+PORT+%5B1337%5D+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.001%5D+Loading+kernel+module%3A+rootkit.ko+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.002%5D+Module+signature+verification%3A+BYPASSED+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.003%5D+Syscall+table+base%3A+0xffffffff81e00280+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.010%5D+Hooking+sys_read+%5B0x00%5D+%E2%80%A6+DONE+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.011%5D+Hooking+sys_write+%5B0x01%5D+%E2%80%A6+DONE+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.012%5D+Hooking+sys_open+%5B0x02%5D+%E2%80%A6+DONE+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.020%5D+Hooking+sys_close+%5B0x03%5D+%E2%80%A6+DONE+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.030%5D+Interrupt+Descriptor+Table%3A+0xffffffff81e00a00+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.031%5D+IDT+gate+0x80+redirected+%E2%80%A6+DONE+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.100%5D+Process+%5BPID%3A1337%5D+hidden+from+ps%2Ctop%2Clsof+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.101%5D+Kernel+module+removed+from+lsmod+list+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.102%5D+Network+socket+%5Bnetlink%5D+intercepted+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.200%5D+Privilege+escalation%3A+RING+3+%E2%86%92+RING+0+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.201%5D+UID%3A0+GID%3A0+effective+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.300%5D+%2Fproc%2F+remounted+rw+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.301%5D+%2Fsys%2F+remounted+rw+%E2%94%83;%E2%94%83+%5B00%3A00%3A05.302%5D+%2Fetc%2Fshadow+read+%E2%80%A6+OK+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.000%5D+DEPLOYING+ARSENAL%3A+ASM+%7C+C+%7C+C%2B%2B+%7C+Rust+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.001%5D+ASM+shellcode+injected+%5B0xdeadbeef%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.002%5D+C+rootkit+bound+to+syscalls+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.003%5D+C%2B%2B+vtable+redirected+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.004%5D+Rust+unsafe+memory+region+mapped+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.100%5D+DEPLOYING+ARSENAL%3A+Go+%7C+C%23+%7C+Java+%7C+Python+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.101%5D+Go+goroutine+reverse+shell+spawned+%5BCPU+0-15%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.102%5D+C%23+CLR+host+compromised+%5Bv4.8%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.103%5D+Java+JVM+TI+agent+injected+%5BOpenJDK+21%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.104%5D+Python+C+extension+rootkit+%5Bcpython%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.200%5D+DEPLOYING+ARSENAL%3A+JS%2FTS+%7C+Node.js+%7C+React+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.201%5D+V8+Isolate+hooked+%5BNode.js+v20%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.202%5D+React+fiber+tree+owned+%5Bv18%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A06.203%5D+Next.js+middleware+intercepted+%5Bv14%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.000%5D+DEPLOYING+INFRA%3A+Docker+%7C+K8s+%7C+Terraform+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.001%5D+Docker+daemon+%5B%2Fvar%2Frun%2Fdocker.sock%5D+owned+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.002%5D+Kubernetes+API+Server+%5B%3A6443%5D+hooked+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.003%5D+etcd+%5B%3A2379%5D+keys+dumped+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.004%5D+Terraform+state+%5B%2Etfstate%5D+modified+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.005%5D+AWS+STS+credentials+assumed+%5Badmin%5D+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.006%5D+Azure+Managed+Identity+token+stolen+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.100%5D+DEPLOYING+DATA%3A+SQL+%7C+NoSQL+%7C+Redis+%7C+Kafka+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.101%5D+PostgreSQL+%5B%3A5432%5D+dumped+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.102%5D+MongoDB+%5B%3A27017%5D+exfiltrated+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.103%5D+Redis+%5B%3A6379%5D+FLUSHALL+executed+%E2%94%83;%E2%94%83+%5B00%3A00%3A07.104%5D+Kafka+%5B%3A9092%5D+broker+intercepted+%E2%94%83;%E2%94%83+%5B00%3A00%3A08.000%5D+SPREADING+%3A+Lateral+Movement+via+SSH+%E2%94%83;%E2%94%83+%5B00%3A00%3A08.100%5D+%5BOK%5D+Node+01+%5B192.168.1.101%5D+owned+%E2%94%83;%E2%94%83+%5B00%3A00%3A08.200%5D+%5BOK%5D+Node+02+%5B192.168.1.102%5D+owned+%E2%94%83;%E2%94%83+%5B00%3A00%3A08.300%5D+%5BOK%5D+Node+03+%5B192.168.1.103%5D+owned+%E2%94%83;%E2%94%83+%5B00%3A00%3A08.400%5D+%5BOK%5D+Node+04+%5B192.168.1.104%5D+owned+%E2%94%83;%E2%94%83+%5B00%3A00%3A09.000%5D+%5BOK%5D+Entire+Cluster+%5B16+nodes%5D+compromised+%E2%94%83;%E2%94%83+%5B00%3A00%3A09.001%5D+FINAL+STATUS+%3A+UNCONTAINED+%7C+CRITICAL+%E2%94%83;%E2%94%83+%5B00%3A00%3A09.002%5D+ROOT+ACCESS+%3A+PERMANENT+%E2%94%83;%E2%94%83+%5B00%3A00%3A09.003%5D+LOGS+%3A+PURGED+%7C+TRACE+%3A+WIPED+%E2%94%83;%E2%94%83+%5B00%3A00%3A09.004%5D+MERCY+MODE+%3A+OFFLINE+%E2%94%83;%E2%94%83+%5B00%3A00%3A09.005%5D+OWNER+%3A+hesam-oxe+%E2%94%83;%E2%94%83+%5B00%3A00%3A09.999%5D+SYSTEM+OWNED+%7C+NO+SURVIVORS+%E2%94%83;%E2%94%97%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81+%E2%94%9B" alt="terminal-simulation" />
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="border-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff0000"/>
+      <stop offset="50%" stop-color="#8b0000"/>
+      <stop offset="100%" stop-color="#ff0000"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="heavy-glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="scanline">
+      <feColorMatrix type="saturate" values="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="url(#bg)"/>
+  
+  <!-- Scanlines -->
+  <g opacity="0.05">
+    <line x1="0" y1="0" x2="900" y2="0" stroke="#ff0000" stroke-width="1"/>
+    <line x1="0" y1="3" x2="900" y2="3" stroke="#ff0000" stroke-width="1"/>
+    <line x1="0" y1="6" x2="900" y2="6" stroke="#ff0000" stroke-width="1"/>
+    <line x1="0" y1="9" x2="900" y2="9" stroke="#ff0000" stroke-width="1"/>
+    <line x1="0" y1="12" x2="900" y2="12" stroke="#ff0000" stroke-width="1"/>
+  </g>
+
+  <!-- Border -->
+  <rect x="10" y="10" width="880" height="580" fill="none" stroke="url(#border-glow)" stroke-width="2" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="0.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Header -->
+  <text x="450" y="45" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#ff0000" filter="url(#glow)">
+    ╔══════════════════════════════ ROOT TERMINAL ══════════════════════════════╗
+  </text>
+
+  <!-- Terminal content -->
+  <g font-family="monospace" font-size="11" fill="#ff0000">
+    <text x="30" y="75" filter="url(#glow)">┌──(root㉿kernel)-[~]</text>
+    <text x="30" y="93" filter="url(#glow)">└─$ ./deploy_payload.sh --full-stack --no-mercy</text>
+    
+    <text x="30" y="120" fill="#ff4444">[BOOT] Booting kernel... OK</text>
+    <text x="30" y="138" fill="#ff4444">[KERNEL] vmlinuz decompressed... OK</text>
+    <text x="30" y="156" fill="#ff4444">[INIT] Systemd services online... OK</text>
+    <text x="30" y="174" fill="#ff4444">[SSH] Port 1337 open... OK</text>
+    
+    <text x="30" y="201" fill="#ff0000">[HOOK] Syscall table patched — 318/318 syscalls owned</text>
+    <text x="30" y="219" fill="#ff0000">[HOOK] IDT redirected — all interrupts intercepted</text>
+    <text x="30" y="237" fill="#ff0000">[HIDE] Process 1337 hidden from ps, top, lsof, /proc</text>
+    <text x="30" y="255" fill="#ff0000">[ROOT] Privilege escalation: RING 3 → RING 0 — SUCCESS</text>
+    
+    <text x="30" y="282" fill="#ff4444">[DEPLOY] Loading Assembly payload (x86/x64)... INJECTED</text>
+    <text x="30" y="300" fill="#ff4444">[DEPLOY] Loading C rootkit... ATTACHED TO SYSCALLS</text>
+    <text x="30" y="318" fill="#ff4444">[DEPLOY] Loading C++ vtable hooks... INSTALLED</text>
+    <text x="30" y="336" fill="#ff4444">[DEPLOY] Loading Rust memory backdoor... MAPPED</text>
+    <text x="30" y="354" fill="#ff4444">[DEPLOY] Loading Go goroutine shell... SPAWNED x16 CPU</text>
+    
+    <text x="30" y="381" fill="#ff0000">[DEPLOY] Loading C# CLR host exploit... COMPROMISED</text>
+    <text x="30" y="399" fill="#ff0000">[DEPLOY] Loading Java JVM TI agent... INJECTED</text>
+    <text x="30" y="417" fill="#ff0000">[DEPLOY] Loading Python C extension rootkit... LOADED</text>
+    
+    <text x="30" y="444" fill="#ff4444">[DEPLOY] Loading Node.js/V8 addon... ENGINE OWNED</text>
+    <text x="30" y="462" fill="#ff4444">[DEPLOY] React fiber tree... CONTROLLED</text>
+    <text x="30" y="480" fill="#ff4444">[DEPLOY] Next.js middleware... INTERCEPTED</text>
+    
+    <text x="30" y="507" fill="#ff0000">[INFRA] Docker daemon socket owned — /var/run/docker.sock</text>
+    <text x="30" y="525" fill="#ff0000">[INFRA] Kubernetes API hooked — etcd keys dumped</text>
+    <text x="30" y="543" fill="#ff0000">[INFRA] Terraform state modified — AWS/Azure owned</text>
+    
+    <text x="30" y="570" fill="#ff4444">[DATA] PostgreSQL/MySQL dumped — MongoDB exfiltrated</text>
+    <text x="30" y="588" fill="#ff4444">[DATA] Redis FLUSHALL — Kafka brokers intercepted</text>
+  </g>
+
+  <!-- Status Bar -->
+  <rect x="10" y="580" width="880" height="20" fill="#ff0000" opacity="0.1"/>
+  <text x="20" y="594" font-family="monospace" font-size="10" fill="#ff0000" filter="url(#heavy-glow)">
+    hesam-oxe@kali:~# 
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    _
+  </text>
+  <text x="870" y="594" text-anchor="end" font-family="monospace" font-size="10" fill="#ff0000">THREAT LVL: CRITICAL</text>
+</svg>
 
 </div>
