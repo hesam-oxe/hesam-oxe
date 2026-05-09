@@ -1,11 +1,5 @@
 <div align="center">
 
-![glitch](https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79f-e264b5e54825.gif)
-
-# ☠️ H E S A M · J A M A L I ☠️
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=18&duration=1500&pause=300&color=FF0000&center=true&vCenter=true&width=800&lines=ROOT%40KERNEL%3A~%24+whoami;hesam-oxe%40FULL-METAL-STACK;ACCESS_LEVEL%3A+UNRESTRICTED;THREAT_LEVEL%3A+CRITICAL;KERNEL_COMPROMISED%3A+TRUE;ALL_SYSTEMS_OWNED)](https://git.io/typing-svg)
-████████████████████████████████████████████████████████████████████████████████
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ C L A S S I F I E D O P E R A T O R ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ████████████████████████████████████████████████████████████████████████████████
 
