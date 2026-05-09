@@ -46,10 +46,7 @@
 
 ### 📊 T E R M I N A L · L O G S
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hesam-oxe&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=FF0000&icon_color=FF0000&text_color=CCCCCC" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hesam-oxe&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=FF0000&text_color=CCCCCC" width="48%" />
-</div>
+
 
 ![snake](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg)
 
