@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
 
 <style>
@@ -112,11 +111,10 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=18&duration=1500&pause=300&color=FF0000&center=true&vCenter=true&width=800&lines=ROOT%40KERNEL%3A~%24+whoami;hesam-oxe%40FULL-METAL-STACK;ACCESS_LEVEL%3A+UNRESTRICTED;THREAT_LEVEL%3A+CRITICAL;KERNEL_COMPROMISED%3A+TRUE;ALL_SYSTEMS_OWNED)](https://git.io/typing-svg)
 
-```
 ████████████████████████████████████████████████████████████████████████████████
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ C L A S S I F I E D   O P E R A T O R ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ████████████████████████████████████████████████████████████████████████████████
-```
+
 
 | 🔴 LOW-LEVEL | 🟡 MID-LEVEL | 🟢 HIGH-LEVEL |
 |:---:|:---:|:---:|
@@ -131,11 +129,11 @@
 | `Terraform` | `Ansible` | `Redis · Kafka` |
 | `AWS · Azure` | `Helm · ArgoCD` | `ELK · Prometheus` |
 
-```
+
 ████████████████████████████████████████████████████████████████████████████████
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  M I S S I O N   L O G  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ████████████████████████████████████████████████████████████████████████████████
-```
+
 
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=hesam-oxe&show_icons=true&theme=codeSTACKr&hide_border=true&bg_color=000000&title_color=FF0000&icon_color=FF0000&text_color=FF0000&border_color=FF0000)](https://github.com/hesam-oxe)
 
@@ -143,19 +141,19 @@
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=hesam-oxe&theme=black-ice&hide_border=true&background=000000&ring=FF0000&fire=FF0000&currStreakLabel=FF0000&sideLabels=FF0000&dates=FF0000&currStreakNum=FF0000&sideNums=FF0000)](https://git.io/streak-stats)
 
-```
+
 ████████████████████████████████████████████████████████████████████████████████
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  S Y S T E M  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ████████████████████████████████████████████████████████████████████████████████
-```
 
-```
+
+
 [████████████████████] KERNEL     : ROOT COMPROMISED
 [████████████████████] RING 0     : ACCESS GRANTED
 [████████████████████] STACK      : FULL METAL DEPLOYED
 [████████████████████] THREAT LVL : CRITICAL - UNCONTAINED
 [████████████░░░░░░░░] MERCY MODE : OFFLINE
-```
+
 
 ```
                       ASM → C → C++ → Rust → Go → C# → Java → Python → JS/TS
