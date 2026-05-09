@@ -1,5 +1,80 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=11&duration=900&pause=0&color=FF0000&center=true&vCenter=true&width=950&height=700&lines=%E2%96%BA+%5BBOOT%5D+BIOS+%E2%86%92+Bootloader+%E2%86%92+initramfs;%E2%96%BA+%5BKERNEL%5D+Decompressing+vmlinuz+image;%E2%96%BA+%5BKERNEL%5D+Memory+management+initialized;%E2%96%BA+%5BKERNEL%5D+Process+scheduler+online;%E2%96%BA+%5BINIT%5D+Systemd+spawning+services;%E2%96%BA+%5BSSH%5D+SSHD+listening+on+PORT+1337;%E2%96%BA+%5BHIDE%5D+Process+hidden+from+ps%2Ftop%2Flsof;%E2%96%BA+%5BHIDE%5D+Kernel+module+concealed+from+lsmod;%E2%96%BA+%5BHOOK%5D+Syscall+table+patched;%E2%96%BA+%5BHOOK%5D+IDT+%28Interrupt+Descriptor+Table%29+redirected;%E2%96%BA+%5BROOT%5D+Privilege+escalation+%3A+RING+3+%E2%86%92+RING+0;%E2%96%BA+%5BROOT%5D+UID+%3A+0+%7C+GID+%3A+0;%E2%96%BA+%5BMEM%5D+Direct+Memory+Access+enabled;%E2%96%BA+%5BMEM%5D+Kernel+heap+spray+ready;%E2%96%BA+%5BPAYLOAD%5D+x86%2Fx64+Assembly+shellcode+injected;%E2%96%BA+%5BPAYLOAD%5D+C+rootkit+attached+to+sys_call_table;%E2%96%BA+%5BPAYLOAD%5D+C%2B%2B+vtable+hooks+installed;%E2%96%BA+%5BPAYLOAD%5D+Rust+unsafe+block+memory+backdoor;%E2%96%BA+%5BPAYLOAD%5D+Go+goroutines+spawned+on+all+CPUs;%E2%96%BA+%5BPAYLOAD%5D+C%23+CLR+host+compromised;%E2%96%BA+%5BPAYLOAD%5D+Java+JVM+TI+agent+injected;%E2%96%BA+%5BPAYLOAD%5D+Python+C+extension+rootkit+loaded;%E2%96%BA+%5BPAYLOAD%5D+Node.js+V8+engine+owned;%E2%96%BA+%5BFRONT%5D+React+%7C+Next.js+frontend+controlled;%E2%96%BA+%5BINFRA%5D+Docker+daemon+compromised;%E2%96%BA+%5BINFRA%5D+Kubernetes+API+server+hooked;%E2%96%BA+%5BINFRA%5D+Terraform+state+manipulated;%E2%96%BA+%5BINFRA%5D+AWS+%7C+Azure+IAM+roles+assumed;%E2%96%BA+%5BDATA%5D+SQL+dumped+%7C+NoSQL+exfiltrated;%E2%96%BA+%5BDATA%5D+Redis+keyspace+overwritten;%E2%96%BA+%5BDATA%5D+Kafka+brokers+intercepted;%E2%96%BA+%5BSPREAD%5D+Lateral+movement+across+subnets;%E2%96%BA+%5BSPREAD%5D+SSH+trust+exploited+on+all+nodes;%E2%96%BA+%5BSPREAD%5D+Entire+cluster+owned;%E2%96%BA+%5BFIN%5D+STATUS+%3A+SYSTEM+FULLY+COMPROMISED;%E2%96%BA+%5BFIN%5D+THREAT+LEVEL+%3A+CRITICAL+-+UNCONTAINED;%E2%96%BA+%5BFIN%5D+NO+LOGS+%7C+NO+TRACE+%7C+NO+MERCY;%E2%96%BA+%5BFIN%5D+FULL-METAL+STACK+DEPLOYED;%E2%96%BA+%5BFIN%5D+OWNER+%3A+hesam-oxe;%E2%96%BA+%5BOFF%5D+ALL+SYSTEMS+NOMINAL+-+GG+WP" alt="terminal-slider-heavy" />
+![glitch](https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79f-e264b5e54825.gif)
 
+# ☠️ H E S A M · J A M A L I ☠️
+### `FULL-METAL STACK · KERNEL-LEVEL OPERATOR`
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2000&pause=400&color=FF0000&center=true&vCenter=true&width=800&lines=%E2%96%BA+whoami+%3A+hesam-oxe;%E2%96%BA+clearance+%3A+UNRESTRICTED;%E2%96%BA+stack+%3A+ASM+%7C+C+%7C+C%2B%2B+%7C+C%23+%7C+Java;%E2%96%BA+stack+%3A+Go+%7C+Rust+%7C+Python+%7C+JS%2FTS;%E2%96%BA+mode+%3A+LETHAL+%7C+UNTET+HERED)](https://git.io/typing-svg)
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+   ⚠️  C L A S S I F I E D   O P E R A T O R   ⚠️
+
+| 🥷 **LOW-LEVEL** | ☁️ **HIGH-LEVEL** | 🗡️ **SYSTEMS** |
+|::|::|::|
+| `x86/x64 Assembly` | `Python` | `Linux · Kernel` |
+| `C · C++` | `JavaScript · TS` | `Docker · K8s` |
+| `Rust` | `React · Node.js` | `AWS · Azure` |
+| `Go` | `Django · FastAPI` | `CI/CD · Terraform` |
+| `C#` | `Next.js` | `SQL · NoSQL` |
+| `Java` | `GraphQL · REST` | `Redis · Kafka` |
+
+
+   ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰   S Y S T E M   C O R E   ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰
+        From Bare Metal to Cloud Native — No Layer Untouched
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+
+
+### ⚡ S Y S T E M · S T A T U S ⚡
+
+
+[████████████████████] KERNEL ACCESS ..... ROOT
+[████████████████████] STACK COVERAGE ... 100%
+[████████████████████] THREAT LEVEL ..... CRITICAL
+[██████░░░░░░░░░░░░░░] SOCIAL LIFE ...... SEGFAULT
+
+
+
+  STATUS: Weaponizing code since day zero
+
+
+
+
+### 📊 T E R M I N A L · L O G S
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=hesam-oxe&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=FF0000&icon_color=FF0000&text_color=CCCCCC" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hesam-oxe&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=FF0000&text_color=CCCCCC" width="48%" />
 </div>
+
+![snake](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg)
+
+
+
+### 📡 E S T A B L I S H · C O N T A C T
+
+[![GitHub](https://img.shields.io/badge/⛓️_GitHub-hesam--oxe-FF0000?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117)](https://github.com/hesam-oxe)
+[![Email](https://img.shields.io/badge/📧_Email-CLASSIFIED-FF0000?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=0D1117)](mailto:your@email.com)
+
+
+
+>  *"I don't write code. I forge weapons."*
+>  
+>  *"از اسمبلی حرف میزنم تا ابر — هیچ لایه‌ای از دستم در نمیره."*
+
+<div align="center">
+  
+  ![warning](https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d3-1c6f5cfc0d22.gif)
+  
+  ### ⚠️ WARNING: OPERATING AT SYSTEM LEVEL ⚠️
+  
+  ![exit](https://user-images.githubusercontent.com/74038190/212284145-b875c56d-2f46-4e38-9760-3dab6b7c7d10.gif)
+  
+</div>
+
+
+
