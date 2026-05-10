@@ -61,8 +61,7 @@
 
 >  *"I don't write code. I forge weapons."*
 >  
->  *"از اسمبلی حرف میزنم تا ابر — هیچ لایه‌ای از دستم در نمیره."*
-
+> *"I speak from assembly to cloud — I don't miss a single layer."*
 <div align="center">
   
   ![warning](https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d3-1c6f5cfc0d22.gif)
