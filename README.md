@@ -61,10 +61,36 @@ From Bare Metal to Cloud Native — No Layer Untouched
 
 ---
 
-## 🏆 G I T H U B · T R O P H I E S
+## 🏆 C O N T R I B U T I O N · H U D
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=hesam-oxe&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=2&column=4" />
+  <a href="https://github.com/hesam-oxe">
+    <img src="https://img.shields.io/badge/🐧_KERNEL-ROOT_ACCESS-DC143C?style=for-the-badge&logo=linux&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/torvalds/linux">
+    <img src="https://img.shields.io/badge/Linus_Torvalds-Pull_Request-000000?style=for-the-badge&logo=git&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/OWASP/www-project-agent-memory-guard">
+    <img src="https://img.shields.io/badge/🛡️_OWASP-%232_Contributor-FF0000?style=for-the-badge&logo=owasp&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/google/rust-multiplatform">
+    <img src="https://img.shields.io/badge/🔍_Google-Rust_Multiplatform-4285F4?style=for-the-badge&logo=google&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/apache/seatunnel">
+    <img src="https://img.shields.io/badge/🐘_Apache-SeaTunnel-FF0000?style=for-the-badge&logo=apache&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/meta-pytorch/tritonparse">
+    <img src="https://img.shields.io/badge/👁️_Meta-PyTorch-1877F2?style=for-the-badge&logo=meta&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/microsoft/typescript-go">
+    <img src="https://img.shields.io/badge/🔷_Microsoft-TypeScript_Go-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/nasa-gibs/worldview">
+    <img src="https://img.shields.io/badge/🚀_NASA-Worldview-0B3D91?style=for-the-badge&logo=nasa&logoColor=white&labelColor=0D1117" />
+  </a>
+  <a href="https://github.com/llvm/llvm-project">
+    <img src="https://img.shields.io/badge/⚙️_LLVM-CodeGen-5C4A7A?style=for-the-badge&logo=llvm&logoColor=white&labelColor=0D1117" />
+  </a>
 </div>
 
 ---
