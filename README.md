@@ -29,10 +29,10 @@ From Bare Metal to Cloud Native — No Layer Untouched
 
 ### ⚡ S Y S T E M · S T A T U S ⚡
 
-[████████████████████] KERNEL ACCESS ..... ROOT
-[████████████████████] STACK COVERAGE ... 100%
-[████████████████████] THREAT LEVEL ..... CRITICAL
-[██████░░░░░░░░░░░░░░] SOCIAL LIFE ...... SEGFAULT
+## [████████████████████] KERNEL ACCESS ..... ROOT
+## [████████████████████] STACK COVERAGE ... 100%
+## [████████████████████] THREAT LEVEL ..... CRITICAL
+## [██████░░░░░░░░░░░░░░] SOCIAL LIFE ...... SEGFAULT
 
 > STATUS: Weaponizing code since day zero
 
