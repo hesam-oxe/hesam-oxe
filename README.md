@@ -72,5 +72,5 @@
   
 </div>
 
-
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=hesam-oxe&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=DC143C&icon_color=DC143C)
 
