@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="240" viewBox="0 0 380 240" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="fadeMask" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.82" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="mfade">
+      <rect x="0" y="0" width="380" height="240" fill="url(#fadeMask)"/>
+    </mask>
+    <linearGradient id="rainBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#05050A"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="380" height="240" rx="10" fill="url(#rainBg)" stroke="#B026FF" stroke-width="1" opacity="0.97"/>
+  <text x="190" y="24" text-anchor="middle" font-size="12" letter-spacing="4" fill="#B026FF">// OPCODE RAIN</text>
+
+  <g mask="url(#mfade)" font-size="13">
+    <!-- column 1 -->
+    <text x="26" fill="#8B0F26">
+      MOV<tspan x="26" dy="17">XOR</tspan><tspan x="26" dy="17">PUSH</tspan><tspan x="26" dy="17" fill="#DC143C">0xFF</tspan><tspan x="26" dy="17">JMP</tspan><tspan x="26" dy="17">RET</tspan><tspan x="26" dy="17">MOV</tspan><tspan x="26" dy="17">XOR</tspan><tspan x="26" dy="17">PUSH</tspan><tspan x="26" dy="17" fill="#DC143C">0xFF</tspan><tspan x="26" dy="17">JMP</tspan><tspan x="26" dy="17">RET</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 -204;0 0" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <!-- column 2 -->
+    <text x="71" fill="#5A1E7A">
+      NOP<tspan x="71" dy="17">CALL</tspan><tspan x="71" dy="17" fill="#B026FF">INT 3</tspan><tspan x="71" dy="17">SUB</tspan><tspan x="71" dy="17">LEA</tspan><tspan x="71" dy="17">NOP</tspan><tspan x="71" dy="17">CALL</tspan><tspan x="71" dy="17" fill="#B026FF">INT 3</tspan><tspan x="71" dy="17">SUB</tspan><tspan x="71" dy="17">LEA</tspan><tspan x="71" dy="17">NOP</tspan><tspan x="71" dy="17">CALL</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 -204;0 0" dur="4.2s" begin="0.6s" repeatCount="indefinite"/>
+    </text>
+    <!-- column 3 -->
+    <text x="118" fill="#8B0F26">
+      IRET<tspan x="118" dy="17">CMP</tspan><tspan x="118" dy="17">TEST</tspan><tspan x="118" dy="17" fill="#00E5FF">RAX</tspan><tspan x="118" dy="17">SHL</tspan><tspan x="118" dy="17">IRET</tspan><tspan x="118" dy="17">CMP</tspan><tspan x="118" dy="17">TEST</tspan><tspan x="118" dy="17" fill="#00E5FF">RAX</tspan><tspan x="118" dy="17">SHL</tspan><tspan x="118" dy="17">IRET</tspan><tspan x="118" dy="17">CMP</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 -204;0 0" dur="7.4s" begin="0.2s" repeatCount="indefinite"/>
+    </text>
+    <!-- column 4 -->
+    <text x="166" fill="#5A1E7A">
+      SEG<tspan x="166" dy="17" fill="#B026FF">CLI</tspan><tspan x="166" dy="17">STI</tspan><tspan x="166" dy="17">POP</tspan><tspan x="166" dy="17">DIV</tspan><tspan x="166" dy="17">SEG</tspan><tspan x="166" dy="17" fill="#B026FF">CLI</tspan><tspan x="166" dy="17">STI</tspan><tspan x="166" dy="17">POP</tspan><tspan x="166" dy="17">DIV</tspan><tspan x="166" dy="17">SEG</tspan><tspan x="166" dy="17" fill="#B026FF">CLI</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 -204;0 0" dur="5.1s" begin="1.1s" repeatCount="indefinite"/>
+    </text>
+    <!-- column 5 -->
+    <text x="214" fill="#8B0F26">
+      LOCK<tspan x="214" dy="17">INC</tspan><tspan x="214" dy="17" fill="#DC143C">0x2A</tspan><tspan x="214" dy="17">DEC</tspan><tspan x="214" dy="17">OR</tspan><tspan x="214" dy="17">LOCK</tspan><tspan x="214" dy="17">INC</tspan><tspan x="214" dy="17" fill="#DC143C">0x2A</tspan><tspan x="214" dy="17">DEC</tspan><tspan x="214" dy="17">OR</tspan><tspan x="214" dy="17">LOCK</tspan><tspan x="214" dy="17">INC</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 -204;0 0" dur="3.6s" begin="0.4s" repeatCount="indefinite"/>
+    </text>
+    <!-- column 6 -->
+    <text x="262" fill="#5A1E7A">
+      SYSCALL<tspan x="262" dy="17">MUL</tspan><tspan x="262" dy="17" fill="#00E5FF">RBX</tspan><tspan x="262" dy="17">NOT</tspan><tspan x="262" dy="17">SYSCALL</tspan><tspan x="262" dy="17">MUL</tspan><tspan x="262" dy="17" fill="#00E5FF">RBX</tspan><tspan x="262" dy="17">NOT</tspan><tspan x="262" dy="17">SYSCALL</tspan><tspan x="262" dy="17">MUL</tspan><tspan x="262" dy="17" fill="#00E5FF">RBX</tspan><tspan x="262" dy="17">NOT</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 -204;0 0" dur="6.8s" begin="1.6s" repeatCount="indefinite"/>
+    </text>
+    <!-- column 7 -->
+    <text x="316" fill="#8B0F26">
+      HLT<tspan x="316" dy="17" fill="#DC143C">0x1F</tspan><tspan x="316" dy="17">IN</tspan><tspan x="316" dy="17">OUT</tspan><tspan x="316" dy="17">WAIT</tspan><tspan x="316" dy="17">HLT</tspan><tspan x="316" dy="17" fill="#DC143C">0x1F</tspan><tspan x="316" dy="17">IN</tspan><tspan x="316" dy="17">OUT</tspan><tspan x="316" dy="17">WAIT</tspan><tspan x="316" dy="17">HLT</tspan><tspan x="316" dy="17" fill="#DC143C">0x1F</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 -204;0 0" dur="4.9s" begin="0.9s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <text x="190" y="226" text-anchor="middle" font-size="11" letter-spacing="3" fill="#DC143C">RING 0 · UNRESTRICTED</text>
+</svg>

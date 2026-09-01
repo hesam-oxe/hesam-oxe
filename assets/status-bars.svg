@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="hudBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#07070C"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="250" rx="10" fill="url(#hudBg)" stroke="#DC143C" stroke-width="1"/>
+  <text x="30" y="34" font-size="14" letter-spacing="5" fill="#F2F2F5">// SYSTEM STATUS <tspan fill="#5c5c70">— live telemetry</tspan></text>
+  <circle cx="722" cy="29" r="4" fill="#39FF14">
+    <animate attributeName="opacity" values="1;1;0.1;0.1" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- row template: label x=30, track x=170 w=460 h=14, value x=648 -->
+  <!-- ROW 1 : KERNEL ACCESS -->
+  <text x="30" y="74" font-size="13" fill="#8a8aa0">KERNEL ACCESS</text>
+  <rect x="165" y="62" width="460" height="14" rx="4" fill="#12121c" stroke="#22223a" stroke-width="1"/>
+  <rect x="165" y="62" width="0" height="14" rx="4" fill="#DC143C">
+    <animate attributeName="width" values="0;0;460;460" keyTimes="0;0.05;0.4;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="648" y="74" font-size="13" font-weight="700" fill="#DC143C">ROOT ▮▮▮▮▮</text>
+
+  <!-- ROW 2 : STACK COVERAGE -->
+  <text x="30" y="112" font-size="13" fill="#8a8aa0">STACK COVERAGE</text>
+  <rect x="165" y="100" width="460" height="14" rx="4" fill="#12121c" stroke="#22223a" stroke-width="1"/>
+  <rect x="165" y="100" width="0" height="14" rx="4" fill="#B026FF">
+    <animate attributeName="width" values="0;0;452;452" keyTimes="0;0.12;0.48;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="648" y="112" font-size="13" font-weight="700" fill="#B026FF">100%</text>
+
+  <!-- ROW 3 : THREAT LEVEL -->
+  <text x="30" y="150" font-size="13" fill="#8a8aa0">THREAT LEVEL</text>
+  <rect x="165" y="138" width="460" height="14" rx="4" fill="#12121c" stroke="#22223a" stroke-width="1"/>
+  <rect x="165" y="138" width="0" height="14" rx="4" fill="#39FF14">
+    <animate attributeName="width" values="0;0;460;460" keyTimes="0;0.20;0.56;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="648" y="150" font-size="13" font-weight="700" fill="#39FF14">CRITICAL
+    <animate attributeName="opacity" values="1;1;0.25;0.25;1" keyTimes="0;0.4;0.45;0.55;1" dur="1.8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- ROW 4 : SOCIAL LIFE -->
+  <text x="30" y="188" font-size="13" fill="#8a8aa0">SOCIAL LIFE</text>
+  <rect x="165" y="176" width="460" height="14" rx="4" fill="#12121c" stroke="#22223a" stroke-width="1"/>
+  <rect x="165" y="176" width="0" height="14" rx="4" fill="#FFB000">
+    <animate attributeName="width" values="0;0;55;55" keyTimes="0;0.30;0.64;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="642" y="188" font-size="13" font-weight="700" fill="#FFB000">12% SEGFAULT
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.9s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- ROW 5 : CAFFEINE -->
+  <text x="30" y="226" font-size="13" fill="#8a8aa0">CAFFEINE RESERVE</text>
+  <rect x="165" y="214" width="460" height="14" rx="4" fill="#12121c" stroke="#22223a" stroke-width="1"/>
+  <rect x="165" y="214" width="0" height="14" rx="4" fill="#00E5FF">
+    <animate attributeName="width" values="0;0;419;419" keyTimes="0;0.38;0.72;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <text x="648" y="226" font-size="13" font-weight="700" fill="#00E5FF">91% STABLE</text>
+
+  <!-- horizontal scanline sweep -->
+  <rect x="1" y="0" width="758" height="2" fill="#B026FF" opacity="0.10">
+    <animate attributeName="y" values="2;246;2" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

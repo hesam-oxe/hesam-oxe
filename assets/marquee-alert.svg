@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="46" viewBox="0 0 760 46" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="tickBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12060B"/>
+      <stop offset="1" stop-color="#0A0A10"/>
+    </linearGradient>
+    <clipPath id="tickClip"><rect x="82" y="4" width="668" height="38"/></clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="46" rx="6" fill="url(#tickBg)" stroke="#DC143C" stroke-width="1.2"/>
+
+  <!-- LIVE indicator -->
+  <circle cx="26" cy="23" r="5" fill="#FF1744">
+    <animate attributeName="opacity" values="1;1;0.15;0.15" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="38" y="28" font-size="12" font-weight="700" letter-spacing="2" fill="#FF1744">LIVE</text>
+  <line x1="76" y1="8" x2="76" y2="38" stroke="#DC143C" stroke-width="1" opacity="0.6"/>
+
+  <!-- scrolling ticker : two copies for seamless loop -->
+  <g clip-path="url(#tickClip)">
+    <g>
+      <text x="0" y="29" font-size="14" letter-spacing="1">
+        <tspan fill="#DC143C" font-weight="700">⚠ BREAKING:</tspan><tspan fill="#E6E6E6"> HESAM JAMALI ENTERED RING-0 </tspan><tspan fill="#B026FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> KERNEL PANICS ARE HIS WARM-UP </tspan><tspan fill="#00E5FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> 0-DAYS FEAR HIM </tspan><tspan fill="#39FF14" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> NO LAYER UNTOUCHED </tspan><tspan fill="#DC143C" font-weight="700">▚</tspan>
+      </text>
+      <text x="1128" y="29" font-size="14" letter-spacing="1">
+        <tspan fill="#DC143C" font-weight="700">⚠ BREAKING:</tspan><tspan fill="#E6E6E6"> HESAM JAMALI ENTERED RING-0 </tspan><tspan fill="#B026FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> KERNEL PANICS ARE HIS WARM-UP </tspan><tspan fill="#00E5FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> 0-DAYS FEAR HIM </tspan><tspan fill="#39FF14" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> NO LAYER UNTOUCHED </tspan><tspan fill="#DC143C" font-weight="700">▚</tspan>
+      </text>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-1128 0" dur="16s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>

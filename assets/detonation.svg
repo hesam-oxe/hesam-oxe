@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="detBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#050508"/>
+    </linearGradient>
+    <radialGradient id="flashG" cx="0.5" cy="0.45" r="0.7">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#DC143C" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="240" rx="10" fill="url(#detBg)" stroke="#DC143C" stroke-width="1.2"/>
+
+  <!-- phase 1 : initializing + loading bar (0 → 0.45 of 7s) -->
+  <text x="380" y="98" text-anchor="middle" font-size="16" letter-spacing="4" fill="#39FF14">INITIALIZING OVERKILL PROTOCOL
+    <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.44;0.45" dur="7s" repeatCount="indefinite"/>
+  </text>
+  <rect x="230" y="116" width="300" height="12" rx="3" fill="#12121c" stroke="#22223a"/>
+  <rect x="232" y="118" width="0" height="8" rx="2" fill="#DC143C">
+    <animate attributeName="width" values="0;0;296" keyTimes="0;0.02;0.44" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- phase 2 : countdown 3..2..1 -->
+  <g font-size="72" font-weight="800">
+    <text x="380" y="148" text-anchor="middle" fill="#DC143C" opacity="0">3
+      <animate attributeName="opacity" values="0;1;1;0" calcMode="discrete" keyTimes="0;0.45;0.483;0.485" dur="7s" repeatCount="indefinite"/>
+    </text>
+    <text x="380" y="148" text-anchor="middle" fill="#B026FF" opacity="0">2
+      <animate attributeName="opacity" values="0;1;1;0" calcMode="discrete" keyTimes="0;0.485;0.517;0.519" dur="7s" repeatCount="indefinite"/>
+    </text>
+    <text x="380" y="148" text-anchor="middle" fill="#00E5FF" opacity="0">1
+      <animate attributeName="opacity" values="0;1;1;0" calcMode="discrete" keyTimes="0;0.519;0.55;0.555" dur="7s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- BOOM : white flash -->
+  <rect x="0" y="0" width="760" height="240" rx="10" fill="url(#flashG)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0.25;0;0" keyTimes="0;0.555;0.565;0.60;0.64;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- shockwave rings -->
+  <circle cx="380" cy="112" r="12" fill="none" stroke="#DC143C" stroke-width="3" opacity="0">
+    <animate attributeName="r" values="12;12;230" keyTimes="0;0.56;0.72" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.9;0;0" keyTimes="0;0.56;0.58;0.72;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="380" cy="112" r="12" fill="none" stroke="#B026FF" stroke-width="2.5" opacity="0">
+    <animate attributeName="r" values="12;12;230" keyTimes="0;0.585;0.75" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.585;0.605;0.75;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="380" cy="112" r="12" fill="none" stroke="#00E5FF" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="12;12;230" keyTimes="0;0.61;0.78" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.7;0;0" keyTimes="0;0.61;0.63;0.78;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- phase 3 : WEAPONIZED stamp pop -->
+  <g transform="translate(380,128)" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.565;0.575;0.95;1" dur="7s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="scale" additive="sum" values="1;1;2.8;1;1" keyTimes="0;0.565;0.575;0.61;1" dur="7s" repeatCount="indefinite"/>
+    <text x="0" y="0" text-anchor="middle" font-size="40" font-weight="800" letter-spacing="6" fill="#DC143C">HESAM JAMALI</text>
+    <text x="0" y="34" text-anchor="middle" font-size="16" letter-spacing="6" fill="#39FF14">WEAPONIZED · RING-0 CERTIFIED</text>
+    <g stroke="#FFB000" stroke-width="2" fill="none">
+      <path d="M-238,-28 L-228,-14 L-238,0 L-248,-14 Z">
+        <animate attributeName="fill" values="#FFB000;#0A0A10;#FFB000" dur="0.8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M238,-28 L248,-14 L238,0 L228,-14 Z">
+        <animate attributeName="fill" values="#FFB000;#0A0A10;#FFB000" dur="0.8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <text x="380" y="222" text-anchor="middle" font-size="11" letter-spacing="4" fill="#5c5c70">DAMAGE RADIUS: ENTIRE STACK</text>
+</svg>

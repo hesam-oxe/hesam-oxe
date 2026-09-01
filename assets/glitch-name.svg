@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="200" viewBox="0 0 760 200" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.6" y="0" fill="#ffffff" opacity="0.025"/>
+    </pattern>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DC143C" stop-opacity="0"/>
+      <stop offset="1" stop-color="#DC143C" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══ EXTREME MODE : shake group + CRT flash ══ -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-4 2;3 -2;-2 1;0 0;0 0" keyTimes="0;0.895;0.902;0.912;0.922;0.935;1" dur="5s" repeatCount="indefinite"/>
+
+  <!-- HUD corner brackets -->
+  <g stroke="#DC143C" stroke-width="2.5" fill="none" opacity="0.9">
+    <path d="M14 30 L14 14 L30 14"/>
+    <path d="M730 14 L746 14 L746 30"/>
+    <path d="M746 170 L746 186 L730 186"/>
+    <path d="M30 186 L14 186 L14 170"/>
+  </g>
+
+  <!-- background panels -->
+  <rect x="0" y="0" width="760" height="200" fill="url(#scan)"/>
+  <rect x="0" y="150" width="760" height="50" fill="url(#vig)"/>
+
+  <!-- glitch RGB split : crimson layer -->
+  <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#DC143C" opacity="0.85">HESAM JAMALI
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-5 2;0 0;4 -2;0 0;-2 1;0 0" keyTimes="0;0.80;0.83;0.86;0.89;0.92;0.95;1" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.85;0.85;0;0.85;0.85" keyTimes="0;0.83;0.845;0.86;1" dur="3.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- glitch RGB split : cyan layer -->
+  <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#00E5FF" opacity="0.6">HESAM JAMALI
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;4 -2;0 0;-4 2;0 0;2 -1;0 0" keyTimes="0;0.78;0.81;0.84;0.87;0.90;0.94;1" dur="2.9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.6;0;0.6;0.6" keyTimes="0;0.81;0.825;0.84;1" dur="2.9s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- glitch RGB split : plasma layer -->
+  <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#B026FF" opacity="0.45">HESAM JAMALI
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;2 3;0 0;-3 -2;0 0" keyTimes="0;0.87;0.90;0.93;0.96;1" dur="4.1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- base white text -->
+  <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#F2F2F5">HESAM JAMALI</text>
+
+  <!-- subtitle -->
+  <text x="380" y="138" text-anchor="middle" font-size="15" letter-spacing="8" fill="#B026FF" opacity="0.95">FULL-METAL STACK · KERNEL-LEVEL OPERATOR
+    <animate attributeName="opacity" values="0.95;0.4;0.95" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- status ticks -->
+  <g font-size="10" fill="#5c5c70" letter-spacing="2">
+    <text x="34" y="30">SYS://PROFILE_v3.0_EXTREME</text>
+    <text x="640" y="30" fill="#DC143C">◉ REC</text>
+  </g>
+
+  <!-- blinking underscore cursor (bottom-right corner) -->
+  <text x="712" y="182" font-size="13" fill="#39FF14" opacity="0.9">█
+    <animate attributeName="opacity" values="0.9;0.9;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- CRT full-frame white flash (discrete) -->
+  <rect x="0" y="0" width="760" height="200" fill="#FFFFFF" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.85;0;0" calcMode="discrete" keyTimes="0;0.895;0.90;0.905;1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  </g>
+</svg>
