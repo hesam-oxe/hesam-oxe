@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="240" viewBox="0 0 380 240" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <radialGradient id="gateBg" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#1a0a1e"/>
+      <stop offset="0.6" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#050508"/>
+    </radialGradient>
+    <radialGradient id="portalG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF4500" stop-opacity="0.85"/>
+      <stop offset="0.25" stop-color="#DC143C" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#B026FF" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#050508" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="runeRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DC143C"/>
+      <stop offset="0.5" stop-color="#B026FF"/>
+      <stop offset="1" stop-color="#00E5FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="380" height="240" rx="10" fill="url(#gateBg)" stroke="#B026FF" stroke-width="1"/>
+  <text x="190" y="24" text-anchor="middle" font-size="12" letter-spacing="4" fill="#B026FF">// HELLGATE · PRODUCTION PORTAL</text>
+
+  <g transform="translate(190,126)">
+    <!-- outer rune ring : rotating slowly, angular glyphs -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      <circle r="86" fill="none" stroke="url(#runeRing)" stroke-width="1.4" stroke-dasharray="10 6" opacity="0.85"/>
+      <!-- angular runes (lines) -->
+      <g stroke="#DC143C" stroke-width="1.8">
+        <line x1="0" y1="-76" x2="0" y2="-86"/><line x1="0" y1="76" x2="0" y2="86"/>
+        <line x1="76" y1="0" x2="86" y2="0"/><line x1="-76" y1="0" x2="-86" y2="0"/>
+        <line x1="54" y1="-54" x2="61" y2="-61"/><line x1="-54" y1="54" x2="-61" y2="61"/>
+        <line x1="54" y1="54" x2="61" y2="61"/><line x1="-54" y1="-54" x2="-61" y2="-61"/>
+      </g>
+    </g>
+
+    <!-- middle ring : counter-rotating dashed -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="14s" repeatCount="indefinite"/>
+      <circle r="66" fill="none" stroke="#B026FF" stroke-width="1.6" stroke-dasharray="26 12" opacity="0.75"/>
+    </g>
+
+    <!-- inner ring : fast, thin, ticked like a clock of doom -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
+      <circle r="46" fill="none" stroke="#DC143C" stroke-width="1.2" stroke-dasharray="4 8" opacity="0.9"/>
+      <!-- triangle of summoning -->
+      <path d="M0,-40 L34.6,20 L-34.6,20 Z" fill="none" stroke="#DC143C" stroke-width="1.5" opacity="0.7"/>
+      <!-- inverted triangle -->
+      <path d="M0,40 L34.6,-20 L-34.6,-20 Z" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- portal core : breathing hellish glow -->
+    <circle r="34" fill="url(#portalG)">
+      <animate attributeName="r" values="30;36;30" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- summon sigil at dead center -->
+    <text x="0" y="7" text-anchor="middle" font-size="16" fill="#FFD0D0" opacity="0.95">⚖</text>
+
+    <!-- orbiting sparks -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite"/>
+      <circle cx="52" cy="0" r="2" fill="#FFB000"/>
+      <circle cx="-52" cy="0" r="1.6" fill="#00E5FF"/>
+      <circle cx="0" cy="52" r="1.4" fill="#B026FF"/>
+    </g>
+  </g>
+
+  <text x="190" y="226" text-anchor="middle" font-size="11" letter-spacing="3" fill="#DC143C">DEPLOYS PASS THROUGH. <tspan fill="#5c5c70">BUGS DO NOT RETURN.</tspan></text>
+</svg>

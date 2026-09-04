@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="200" viewBox="0 0 480 200" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="phBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#050508"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="480" height="200" rx="10" fill="url(#phBg)" stroke="#DC143C" stroke-width="1"/>
+  <text x="240" y="90" text-anchor="middle" font-size="16" letter-spacing="4" fill="#DC143C">// COMMENDATIONS PENDING</text>
+  <text x="240" y="116" text-anchor="middle" font-size="11" letter-spacing="2" fill="#5c5c70">first metrics workflow run — achievements will generate this panel
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+  <rect x="140" y="132" width="200" height="10" rx="5" fill="#12121c" stroke="#22223a"/>
+  <rect x="142" y="134" width="0" height="6" rx="3" fill="#DC143C">
+    <animate attributeName="width" values="0;196;0" dur="2s" repeatCount="indefinite"/>
+  </rect>
+</svg>

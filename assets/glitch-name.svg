@@ -7,9 +7,17 @@
       <stop offset="0" stop-color="#DC143C" stop-opacity="0"/>
       <stop offset="1" stop-color="#DC143C" stop-opacity="0.06"/>
     </linearGradient>
+    <linearGradient id="tearG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DC143C" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00E5FF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#DC143C" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="tearTop"><rect x="0" y="70" width="760" height="14"/></clipPath>
+    <clipPath id="tearMid"><rect x="0" y="96" width="760" height="10"/></clipPath>
+    <clipPath id="tearBot"><rect x="0" y="118" width="760" height="16"/></clipPath>
   </defs>
 
-  <!-- ══ EXTREME MODE : shake group + CRT flash ══ -->
+  <!-- ══ v4 EXTREME : shake group + CRT flash + screen tears + roaming scanline ══ -->
   <g>
     <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-4 2;3 -2;-2 1;0 0;0 0" keyTimes="0;0.895;0.902;0.912;0.922;0.935;1" dur="5s" repeatCount="indefinite"/>
 
@@ -45,6 +53,31 @@
   <!-- base white text -->
   <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#F2F2F5">HESAM JAMALI</text>
 
+  <!-- ░░ SCREEN TEAR BANDS : slices of the name displaced horizontally ░░ -->
+  <g clip-path="url(#tearTop)">
+    <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#F2F2F5" opacity="0">HESAM JAMALI
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.55;0.565;0.58;0.62;0.635;0.65;1" dur="4.6s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;18 0;0 0;-14 0;0 0" keyTimes="0;0.55;0.565;0.58;0.635;0.65;1" dur="4.6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <g clip-path="url(#tearMid)">
+    <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#00E5FF" opacity="0">HESAM JAMALI
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.30;0.315;0.33;0.33;0.345;0.36;1" dur="3.7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-22 0;0 0;16 0;0 0" keyTimes="0;0.30;0.315;0.33;0.345;0.36;1" dur="3.7s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <g clip-path="url(#tearBot)">
+    <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#DC143C" opacity="0">HESAM JAMALI
+      <animate attributeName="opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.72;0.735;0.75;0.75;0.765;0.78;1" dur="5.3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;26 0;0 0;-20 0;0 0" keyTimes="0;0.72;0.735;0.75;0.765;0.78;1" dur="5.3s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- roaming vertical scanline -->
+  <rect x="-20" y="0" width="14" height="200" fill="url(#tearG)" opacity="0.35">
+    <animate attributeName="x" values="-20;770" dur="2.6s" repeatCount="indefinite"/>
+  </rect>
+
   <!-- subtitle -->
   <text x="380" y="138" text-anchor="middle" font-size="15" letter-spacing="8" fill="#B026FF" opacity="0.95">FULL-METAL STACK · KERNEL-LEVEL OPERATOR
     <animate attributeName="opacity" values="0.95;0.4;0.95" dur="4s" repeatCount="indefinite"/>
@@ -52,7 +85,7 @@
 
   <!-- status ticks -->
   <g font-size="10" fill="#5c5c70" letter-spacing="2">
-    <text x="34" y="30">SYS://PROFILE_v3.0_EXTREME</text>
+    <text x="34" y="30">SYS://PROFILE_v4.0_HELLBEAST</text>
     <text x="640" y="30" fill="#DC143C">◉ REC</text>
   </g>
 

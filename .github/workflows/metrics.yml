@@ -1,0 +1,61 @@
+name: "📊 Generate Metrics Panels"
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # daily at 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: People panel
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          filename: metrics/people.svg
+          base: ""
+          plugin_people: yes
+          plugin_people_limit: 24
+          plugin_people_identicons: yes
+          plugin_people_types: followers, following, contributors
+          config_display: large
+          config_output: svg
+          config_timezone: Asia/Tehran
+
+      - name: Follow-up panel
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          filename: metrics/followup.svg
+          base: ""
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          config_output: svg
+          config_timezone: Asia/Tehran
+
+      - name: Achievements panel
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          filename: metrics/achievements.svg
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+          config_output: svg
+          config_timezone: Asia/Tehran
+
+      - name: Commit and push metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add metrics/ || true
+          git commit -m "ci: regenerate metrics panels [skip ci]" || echo "nothing to commit"
+          git push

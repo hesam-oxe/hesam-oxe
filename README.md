@@ -3,20 +3,22 @@
 <!-- ░░ BREAKING NEWS TICKER — handcrafted animated SVG ░░ -->
 <img src="assets/marquee-alert.svg" width="100%" alt="live ticker"/>
 
-<!-- ░░ CUSTOM GLITCH HEADER v3 — CRT flash + frame shake ░░ -->
+<!-- ░░ SCP CONTAINMENT BANNER ░░ -->
+<img src="https://img.shields.io/badge/⚠️_ITEM_№_HESAM--OXE-CONTAINMENT_CLASS:_KETER-DC143C?style=for-the-badge&labelColor=0D1117" alt="SCP banner"/>
+<img src="https://img.shields.io/badge/🚫_DO_NOT_APPROACH_WITHOUT_DEBUGGER-0D1117?style=for-the-badge&labelColor=DC143C" alt="SCP warning"/>
+
+<!-- ░░ CUSTOM GLITCH HEADER v4 — CRT flash + screen tears + roaming scanline ░░ -->
 <img src="assets/glitch-name.svg" width="100%" alt="HESAM JAMALI — glitch header"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2200&pause=500&color=DC143C&center=true&vCenter=true&width=760&lines=%E2%96%BA+whoami+%3A+hesam-oxe;%E2%96%BA+clearance+%3A+UNRESTRICTED;%E2%96%BA+from+bare+metal+to+cloud+native;%E2%96%BA+asm+%C2%B7+rust+%C2%B7+go+%C2%B7+c+%C2%B7+cpp+%C2%B7+py+%C2%B7+ts;%E2%96%BA+kernel+compiled.+threats+neutralized.)](https://github.com/hesam-oxe)
 
-<!-- ░░ DETONATION PROTOCOL ░░ -->
+<!-- ░░ DETONATION PROTOCOL v2 — shockwaves + ash + launch silo ░░ -->
 <img src="assets/detonation.svg" width="100%" alt="overkill detonation sequence"/>
 
 </div>
 
-<!-- ░░ HAZARD STRIP ░░ -->
-<div align="center">
-  <img src="assets/hazard-divider.svg" width="100%" alt="caution strip"/>
-</div>
+<!-- ░░ HELLFIRE WALL ░░ -->
+<img src="assets/hellfire.svg" width="100%" alt="hellfire wall"/>
 
 ---
 
@@ -28,15 +30,35 @@
 
 ---
 
+## ⬢ L I V E · S H E L L
+
+<div align="center">
+  <img src="assets/terminal.svg" width="100%" alt="live ssh session"/>
+</div>
+
+---
+
 ## ⬢ T H R E A T · S W E E P &nbsp;·&nbsp; F U S I O N · C O R E &nbsp;·&nbsp; O P C O D E · R A I N
 
 <div align="center">
   <table><tr><td>
-    <img src="assets/radar.svg" width="100%" alt="threat radar"/>
+    <img src="assets/radar.svg" width="100%" alt="threat radar — targets locked"/>
   </td><td>
     <img src="assets/core-reactor.svg" width="100%" alt="fusion core"/>
   </td><td>
-    <img src="assets/code-rain.svg" width="100%" alt="assembly opcode rain"/>
+    <img src="assets/code-rain.svg" width="100%" alt="assembly opcode rain x86_64"/>
+  </td></tr></table>
+</div>
+
+---
+
+## ⬢ H E L L G A T E &nbsp;·&nbsp; C R T · S K U L L
+
+<div align="center">
+  <table><tr><td>
+    <img src="assets/hellgate.svg" width="100%" alt="production portal"/>
+  </td><td>
+    <img src="assets/skull.svg" width="100%" alt="CRT skull guardian"/>
   </td></tr></table>
 </div>
 
@@ -46,6 +68,35 @@
 
 <div align="center">
   <img src="assets/threat-dashboard.svg" width="100%" alt="animated combat counters"/>
+</div>
+
+---
+
+## ⬢ S Y S T E M · L O G &nbsp;·&nbsp; O P E R A T O R · V I T A L S
+
+<div align="center">
+  <img src="assets/syslog.svg" width="100%" alt="live dmesg stream"/>
+  <img src="assets/flatline-ekg.svg" width="100%" alt="cardiac telemetry — flatline & shock"/>
+</div>
+
+---
+
+## ⬢ A R M O R Y &nbsp;·&nbsp; D O S S I E R · O F · O P E R A T I O N S
+
+<div align="center">
+
+| 🎯 TARGET | 🪖 ROLE | ⚔️ Weapon of Choice | 📛 Status |
+|---|---|---|---|
+| 🐧 [**Linux Kernel**](https://github.com/torvalds/linux) | Kernel infantry — merged patches in the world's largest collaborative codebase | `C` · `asm` | `MERGED` |
+| ⚙️ [**LLVM**](https://github.com/llvm/llvm-project) | Compiler blacksmith — codegen & optimization trenches | `C++` | `ENGAGED` |
+| 🛡️ [**OWASP**](https://github.com/OWASP/www-project-agent-memory-guard) | Security operative — agent memory guard for LLM systems | `Python` | `LOCKED` |
+| 👁️ [**Meta PyTorch**](https://github.com/meta-pytorch/tritonparse) | ML artillery — triton kernel validation at scale | `Python` · `Triton` | `LOCKED` |
+| 🔷 [**Microsoft TypeScript-Go**](https://github.com/microsoft/typescript-go) | Language port commando — 10M-line compiler rewritten in Go | `Go` | `DEPLOYED` |
+| 🚀 [**NASA Worldview**](https://github.com/nasa-gibs/worldview) | Orbital recon — satellite imagery pipeline | `JS` | `IN ORBIT` |
+| 🐘 [**Apache SeaTunnel**](https://github.com/apache/seatunnel) | Data pipeline engineering — high-throughput sync | `Java` | `STREAMING` |
+
+<sub>⚠️ All operations executed. None detected early enough to stop.</sub>
+
 </div>
 
 ---
@@ -103,6 +154,17 @@
 
 ---
 
+## ⬢ I N T E L · F I E L D · A G E N T S
+
+<div align="center">
+  <img src="./metrics/people.svg" width="48.5%" alt="agents of interest"/>
+  <img src="./metrics/followup.svg" width="48.5%" alt="follow-up intel"/>
+  <img src="./metrics/achievements.svg" width="100%" alt="commendations earned"/>
+  <img src="https://img.shields.io/badge/📊_field_reports_regenerated_daily_by_GitHub_Actions-00E5FF?style=for-the-badge&labelColor=0D1117" alt="auto-generated"/>
+</div>
+
+---
+
 ## ⬢ T R O P H Y · V A U L T
 
 <div align="center">
@@ -122,11 +184,17 @@
 
 ---
 
-## ⬢ C O N T R I B U T I O N · S N A K E
+## ⬢ C O N T R I B U T I O N · S N A K E S
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/hesam-oxe/hesam-oxe/output/github-contribution-grid-snake.svg" width="100%" alt="contribution snake — blood & plasma palette"/>
-  <img src="https://img.shields.io/badge/🐍_crimson_snake_on_a_diet_of_commits-B026FF?style=for-the-badge&labelColor=0D1117" alt="snake badge"/>
+
+### 🩸 BLOOD SERPENT — the crimson hunter
+  <img src="https://raw.githubusercontent.com/hesam-oxe/hesam-oxe/output/github-contribution-grid-snake.svg" width="100%" alt="contribution snake — blood palette"/>
+
+### 💜 VOID SERPENT — the plasma phantom
+  <img src="https://raw.githubusercontent.com/hesam-oxe/hesam-oxe/output/github-contribution-grid-snake-dark.svg" width="100%" alt="contribution snake — dark plasma palette"/>
+
+<img src="https://img.shields.io/badge/🐍_TWIN_SERPENTS_fed_daily_on_a_diet_of_commits-B026FF?style=for-the-badge&labelColor=0D1117" alt="snake badge"/>
 </div>
 
 ---
@@ -180,10 +248,9 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=hesam-oxe&color=DC143C&style=for-the-badge&label=☠️+OPERATORS+WATCHING)
 
-<img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d3-1c6f5cfc0d22.gif" width="100%"/>
+<!-- ░░ FINAL HELLFIRE — the profile ends in flames ░░ -->
+<img src="assets/hellfire.svg" width="100%" alt="hellfire outro"/>
 
-### ⚠️ WARNING: OPERATING AT SYSTEM LEVEL ⚠️
-
-<img src="assets/hazard-divider.svg" width="100%" alt="caution strip"/>
+### ⚠️ YOU HAVE REACHED THE END. THE FIRE HASN'T. ⚠️
 
 </div>

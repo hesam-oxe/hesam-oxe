@@ -32,7 +32,7 @@
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.6s" repeatCount="indefinite"/>
     </line>
 
-    <!-- blips -->
+    <!-- blip 1 : LINUX KERNEL -->
     <g>
       <circle cx="34" cy="-28" r="3.2" fill="#DC143C">
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.5;0.62" dur="3.6s" repeatCount="indefinite"/>
@@ -41,7 +41,14 @@
         <animate attributeName="r" values="3;14" dur="1.6s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0.8;0" dur="1.6s" repeatCount="indefinite"/>
       </circle>
+      <text x="34" y="-38" text-anchor="middle" font-size="8" letter-spacing="1" fill="#DC143C" opacity="0">
+        torvalds/linux<tspan x="34" dy="9" fill="#39FF14" font-weight="700">LOCKED</tspan>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.08;0.12;0.5;0.62;1" dur="3.6s" repeatCount="indefinite"/>
+      </text>
+    </g>
 
+    <!-- blip 2 : LLVM -->
+    <g>
       <circle cx="-42" cy="18" r="3.2" fill="#B026FF">
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.3;0.72;0.85" dur="3.6s" repeatCount="indefinite"/>
       </circle>
@@ -49,7 +56,14 @@
         <animate attributeName="r" values="3;14" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0.8;0" dur="1.6s" begin="0.8s" repeatCount="indefinite"/>
       </circle>
+      <text x="-42" y="36" text-anchor="middle" font-size="8" letter-spacing="1" fill="#B026FF" opacity="0">
+        llvm/llvm-project<tspan x="-42" dy="9" fill="#39FF14" font-weight="700">LOCKED</tspan>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3;0.34;0.72;0.85;1" dur="3.6s" repeatCount="indefinite"/>
+      </text>
+    </g>
 
+    <!-- blip 3 : OWASP -->
+    <g>
       <circle cx="20" cy="44" r="3.2" fill="#00E5FF">
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.55;0.9;1" dur="3.6s" repeatCount="indefinite"/>
       </circle>
@@ -57,15 +71,26 @@
         <animate attributeName="r" values="3;14" dur="1.6s" begin="1.4s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0.8;0" dur="1.6s" begin="1.4s" repeatCount="indefinite"/>
       </circle>
+      <text x="20" y="62" text-anchor="middle" font-size="8" letter-spacing="1" fill="#00E5FF" opacity="0">
+        OWASP<tspan x="20" dy="9" fill="#39FF14" font-weight="700">LOCKED</tspan>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.55;0.59;0.9;0.96;1" dur="3.6s" repeatCount="indefinite"/>
+      </text>
+    </g>
 
+    <!-- blip 4 : TYPESCRIPT-GO -->
+    <g>
       <circle cx="-24" cy="-50" r="3.2" fill="#39FF14">
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.72;0.94;1" dur="3.6s" repeatCount="indefinite"/>
       </circle>
+      <text x="-24" y="-60" text-anchor="middle" font-size="8" letter-spacing="1" fill="#39FF14" opacity="0">
+        typescript-go<tspan x="-24" dy="9" fill="#39FF14" font-weight="700">LOCKED</tspan>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.72;0.76;0.94;0.99;1" dur="3.6s" repeatCount="indefinite"/>
+      </text>
     </g>
 
     <!-- center dot -->
     <circle r="2.5" fill="#F2F2F5"/>
   </g>
 
-  <text x="190" y="226" text-anchor="middle" font-size="11" letter-spacing="3" fill="#39FF14">SCANNING GITHUB…<tspan fill="#5c5c70"> 4 SIGNALS LOCKED</tspan></text>
+  <text x="190" y="226" text-anchor="middle" font-size="11" letter-spacing="3" fill="#39FF14">SCANNING GITHUB…<tspan fill="#5c5c70"> 4 TARGETS LOCKED · 0 ESCAPED</tspan></text>
 </svg>

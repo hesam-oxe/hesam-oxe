@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="sysBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#050508"/>
+    </linearGradient>
+    <linearGradient id="fadeMask2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.12" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.88" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="sysfade"><rect x="0" y="0" width="760" height="240" fill="url(#fadeMask2)"/></mask>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="240" rx="10" fill="url(#sysBg)" stroke="#00E5FF" stroke-width="1"/>
+  <text x="30" y="28" font-size="13" letter-spacing="4" fill="#00E5FF">// DMESG — HELLBEAST SYSTEM LOG <tspan fill="#5c5c70">· tail -f /var/log/wrath</tspan></text>
+  <circle cx="722" cy="23" r="4" fill="#FF1744">
+    <animate attributeName="opacity" values="1;1;0.1;0.1" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <g mask="url(#sysfade)" font-size="12.5">
+    <!-- stream 1 : scrolls up, replaced by stream 2 seamlessly -->
+    <text x="30" y="0">
+      <tspan x="30" fill="#39FF14">[  0.000000] Linux HellBeast 6.6.6-hellfire x86_64 booting…</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000001] CPU: 13th Gen Hesam i9-99999K @ 6.66GHz</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000042] Memory: 666TB RAM, all of it swapped to rage</tspan>
+      <tspan x="30" dy="17" fill="#DC143C">[  0.001337] WARN: caffeine levels critical — overclocking</tspan>
+      <tspan x="30" dy="17" fill="#39FF14">[  0.002000] init: weaponized-code.service started</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  0.666000] usb 6-6:0x66: keyboard connected — deploy mode</tspan>
+      <tspan x="30" dy="17" fill="#B026FF">[  1.337000] threat detected: deadline approaching</tspan>
+      <tspan x="30" dy="17" fill="#DC143C">[  1.337001] threat neutralized. deadline deleted.</tspan>
+      <tspan x="30" dy="17" fill="#39FF14">[  2.000000] watchdog: operator still alive (impossible)</tspan>
+      <tspan x="30" dy="17" fill="#00E5FF">[  3.141592] cloud: k8s cluster responding to commands</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  4.044000] filesystem: /dev/fear not found — good.</tspan>
+      <tspan x="30" dy="17" fill="#DC143C">[  5.000000] OVERKILL protocol armed and unapologetic</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 40;0 -220" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <!-- stream 2 : identical, follows behind for seamless loop -->
+    <text x="30" y="0">
+      <tspan x="30" fill="#39FF14">[  0.000000] Linux HellBeast 6.6.6-hellfire x86_64 booting…</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000001] CPU: 13th Gen Hesam i9-99999K @ 6.66GHz</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000042] Memory: 666TB RAM, all of it swapped to rage</tspan>
+      <tspan x="30" dy="17" fill="#DC143C">[  0.001337] WARN: caffeine levels critical — overclocking</tspan>
+      <tspan x="30" dy="17" fill="#39FF14">[  0.002000] init: weaponized-code.service started</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  0.666000] usb 6-6:0x66: keyboard connected — deploy mode</tspan>
+      <tspan x="30" dy="17" fill="#B026FF">[  1.337000] threat detected: deadline approaching</tspan>
+      <tspan x="30" dy="17" fill="#DC143C">[  1.337001] threat neutralized. deadline deleted.</tspan>
+      <tspan x="30" dy="17" fill="#39FF14">[  2.000000] watchdog: operator still alive (impossible)</tspan>
+      <tspan x="30" dy="17" fill="#00E5FF">[  3.141592] cloud: k8s cluster responding to commands</tspan>
+      <tspan x="30" dy="17" fill="#8a8aa0">[  4.044000] filesystem: /dev/fear not found — good.</tspan>
+      <tspan x="30" dy="17" fill="#DC143C">[  5.000000] OVERKILL protocol armed and unapologetic</tspan>
+      <animateTransform attributeName="transform" type="translate" values="0 244;0 -16" dur="6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <text x="380" y="226" text-anchor="middle" font-size="11" letter-spacing="3" fill="#5c5c70">12 EVENTS/SEC · <tspan fill="#DC143C">0 REGRETS LOGGED</tspan></text>
+</svg>
