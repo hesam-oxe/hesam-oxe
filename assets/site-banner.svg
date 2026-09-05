@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="120" viewBox="0 0 760 120" font-family="'Cascadia Code','Fira Code',monospace"><title>fortress gateway — hesam-oxe.github.io online</title>
+  <defs>
+    <linearGradient id="sbBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="0.5" stop-color="#1A080D"/>
+      <stop offset="1" stop-color="#0A0A10"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="760" height="120" rx="10" fill="url(#sbBg)" stroke="#00E5FF" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="22" fill="none" stroke="#00E5FF" stroke-width="2">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="60" r="8" fill="#00E5FF">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="110" y="52" font-size="20" font-weight="800" letter-spacing="3" fill="#F2F2F5">FORTRESS ONLINE — hesam-oxe.github.io</text>
+  <text x="110" y="78" font-size="12" letter-spacing="2" fill="#00E5FF">WebGL war-room · real terminal · zero mercy</text>
+  <text x="110" y="98" font-size="11" fill="#5c5c70">click to enter — the fire continues outside GitHub</text>
+  <text x="700" y="66" font-size="28" fill="#00E5FF">➔
+    <animateTransform attributeName="transform" type="translate" values="0 0;8 0;0 0" keyTimes="0;0.5;1" dur="1.6s" repeatCount="indefinite"/>
+  </text>
+</svg>

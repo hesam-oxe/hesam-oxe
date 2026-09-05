@@ -7,10 +7,25 @@
 <a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/3d-contrib.yml/badge.svg" alt="3d CI"/></a>
 <a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/metrics.yml/badge.svg" alt="metrics CI"/></a>
 <a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/hell-stats.yml/badge.svg" alt="hell-stats CI"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/blog-rss.yml/badge.svg" alt="blog CI"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/activity.yml/badge.svg" alt="activity CI"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/waka.yml/badge.svg" alt="waka CI"/></a>
 <br/>
 <a href="https://github.com/hesam-oxe?tab=followers"><img src="https://img.shields.io/github/followers/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=DC143C" alt="followers"/></a>
 <a href="https://github.com/hesam-oxe/hesam-oxe"><img src="https://img.shields.io/github/stars/hesam-oxe/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=FFB000" alt="stars"/></a>
 <a href="https://github.com/hesam-oxe/hesam-oxe"><img src="https://img.shields.io/github/last-commit/hesam-oxe/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=00E5FF" alt="last commit"/></a>
+
+<!-- ░░ ATOMIC TOC — jump straight into the fire ░░ -->
+<p align="center">
+  <a href="#-b-o-o-t--s-e-q-u-e-n-c-e--v5">BOOT</a> ·
+  <a href="#-k-e-r-n-e-l--p-a-n-i-c--real-dump">PANIC</a> ·
+  <a href="#-k-i-l-l--b-o-a-r-d">KILLS</a> ·
+  <a href="#-w-a-r--r-o-o-m--r-a-d-a-r-v2">RADAR</a> ·
+  <a href="#-transmissions--live-feeds">FEEDS</a> ·
+  <a href="#-a-r-m-o-r-y--d-o-s-s-i-e-r--o-f--o-p-e-r-a-t-i-o-n-s">ARMORY</a> ·
+  <a href="#-fortress-gateway">FORTRESS</a> ·
+  <a href="#-e-s-t-a-b-l-i-s-h--c-o-n-t-a-c-t">CONTACT</a>
+</p>
 
 <!-- ░░ BREAKING NEWS TICKER v5 — 12s master loop ░░ -->
 <img src="assets/marquee-alert.svg" width="100%" alt="live ticker — intruder detected, senior dev neutralized"/>
@@ -172,6 +187,38 @@
 
 ---
 
+## ⬢ TRANSMISSIONS · LIVE FEEDS
+
+> [!TIP]
+> **Live pipelines.** These blocks rewrite themselves via Actions — blog every 6h, activity every 6h, coding-hours daily. No token yet → graceful placeholder, zero breakage.
+
+### 📡 DISPATCHES FROM THE FRONT
+<!-- BLOG-START -->
+- 🛰️ _No transmissions yet — add RSS URLs to `FEEDS.json` (see `FEEDS.json.example`)._
+<!-- BLOG-END -->
+
+### ⚡ RECENT COMBAT ACTIVITY
+<!-- ACTIVITY-START -->
+- 🔥 `PushEvent` @ [hesam-oxe/line](https://github.com/hesam-oxe/line) — 2026-09-03
+- 🔥 `PushEvent` @ [hesam-oxe/line](https://github.com/hesam-oxe/line) — 2026-09-01
+- 🔥 `PushEvent` @ [hesam-oxe/line](https://github.com/hesam-oxe/line) — 2026-09-01
+- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe](https://github.com/hesam-oxe/hesam-oxe) — 2026-09-01
+- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe](https://github.com/hesam-oxe/hesam-oxe) — 2026-09-01
+<!-- ACTIVITY-END -->
+
+### ⌨️ CODING-HOURS TELEMETRY
+<!-- WAKA-START -->
+- ⌨️ _WakaTime not linked — add `WAKATIME_API_KEY` secret to enable coding-hours chart._
+<!-- WAKA-END -->
+
+### 🏆 OFF-GITHUB PROOF (placeholder — drop your IDs to activate)
+<!-- LEETCODE: set your username in .github/workflows/leetcode.yml (see SETUP-FINAL.md) -->
+<!-- STACKOVERFLOW: set your numeric user ID in SETUP-FINAL.md -->
+- 🧩 _LeetCode card: pending username —_ `hesam-oxe`
+- 📚 _StackOverflow flair: pending numeric ID —_ `0000000`
+
+---
+
 ## ⬢ K I L L · C H A I N — FROM SILICON TO CLOUD (native mermaid)
 
 ```mermaid
@@ -248,6 +295,8 @@ graph LR
   <img src="./metrics/people.svg" width="100%" alt="agents of interest"/>
   <img src="./metrics/followup.svg" width="100%" alt="follow-up intel"/>
   <img src="./metrics/achievements.svg" width="100%" alt="commendations earned"/>
+  <img src="./metrics/calendar.svg" width="100%" alt="combat calendar"/>
+  <img src="./metrics/habits.svg" width="100%" alt="war habits"/>
   <img src="https://img.shields.io/badge/📊_field_reports_regenerated_daily_by_GitHub_Actions-00E5FF?style=for-the-badge&labelColor=0D1117" alt="auto-generated"/>
 </div>
 
@@ -329,6 +378,19 @@ graph LR
 <div align="center">
   <img src="assets/oscilloscope.svg" width="100%" alt="live vitals oscilloscope"/>
 </div>
+
+---
+
+## ⬢ FORTRESS GATEWAY
+
+<div align="center">
+  <a href="https://hesam-oxe.github.io">
+    <img src="assets/site-banner.svg" width="100%" alt="fortress gateway — hesam-oxe.github.io online"/>
+  </a>
+</div>
+
+> [!IMPORTANT]
+> **The fire continues outside GitHub.** WebGL war-room + real terminal at [hesam-oxe.github.io](https://hesam-oxe.github.io) — no JS was harmed inside this README to bring you that.
 
 ---
 

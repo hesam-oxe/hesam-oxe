@@ -1,0 +1,9 @@
+{
+  "_comment": "FINAL-A live feeds. Add your real RSS URLs here — empty list = graceful placeholder, no failure.",
+  "feeds": [],
+  "max_items": 5,
+  "example": [
+    "https://dev.to/feed/hesam-oxe",
+    "https://medium.com/feed/@hesam-oxe"
+  ]
+}

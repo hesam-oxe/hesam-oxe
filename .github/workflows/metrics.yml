@@ -52,6 +52,28 @@ jobs:
           config_output: svg
           config_timezone: Asia/Tehran
 
+      - name: Calendar panel
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          filename: metrics/calendar.svg
+          base: ""
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
+          config_output: svg
+          config_timezone: Asia/Tehran
+
+      - name: Habits panel
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          filename: metrics/habits.svg
+          base: ""
+          plugin_habits: yes
+          plugin_habits_from: 200
+          config_output: svg
+          config_timezone: Asia/Tehran
+
       - name: Commit and push metrics
         run: |
           git config user.name "github-actions[bot]"

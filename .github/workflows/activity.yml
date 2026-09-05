@@ -1,0 +1,27 @@
+name: "⚡ Activity -> README"
+
+on:
+  schedule:
+    - cron: "30 */6 * * *" # every 6h, offset from blog
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  activity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/update_activity.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md || true
+          git commit -m "⚡ activity sync [skip ci]" || echo "nothing to commit"
+          git push
