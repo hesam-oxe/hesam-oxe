@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <rect x="0" y="0" width="760" height="210" fill="#F2F2F5"/>
+  <g stroke="#0D1117" stroke-width="2.5" fill="none" opacity="0.9">
+    <path d="M14 30 L14 14 L30 14"/>
+    <path d="M730 14 L746 14 L746 30"/>
+    <path d="M746 180 L746 196 L730 196"/>
+    <path d="M30 196 L14 196 L14 180"/>
+  </g>
+  <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#0D1117">HESAM JAMALI</text>
+  <text x="380" y="102" text-anchor="middle" font-size="62" font-weight="800" letter-spacing="6" fill="#DC143C" opacity="0.35">HESAM JAMALI
+    <animateTransform attributeName="transform" type="translate" values="0 0;3 -2;0 0" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+  <text x="380" y="142" text-anchor="middle" font-size="15" letter-spacing="8" fill="#5A1E7A">FULL-METAL STACK · KERNEL-LEVEL OPERATOR</text>
+  <text x="380" y="164" text-anchor="middle" font-size="11" letter-spacing="4" fill="#8B0000">SENIORS TERMINATED: 1337 · MERCY: NOT FOUND</text>
+  <text x="34" y="30" font-size="10" letter-spacing="2" fill="#5c5c70">SYS://PROFILE_v5.0_LIGHTMODE</text>
+</svg>

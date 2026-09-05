@@ -1,4 +1,16 @@
+<img src="assets/wave-top.svg" width="100%" alt="hell wave top"/>
+
 <div align="center">
+
+<!-- ░░ ELITE BADGES — workflow status + social proof (shields stable, self-host rest) ░░ -->
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/snake.yml/badge.svg" alt="snake CI"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/3d-contrib.yml/badge.svg" alt="3d CI"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/metrics.yml/badge.svg" alt="metrics CI"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/hell-stats.yml/badge.svg" alt="hell-stats CI"/></a>
+<br/>
+<a href="https://github.com/hesam-oxe?tab=followers"><img src="https://img.shields.io/github/followers/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=DC143C" alt="followers"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe"><img src="https://img.shields.io/github/stars/hesam-oxe/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=FFB000" alt="stars"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe"><img src="https://img.shields.io/github/last-commit/hesam-oxe/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=00E5FF" alt="last commit"/></a>
 
 <!-- ░░ BREAKING NEWS TICKER v5 — 12s master loop ░░ -->
 <img src="assets/marquee-alert.svg" width="100%" alt="live ticker — intruder detected, senior dev neutralized"/>
@@ -7,8 +19,11 @@
 <img src="https://img.shields.io/badge/⚠️_ITEM_№_HESAM--OXE-CONTAINMENT_CLASS:_KETER-DC143C?style=for-the-badge&labelColor=0D1117" alt="SCP banner"/>
 <img src="https://img.shields.io/badge/🚫_DO_NOT_APPROACH_WITHOUT_DEBUGGER-0D1117?style=for-the-badge&labelColor=DC143C" alt="SCP warning"/>
 
-<!-- ░░ CUSTOM GLITCH HEADER v5 — 12s sync + 4 tear bands + double flash ░░ -->
-<img src="assets/glitch-name.svg" width="100%" alt="HESAM JAMALI — glitch header v5"/>
+<!-- ░░ ELITE TRICK #1 — <picture> dark/light adaptive hero (old-timers know camo respects media) ░░ -->
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/glitch-name-light.svg"/>
+  <img src="assets/glitch-name.svg" width="100%" alt="HESAM JAMALI — glitch header v5, dark/light adaptive"/>
+</picture>
 
 <!-- ░░ SELF-HOSTED TYPING BILLBOARD — zero external deps ░░ -->
 <img src="assets/typing-local.svg" width="100%" alt="whoami hesam-oxe, arsenal weaponized, seniors neutralized"/>
@@ -17,6 +32,9 @@
 <img src="assets/detonation.svg" width="100%" alt="overkill detonation sequence"/>
 
 </div>
+
+> [!CAUTION]
+> **RESTRICTED ZONE.** You are viewing a live fire profile. Seniors have been neutralized here in 0.03s. Proceed with debugger.
 
 <!-- ░░ HELLFIRE WALL — 12s master loop ░░ -->
 <img src="assets/hellfire.svg" width="100%" alt="hellfire wall"/>
@@ -28,6 +46,17 @@
 <div align="center">
   <img src="assets/boot-sequence.svg" width="100%" alt="kernel boot sequence — soul mounted, mercy not found"/>
 </div>
+
+---
+
+## ⬢ K E R N E L · P A N I C — REAL DUMP
+
+<div align="center">
+  <img src="assets/kernel-panic.svg" width="100%" alt="kernel panic — senior dev detected, threat contained"/>
+</div>
+
+> [!NOTE]
+> **Forensics:** `RIP: panic+0x666` — cause: senior ego overflow. Handler: `hesam-oxe`. Resolution time: `0.03s`.
 
 ---
 
@@ -47,6 +76,14 @@
 
 ---
 
+## ⬢ F I N A L · B O S S — LVL 99
+
+<div align="center">
+  <img src="assets/final-boss.svg" width="100%" alt="final boss — senior architect HP drained to zero"/>
+</div>
+
+---
+
 ## ⬢ C O M B A T · R E C O R D
 
 <div align="center">
@@ -59,6 +96,14 @@
 
 <div align="center">
   <img src="assets/war-room.svg" width="100%" alt="war room radar — 3 hostile seniors locked"/>
+</div>
+
+---
+
+## ⬢ S E C T O R 7 — CONQUERED SKYLINE
+
+<div align="center">
+  <img src="assets/skyline-hell.svg" width="100%" alt="conquered skyline — smoke still rising, searchlights sweeping"/>
 </div>
 
 ---
@@ -127,6 +172,22 @@
 
 ---
 
+## ⬢ K I L L · C H A I N — FROM SILICON TO CLOUD (native mermaid)
+
+```mermaid
+graph LR
+    A[asm · silicon] --> B[C · kernel]
+    B --> C[rust · go · fear]
+    C --> D[k8s · cloud]
+    D --> E{SENIOR?}
+    E -->|yes| F[☠ neutralized 0.03s]
+    E -->|no| G[spared · for now]
+    style F fill:#DC143C,stroke:#FF1744,color:#fff
+    style A fill:#0D1117,stroke:#DC143C,color:#fff
+```
+
+---
+
 ## ⬢ S T A C K · M A T R I X
 
 <div align="center">
@@ -141,6 +202,43 @@
 <img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws,azure,redis,kafka,terraform,nginx,git&theme=dark" alt="systems stack"/>
 
 </div>
+
+---
+
+## ⬢ C L A S S I F I E D · D O S S I E R S — click to declassify
+
+<details>
+<summary>☠️ FILE 001 — HOW SENIORS GET NEUTRALIZED IN 0.03s</summary>
+
+- `00.00s` — nmap sweep, ego port open
+- `00.01s` — legacy argument detected: _"in my 20 years..."_
+- `00.02s` — counter: kernel patch + benchmark + one-liner in asm
+- `00.03s` — silence. Target terminated. Loot: respect +∞
+
+> [!WARNING]
+> Do not attempt without ring-0 clearance.
+
+</details>
+
+<details>
+<summary>🔥 FILE 002 — WEAPON LOADOUT (12 LANGUAGES)</summary>
+
+- **bare metal:** `asm · c · cpp · rust` — where others fear to step
+- **strike:** `go · java · cs` — concurrent, ruthless
+- **interface:** `py · ts · js` — pretty on top, lethal underneath
+- **battlefield:** `linux · k8s · docker · terraform` — the whole stack kneels
+
+</details>
+
+<details>
+<summary>👁️ FILE 003 — RULES OF ENGAGEMENT</summary>
+
+1. No layer untouched — from silicon to cloud
+2. No mercy module — `mercy.service not found — good.`
+3. Uptime ∞ — sleep schedule `404`
+4. Juniors spared: `0` — everyone gets forged
+
+</details>
 
 ---
 
@@ -254,3 +352,5 @@
 ### ⚠️ YOU HAVE REACHED THE END. THE FIRE HASN'T. ⚠️
 
 </div>
+
+<img src="assets/wave-bottom.svg" width="100%" alt="hell wave bottom"/>

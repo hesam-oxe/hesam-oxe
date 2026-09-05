@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="110" viewBox="0 0 760 110" preserveAspectRatio="none" font-family="'Cascadia Code','Fira Code',monospace">
+  <defs>
+    <linearGradient id="wv1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DC143C" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#3D0C14"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="760" height="110" fill="#0A0A10"/>
+  <g>
+    <path d="M0,60 Q60,20 120,55 T240,55 T360,55 T480,55 T600,55 T720,55 T840,55 L840,110 L0,110 Z" fill="url(#wv1)" opacity="0.9">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-120 0;0 0" keyTimes="0;0.5;1" dur="12s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,75 Q60,45 120,70 T240,70 T360,70 T480,70 T600,70 T720,70 T840,70 L840,110 L0,110 Z" fill="#0D1117" opacity="1"/>
+  </g>
+</svg>
