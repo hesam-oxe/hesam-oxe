@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="280" viewBox="0 0 760 280" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <radialGradient id="radarBg" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#0D1A0D"/>
+      <stop offset="1" stop-color="#050508"/>
+    </radialGradient>
+    <linearGradient id="sweepG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="1" stop-color="#39FF14" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="760" height="280" rx="10" fill="#0A0A10" stroke="#39FF14" stroke-width="1.2"/>
+  <text x="30" y="32" font-size="13" letter-spacing="4" fill="#39FF14">// WAR-ROOM RADAR v2 <tspan fill="#5c5c70">— 12s sweep · targets locked</tspan></text>
+  <circle cx="200" cy="165" r="95" fill="url(#radarBg)" stroke="#39FF14" stroke-width="1" opacity="0.9"/>
+  <circle cx="200" cy="165" r="65" fill="none" stroke="#39FF14" stroke-width="0.7" opacity="0.5"/>
+  <circle cx="200" cy="165" r="35" fill="none" stroke="#39FF14" stroke-width="0.7" opacity="0.5"/>
+  <line x1="105" y1="165" x2="295" y2="165" stroke="#39FF14" stroke-width="0.5" opacity="0.4"/>
+  <line x1="200" y1="70" x2="200" y2="260" stroke="#39FF14" stroke-width="0.5" opacity="0.4"/>
+  <g opacity="0.85">
+    <line x1="200" y1="165" x2="295" y2="165" stroke="url(#sweepG)" stroke-width="2.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 200 165" to="360 200 165" dur="12s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  <g fill="#FF1744">
+    <circle cx="245" cy="130" r="4">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="195" r="3.5">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="225" cy="200" r="3">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g fill="#DC143C" font-size="9">
+    <text x="252" y="128">SR-DEV-01 ☠</text>
+    <text x="120" y="212">ARCH-07 ☠</text>
+  </g>
+  <g font-size="13">
+    <text x="340" y="90" fill="#39FF14">▶ SCAN: <tspan fill="#E6E6E6">entire stack</tspan></text>
+    <text x="340" y="116" fill="#39FF14">▶ CONTACTS: <tspan fill="#FF1744" font-weight="700">3 HOSTILE SENIORS</tspan></text>
+    <text x="340" y="142" fill="#39FF14">▶ WEAPON: <tspan fill="#E6E6E6">asm·rust·go·kernel</tspan></text>
+    <text x="340" y="168" fill="#39FF14">▶ ETA: <tspan fill="#FFB000" font-weight="700">0.03s TO NEUTRALIZE</tspan></text>
+    <text x="340" y="194" fill="#39FF14">▶ MERCY: <tspan fill="#DC143C" font-weight="700">NOT FOUND [404]</tspan></text>
+    <text x="340" y="220" fill="#5c5c70" font-size="11">sweep synced to 12s master loop</text>
+    <text x="340" y="242" fill="#B026FF" font-size="12" font-weight="700">STATUS: ALL TARGETS LOCKED 🔒</text>
+  </g>
+</svg>

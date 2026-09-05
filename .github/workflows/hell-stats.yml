@@ -1,0 +1,41 @@
+name: "🔥 Hell Stats Regenerator"
+
+on:
+  schedule:
+    - cron: "15 2 * * *" # daily at 02:15 UTC — after 3d-city, before metrics
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  hell:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Stamp hell-stats (bump date + kill-count)
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          COUNT=$((1337 + $(date -u +%j) % 100))
+          echo "Hell stamp: $DATE kill-count=$COUNT"
+          # touch self-hosted SVGs so commit history proves nightly activity
+          # content itself is loop-animated (12s master), no API needed
+          sed -i "s/SENIORS TERMINATED: [0-9]*/SENIORS TERMINATED: $COUNT/" assets/glitch-name.svg || true
+          sed -i "s/1337 TERMINATED/$COUNT TERMINATED/" assets/marquee-alert.svg || true
+          sed -i "s/1337 neutralized/$COUNT neutralized/" assets/trophies-local.svg || true
+          echo "$DATE $COUNT" > .hell-stamp || true
+
+      - name: Validate SVGs (well-formed XML)
+        run: |
+          python3 -c "import xml.dom.minidom, glob, sys; [xml.dom.minidom.parse(f) for f in glob.glob('assets/*.svg')]; print('all assets/*.svg valid XML')"
+          ls -lh assets/*.svg | awk '{print $9, $5}'
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/ .hell-stamp || true
+          git commit -m "🔥 hell-stats: nightly stamp [skip ci]" || echo "nothing to commit"
+          git push

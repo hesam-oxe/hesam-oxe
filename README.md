@@ -1,65 +1,48 @@
 <div align="center">
 
-<!-- ░░ BREAKING NEWS TICKER — handcrafted animated SVG ░░ -->
-<img src="assets/marquee-alert.svg" width="100%" alt="live ticker"/>
+<!-- ░░ BREAKING NEWS TICKER v5 — 12s master loop ░░ -->
+<img src="assets/marquee-alert.svg" width="100%" alt="live ticker — intruder detected, senior dev neutralized"/>
 
 <!-- ░░ SCP CONTAINMENT BANNER ░░ -->
 <img src="https://img.shields.io/badge/⚠️_ITEM_№_HESAM--OXE-CONTAINMENT_CLASS:_KETER-DC143C?style=for-the-badge&labelColor=0D1117" alt="SCP banner"/>
 <img src="https://img.shields.io/badge/🚫_DO_NOT_APPROACH_WITHOUT_DEBUGGER-0D1117?style=for-the-badge&labelColor=DC143C" alt="SCP warning"/>
 
-<!-- ░░ CUSTOM GLITCH HEADER v4 — CRT flash + screen tears + roaming scanline ░░ -->
-<img src="assets/glitch-name.svg" width="100%" alt="HESAM JAMALI — glitch header"/>
+<!-- ░░ CUSTOM GLITCH HEADER v5 — 12s sync + 4 tear bands + double flash ░░ -->
+<img src="assets/glitch-name.svg" width="100%" alt="HESAM JAMALI — glitch header v5"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2200&pause=500&color=DC143C&center=true&vCenter=true&width=760&lines=%E2%96%BA+whoami+%3A+hesam-oxe;%E2%96%BA+clearance+%3A+UNRESTRICTED;%E2%96%BA+from+bare+metal+to+cloud+native;%E2%96%BA+asm+%C2%B7+rust+%C2%B7+go+%C2%B7+c+%C2%B7+cpp+%C2%B7+py+%C2%B7+ts;%E2%96%BA+kernel+compiled.+threats+neutralized.)](https://github.com/hesam-oxe)
+<!-- ░░ SELF-HOSTED TYPING BILLBOARD — zero external deps ░░ -->
+<img src="assets/typing-local.svg" width="100%" alt="whoami hesam-oxe, arsenal weaponized, seniors neutralized"/>
 
-<!-- ░░ DETONATION PROTOCOL v2 — shockwaves + ash + launch silo ░░ -->
+<!-- ░░ DETONATION PROTOCOL v5 — 12s sync with hellfire ░░ -->
 <img src="assets/detonation.svg" width="100%" alt="overkill detonation sequence"/>
 
 </div>
 
-<!-- ░░ HELLFIRE WALL ░░ -->
+<!-- ░░ HELLFIRE WALL — 12s master loop ░░ -->
 <img src="assets/hellfire.svg" width="100%" alt="hellfire wall"/>
 
 ---
 
-## ⬢ B O O T · S E Q U E N C E
+## ⬢ B O O T · S E Q U E N C E · v5
 
 <div align="center">
-  <img src="assets/boot-sequence.svg" width="100%" alt="kernel boot sequence"/>
+  <img src="assets/boot-sequence.svg" width="100%" alt="kernel boot sequence — soul mounted, mercy not found"/>
 </div>
 
 ---
 
-## ⬢ L I V E · S H E L L
+## ⬢ L I V E · S H E L L · v5
 
 <div align="center">
-  <img src="assets/terminal.svg" width="100%" alt="live ssh session"/>
+  <img src="assets/terminal.svg" width="100%" alt="live ssh session — seniors annihilated"/>
 </div>
 
 ---
 
-## ⬢ T H R E A T · S W E E P &nbsp;·&nbsp; F U S I O N · C O R E &nbsp;·&nbsp; O P C O D E · R A I N
+## ⬢ K I L L · B O A R D
 
 <div align="center">
-  <table><tr><td>
-    <img src="assets/radar.svg" width="100%" alt="threat radar — targets locked"/>
-  </td><td>
-    <img src="assets/core-reactor.svg" width="100%" alt="fusion core"/>
-  </td><td>
-    <img src="assets/code-rain.svg" width="100%" alt="assembly opcode rain x86_64"/>
-  </td></tr></table>
-</div>
-
----
-
-## ⬢ H E L L G A T E &nbsp;·&nbsp; C R T · S K U L L
-
-<div align="center">
-  <table><tr><td>
-    <img src="assets/hellgate.svg" width="100%" alt="production portal"/>
-  </td><td>
-    <img src="assets/skull.svg" width="100%" alt="CRT skull guardian"/>
-  </td></tr></table>
+  <img src="assets/kill-board.svg" width="100%" alt="kill board — 1337 seniors terminated, 0 juniors spared"/>
 </div>
 
 ---
@@ -72,11 +55,36 @@
 
 ---
 
-## ⬢ S Y S T E M · L O G &nbsp;·&nbsp; O P E R A T O R · V I T A L S
+## ⬢ W A R · R O O M · R A D A R v2
 
 <div align="center">
-  <img src="assets/syslog.svg" width="100%" alt="live dmesg stream"/>
-  <img src="assets/flatline-ekg.svg" width="100%" alt="cardiac telemetry — flatline & shock"/>
+  <img src="assets/war-room.svg" width="100%" alt="war room radar — 3 hostile seniors locked"/>
+</div>
+
+---
+
+## ⬢ T H R E A T · S W E E P &nbsp;·&nbsp; F U S I O N · C O R E
+
+<div align="center">
+  <img src="assets/radar.svg" width="100%" alt="threat radar — targets locked"/>
+  <img src="assets/core-reactor.svg" width="100%" alt="fusion core"/>
+</div>
+
+---
+
+## ⬢ O P C O D E · R A I N · v5 — 2X DENSITY
+
+<div align="center">
+  <img src="assets/code-rain.svg" width="100%" alt="assembly opcode rain x86_64 — 0xDEAD 0xBEEF SEGFAULT"/>
+</div>
+
+---
+
+## ⬢ H E L L G A T E &nbsp;·&nbsp; C R T · S K U L L
+
+<div align="center">
+  <img src="assets/hellgate.svg" width="100%" alt="production portal"/>
+  <img src="assets/skull.svg" width="100%" alt="CRT skull guardian"/>
 </div>
 
 ---
@@ -111,6 +119,14 @@
 
 ---
 
+## ⬢ H E L L · S T A T S — SELF-HOSTED · OFFLINE-PROOF
+
+<div align="center">
+  <img src="assets/stats-local.svg" width="100%" alt="hell stats — commits infinity, 12+ languages, uptime 99.99"/>
+</div>
+
+---
+
 ## ⬢ S T A C K · M A T R I X
 
 <div align="center">
@@ -128,47 +144,21 @@
 
 ---
 
-## ⬢ G I T H U B · C O M B A T · D A T A
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hesam-oxe&show_icons=true&hide_border=true&bg_color=0D1117&title_color=DC143C&icon_color=B026FF&text_color=E6E6E6&include_all_commits=true&count_private=true" width="48.5%" alt="GitHub stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hesam-oxe&hide_border=true&background=0D1117&stroke=DC143C&ring=B026FF&fire=DC143C&currStreakLabel=00E5FF&sideLabels=E6E6E6&currStreakNum=F2F2F5&sideNums=F2F2F5&dates=8a8aa0" width="48.5%" alt="GitHub streak"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hesam-oxe&layout=compact&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=E6E6E6&langs_count=8" width="42%" alt="top languages"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=hesam-oxe&bg_color=0D1117&color=E6E6E6&line=DC143C&point=B026FF&area=true&area_color=3D0C14&hide_border=true" width="100%" alt="activity graph"/>
-</div>
-
----
-
-## ⬢ I N T E L · S U M M A R Y · C A R D S
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=hesam-oxe&theme=github_dark" width="100%" alt="profile details"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=hesam-oxe&theme=github_dark" width="32.6%" alt="repos per language"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=hesam-oxe&theme=github_dark" width="32.6%" alt="most commit language"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=hesam-oxe&theme=github_dark" width="32.6%" alt="summary stats"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=hesam-oxe&theme=github_dark" width="65.5%" alt="productive time"/>
-</div>
-
----
-
 ## ⬢ I N T E L · F I E L D · A G E N T S
 
 <div align="center">
-  <img src="./metrics/people.svg" width="48.5%" alt="agents of interest"/>
-  <img src="./metrics/followup.svg" width="48.5%" alt="follow-up intel"/>
+  <img src="./metrics/people.svg" width="100%" alt="agents of interest"/>
+  <img src="./metrics/followup.svg" width="100%" alt="follow-up intel"/>
   <img src="./metrics/achievements.svg" width="100%" alt="commendations earned"/>
   <img src="https://img.shields.io/badge/📊_field_reports_regenerated_daily_by_GitHub_Actions-00E5FF?style=for-the-badge&labelColor=0D1117" alt="auto-generated"/>
 </div>
 
 ---
 
-## ⬢ T R O P H Y · V A U L T
+## ⬢ T R O P H Y · V A U L T — SELF-HOSTED
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=hesam-oxe&theme=radical&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%" alt="GitHub trophies"/>
+  <img src="assets/trophies-local.svg" width="100%" alt="trophy vault — kernel slayer, forge master, senior reaper"/>
 </div>
 
 ---
@@ -227,6 +217,15 @@
 
 ---
 
+## ⬢ S Y S T E M · L O G &nbsp;·&nbsp; O P E R A T O R · V I T A L S
+
+<div align="center">
+  <img src="assets/syslog.svg" width="100%" alt="live dmesg stream"/>
+  <img src="assets/flatline-ekg.svg" width="100%" alt="cardiac telemetry — flatline & shock"/>
+</div>
+
+---
+
 ## ⬢ V I T A L S
 
 <div align="center">
@@ -241,6 +240,7 @@
 
 > *"I don't write code. I forge weapons."*
 > *"I speak from assembly to cloud — I don't miss a single layer."*
+> *"Seniors terminated: 1337. Juniors spared: 0. You have been warned."*
 
 [![GitHub](https://img.shields.io/badge/⛓️_GitHub-hesam--oxe-DC143C?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117)](https://github.com/hesam-oxe)
 [![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-hesam--jamali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117)](https://www.linkedin.com/in/hesam-jamali-218b93414/)

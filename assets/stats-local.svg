@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="slBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#07070C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="760" height="210" rx="10" fill="url(#slBg)" stroke="#DC143C" stroke-width="1.2"/>
+  <text x="30" y="32" font-size="14" letter-spacing="4" fill="#F2F2F5">// HELL STATS <tspan fill="#5c5c70">— self-hosted · updated nightly · no vercel</tspan></text>
+  <circle cx="722" cy="27" r="4" fill="#39FF14">
+    <animate attributeName="opacity" values="1;1;0.1;0.1" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <g font-size="11" letter-spacing="2" fill="#8a8aa0" text-anchor="middle">
+    <text x="120" y="62">COMMITS FIRED</text>
+    <text x="310" y="62">LANGUAGES</text>
+    <text x="490" y="62">UPTIME</text>
+    <text x="660" y="62">FEAR INDUCED</text>
+  </g>
+  <g font-size="30" font-weight="800" text-anchor="middle">
+    <text x="120" y="100" fill="#DC143C">∞</text>
+    <text x="310" y="100" fill="#B026FF">12+</text>
+    <text x="490" y="100" fill="#39FF14">99.99%</text>
+    <text x="660" y="100" fill="#FFB000">100%</text>
+  </g>
+  <g>
+    <rect x="30" y="120" width="165" height="8" rx="4" fill="#12121c"/>
+    <rect x="30" y="120" width="0" height="8" rx="4" fill="#DC143C">
+      <animate attributeName="width" values="0;165" keyTimes="0;1" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="215" y="120" width="165" height="8" rx="4" fill="#12121c"/>
+    <rect x="215" y="120" width="0" height="8" rx="4" fill="#B026FF">
+      <animate attributeName="width" values="0;150" keyTimes="0;1" dur="3.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="400" y="120" width="165" height="8" rx="4" fill="#12121c"/>
+    <rect x="400" y="120" width="0" height="8" rx="4" fill="#39FF14">
+      <animate attributeName="width" values="0;163" keyTimes="0;1" dur="2.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="585" y="120" width="145" height="8" rx="4" fill="#12121c"/>
+    <rect x="585" y="120" width="0" height="8" rx="4" fill="#FFB000">
+      <animate attributeName="width" values="0;145" keyTimes="0;1" dur="3.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <text x="380" y="160" text-anchor="middle" font-size="12" letter-spacing="2" fill="#5c5c70">asm · rust · go · c · cpp · py · ts · js · java — <tspan fill="#DC143C">no layer untouched</tspan></text>
+  <text x="380" y="184" text-anchor="middle" font-size="11" letter-spacing="3" fill="#3a3a55">PRIVATE COMMITS COUNTED · OFFLINE-PROOF · CAMO-SAFE</text>
+  <rect x="30" y="193" width="700" height="6" rx="3" fill="#12121c"/>
+  <rect x="30" y="193" width="0" height="6" rx="3" fill="#DC143C">
+    <animate attributeName="width" values="0;700" keyTimes="0;1" dur="12s" repeatCount="indefinite"/>
+  </rect>
+</svg>

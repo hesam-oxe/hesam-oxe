@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="84" viewBox="0 0 760 84" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <defs>
+    <linearGradient id="tlBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A10"/>
+      <stop offset="1" stop-color="#050508"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="760" height="84" rx="10" fill="url(#tlBg)" stroke="#DC143C" stroke-width="1.2"/>
+  <circle cx="26" cy="24" r="5" fill="#DC143C"/>
+  <circle cx="46" cy="24" r="5" fill="#B026FF"/>
+  <circle cx="66" cy="24" r="5" fill="#00E5FF"/>
+  <text x="380" y="28" text-anchor="middle" font-size="11" letter-spacing="3" fill="#5c5c70">root@hellfire:~ — live billboard · self-hosted · zero external deps</text>
+  <line x1="14" y1="40" x2="746" y2="40" stroke="#22223a" stroke-width="1"/>
+  <g font-size="19" font-weight="700" text-anchor="middle">
+    <text x="380" y="68" fill="#DC143C" opacity="0">▸ whoami: hesam-oxe — RING-0 OPERATOR
+      <animate attributeName="opacity" values="1;1;0;0" calcMode="discrete" keyTimes="0;0.3;0.33;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="380" y="68" fill="#B026FF" opacity="0">▸ arsenal: asm·rust·go·c·cpp·py·ts — ALL WEAPONIZED
+      <animate attributeName="opacity" values="0;0;1;1;0;0" calcMode="discrete" keyTimes="0;0.33;0.36;0.63;0.66;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="380" y="68" fill="#00E5FF" opacity="0">▸ status: SENIOR DEVS NEUTRALIZED — 1337 AND COUNTING
+      <animate attributeName="opacity" values="0;0;1;1;0" calcMode="discrete" keyTimes="0;0.66;0.69;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <rect x="330" y="74" width="100" height="3" rx="1.5" fill="#12121c"/>
+  <rect x="330" y="74" width="0" height="3" rx="1.5" fill="#DC143C">
+    <animate attributeName="width" values="0;100;0" keyTimes="0;0.97;1" dur="12s" repeatCount="indefinite"/>
+  </rect>
+</svg>

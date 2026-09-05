@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="132" viewBox="0 0 760 132" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace">
+  <rect x="0" y="0" width="760" height="132" rx="10" fill="#0A0A10" stroke="#B026FF" stroke-width="1.2"/>
+  <text x="30" y="30" font-size="13" letter-spacing="4" fill="#F2F2F5">// TROPHY VAULT <tspan fill="#5c5c70">— self-hosted · never 503</tspan></text>
+  <g font-size="12" font-weight="700" text-anchor="middle">
+    <g>
+      <rect x="30" y="46" width="158" height="68" rx="8" fill="#12060B" stroke="#DC143C"/>
+      <text x="109" y="72" fill="#DC143C">🐧 KERNEL SLAYER</text>
+      <text x="109" y="92" fill="#8a8aa0" font-weight="400">ring-0 certified</text>
+    </g>
+    <g>
+      <rect x="198" y="46" width="158" height="68" rx="8" fill="#12060B" stroke="#B026FF"/>
+      <text x="277" y="72" fill="#B026FF">⚙️ FORGE MASTER</text>
+      <text x="277" y="92" fill="#8a8aa0" font-weight="400">12 langs weaponized</text>
+    </g>
+    <g>
+      <rect x="366" y="46" width="158" height="68" rx="8" fill="#12060B" stroke="#00E5FF"/>
+      <text x="445" y="72" fill="#00E5FF">👁️ 0-DAY HUNTER</text>
+      <text x="445" y="92" fill="#8a8aa0" font-weight="400">13 patched · ∞ found</text>
+    </g>
+    <g>
+      <rect x="534" y="46" width="196" height="68" rx="8" fill="#12060B" stroke="#FFB000"/>
+      <text x="632" y="72" fill="#FFB000">☠️ SENIOR REAPER</text>
+      <text x="632" y="92" fill="#8a8aa0" font-weight="400">1337 neutralized</text>
+      <animate attributeName="opacity" values="1;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>
