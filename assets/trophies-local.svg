@@ -20,7 +20,7 @@
     <g>
       <rect x="534" y="46" width="196" height="68" rx="8" fill="#12060B" stroke="#FFB000"/>
       <text x="632" y="72" fill="#FFB000">☠️ SENIOR REAPER</text>
-      <text x="632" y="92" fill="#8a8aa0" font-weight="400">1337 neutralized</text>
+      <text x="632" y="92" fill="#8a8aa0" font-weight="400">1386 neutralized</text>
       <animate attributeName="opacity" values="1;0.85;1" dur="2.4s" repeatCount="indefinite"/>
     </g>
   </g>

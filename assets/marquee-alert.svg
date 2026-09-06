@@ -16,10 +16,10 @@
   <g clip-path="url(#tickClip5)">
     <g>
       <text x="0" y="29" font-size="14" letter-spacing="1">
-        <tspan fill="#FF1744" font-weight="700">⚠ INTRUDER DETECTED:</tspan><tspan fill="#E6E6E6"> SENIOR DEV ENTERED RING-0 </tspan><tspan fill="#B026FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> NEUTRALIZED IN 0.03s </tspan><tspan fill="#00E5FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> 1337 TERMINATED </tspan><tspan fill="#39FF14" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> MERCY NOT FOUND </tspan><tspan fill="#DC143C" font-weight="700">▚</tspan>
+        <tspan fill="#FF1744" font-weight="700">⚠ INTRUDER DETECTED:</tspan><tspan fill="#E6E6E6"> SENIOR DEV ENTERED RING-0 </tspan><tspan fill="#B026FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> NEUTRALIZED IN 0.03s </tspan><tspan fill="#00E5FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> 1386 TERMINATED </tspan><tspan fill="#39FF14" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> MERCY NOT FOUND </tspan><tspan fill="#DC143C" font-weight="700">▚</tspan>
       </text>
       <text x="1180" y="29" font-size="14" letter-spacing="1">
-        <tspan fill="#FF1744" font-weight="700">⚠ INTRUDER DETECTED:</tspan><tspan fill="#E6E6E6"> SENIOR DEV ENTERED RING-0 </tspan><tspan fill="#B026FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> NEUTRALIZED IN 0.03s </tspan><tspan fill="#00E5FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> 1337 TERMINATED </tspan><tspan fill="#39FF14" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> MERCY NOT FOUND </tspan><tspan fill="#DC143C" font-weight="700">▚</tspan>
+        <tspan fill="#FF1744" font-weight="700">⚠ INTRUDER DETECTED:</tspan><tspan fill="#E6E6E6"> SENIOR DEV ENTERED RING-0 </tspan><tspan fill="#B026FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> NEUTRALIZED IN 0.03s </tspan><tspan fill="#00E5FF" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> 1386 TERMINATED </tspan><tspan fill="#39FF14" font-weight="700">▚</tspan><tspan fill="#E6E6E6"> MERCY NOT FOUND </tspan><tspan fill="#DC143C" font-weight="700">▚</tspan>
       </text>
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-1180 0" dur="12s" repeatCount="indefinite"/>
     </g>
