@@ -1,135 +1,149 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="310" viewBox="0 0 760 310" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace"><title>combat record — animated counters</title>
-  <defs>
-    <linearGradient id="dashBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0A0A10"/>
-      <stop offset="1" stop-color="#07070C"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="290" viewBox="0 0 1000 290" font-family="'Cascadia Code','Fira Code','JetBrains Mono',SFMono-Regular,Consolas,Menlo,monospace" role="img" aria-label="telemetry"><title>telemetry</title><defs>
+<!-- ░ gradients ░ -->
+<linearGradient id="gFire" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#8B0020"/><stop offset="28%" stop-color="#DC143C"/>
+  <stop offset="58%" stop-color="#FF6B35"/><stop offset="82%" stop-color="#FFB000"/>
+  <stop offset="100%" stop-color="#FFE9A0"/>
+</linearGradient>
+<linearGradient id="gSpec" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#DC143C"/><stop offset="26%" stop-color="#FF6B35"/>
+  <stop offset="52%" stop-color="#FFB000"/><stop offset="76%" stop-color="#00E5FF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+  <animateTransform attributeName="gradientTransform" type="translate"
+    values="-1 0;1 0;-1 0" dur="9s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="gIce" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#5B8CFF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+</linearGradient>
+<linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="45%" stop-color="#fff" stop-opacity="0.10"/>
+  <stop offset="55%" stop-color="#fff" stop-opacity="0.16"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0.35" y2="1">
+  <stop offset="0%" stop-color="#131A25"/><stop offset="45%" stop-color="#0B1017"/>
+  <stop offset="100%" stop-color="#05080D"/>
+</linearGradient>
+<radialGradient id="gVig" cx="50%" cy="45%" r="72%">
+  <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.72"/>
+</radialGradient>
+<radialGradient id="gCore">
+  <stop offset="0%" stop-color="#FFF4D6"/><stop offset="35%" stop-color="#FFB000"/>
+  <stop offset="70%" stop-color="#DC143C"/><stop offset="100%" stop-color="#3A0010" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gFade" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="18%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="76%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
 
-  <rect x="0" y="0" width="760" height="310" rx="10" fill="url(#dashBg)" stroke="#DC143C" stroke-width="1"/>
-  <text x="30" y="32" font-size="14" letter-spacing="5" fill="#F2F2F5">// COMBAT RECORD <tspan fill="#5c5c70">— live fire telemetry</tspan></text>
-  <circle cx="722" cy="27" r="4" fill="#FF1744">
-    <animate attributeName="opacity" values="1;1;0.1;0.1" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
-  </circle>
+<!-- ░ patterns ░ -->
+<pattern id="pGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+  <path d="M24 0H0V24" fill="none" stroke="#141D2A" stroke-width="1"/>
+  <circle cx="0" cy="0" r="1" fill="#1E2A3B"/>
+</pattern>
+<pattern id="pFine" width="6" height="6" patternUnits="userSpaceOnUse">
+  <path d="M6 0H0V6" fill="none" stroke="#0F1620" stroke-width=".6"/>
+</pattern>
+<pattern id="pScan" width="3" height="3" patternUnits="userSpaceOnUse">
+  <rect width="3" height="1.4" fill="#000" opacity="0.20"/>
+</pattern>
+<pattern id="pHex" width="28" height="48" patternUnits="userSpaceOnUse">
+  <path d="M14 0 L28 8 L28 24 L14 32 L0 24 L0 8 Z" fill="none" stroke="#121A26" stroke-width="1"/>
+</pattern>
 
-  <!-- ══ ROW 1 ══ -->
+<!-- ░ bloom tiers ░ -->
+<filter id="fBloom" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="2" result="b1"/>
+  <feGaussianBlur stdDeviation="7" result="b2"/>
+  <feGaussianBlur stdDeviation="16" result="b3"/>
+  <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/>
+    <feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlow" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlowS" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation="1.3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fHalo" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="14"/>
+</filter>
 
-  <!-- BOX 1 : COMMITS FIRED -->
-  <rect x="30" y="48" width="170" height="78" rx="8" fill="#0D0D15" stroke="#DC143C" stroke-width="1.2"/>
-  <text x="115" y="70" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">COMMITS FIRED</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#DC143C">
-    <text x="115" y="102">0<animate attributeName="opacity" values="1;0;0;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="115" y="102" opacity="0">2K<animate attributeName="opacity" values="0;1;0;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="115" y="102" opacity="0">4.7K<animate attributeName="opacity" values="0;0;1;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="115" y="102" opacity="0">8.9K<animate attributeName="opacity" values="0;0;0;1;0;0;0;0" calcMode="discrete" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="115" y="102" opacity="0">11.2K<animate attributeName="opacity" values="0;0;0;0;1;0;0;0" calcMode="discrete" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="115" y="102" opacity="0">13.4K<animate attributeName="opacity" values="0;0;0;0;0;1;0;0" calcMode="discrete" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="115" y="102">∞
-      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1" calcMode="discrete" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;1" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="fill" values="#DC143C;#FFB000;#DC143C" dur="0.7s" repeatCount="indefinite"/>
-    </text>
-  </g>
+<!-- ░ chromatic aberration ░ -->
+<filter id="fChroma" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset in="SourceGraphic" dx="-2.2" dy="0" result="r"/>
+  <feColorMatrix in="r" type="matrix" result="rc"
+    values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
+  <feOffset in="SourceGraphic" dx="2.2" dy="0" result="b"/>
+  <feColorMatrix in="b" type="matrix" result="bc"
+    values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+  <feBlend in="rc" in2="bc" mode="screen" result="rb"/>
+  <feBlend in="SourceGraphic" in2="rb" mode="screen"/>
+</filter>
 
-  <!-- BOX 2 : LANGUAGES DEPLOYED -->
-  <rect x="215" y="48" width="170" height="78" rx="8" fill="#0D0D15" stroke="#B026FF" stroke-width="1.2"/>
-  <text x="300" y="70" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">LANGUAGES DEPLOYED</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#B026FF">
-    <text x="300" y="102">4<animate attributeName="opacity" values="1;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="102" opacity="0">6<animate attributeName="opacity" values="0;1;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="102" opacity="0">8<animate attributeName="opacity" values="0;0;1;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="102" opacity="0">10<animate attributeName="opacity" values="0;0;0;1;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="102">12+<animate attributeName="opacity" values="0;0;0;0;1;1" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-  </g>
+<!-- ░ turbulence fire ░ -->
+<filter id="fFire" x="-25%" y="-45%" width="150%" height="190%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.016 0.045" numOctaves="4"
+                seed="7" result="n">
+    <animate attributeName="baseFrequency" dur="7s" repeatCount="indefinite"
+             values="0.016 0.045;0.024 0.062;0.016 0.045"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="26"
+                     xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="2.4" result="db"/>
+  <feMerge><feMergeNode in="db"/><feMergeNode in="d"/></feMerge>
+</filter>
 
-  <!-- BOX 3 : KERNEL PANICS CAUSED -->
-  <rect x="400" y="48" width="170" height="78" rx="8" fill="#0D0D15" stroke="#FF1744" stroke-width="1.2"/>
-  <text x="485" y="70" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">KERNEL PANICS CAUSED</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#FF1744">
-    <text x="485" y="102">10<animate attributeName="opacity" values="1;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="485" y="102" opacity="0">250<animate attributeName="opacity" values="0;1;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="485" y="102" opacity="0">500<animate attributeName="opacity" values="0;0;1;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="485" y="102" opacity="0">750<animate attributeName="opacity" values="0;0;0;1;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="485" y="102">999+
-      <animate attributeName="opacity" values="0;0;0;0;1;1" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="fill" values="#FF1744;#FFB000;#FF1744" dur="0.7s" repeatCount="indefinite"/>
-    </text>
-  </g>
+<!-- ░ plasma ░ -->
+<filter id="fPlasma" x="-20%" y="-20%" width="140%" height="140%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="5" seed="3" result="n">
+    <animate attributeName="seed" dur="10s" values="3;9;3" repeatCount="indefinite"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="14"
+                     xChannelSelector="R" yChannelSelector="B"/>
+</filter>
 
-  <!-- BOX 4 : STARS PLUNDERED (NEW) -->
-  <rect x="585" y="48" width="145" height="78" rx="8" fill="#0D0D15" stroke="#FFB000" stroke-width="1.2"/>
-  <text x="657" y="70" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">STARS PLUNDERED</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#FFB000">
-    <text x="657" y="102">0<animate attributeName="opacity" values="1;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.12;0.24;0.36;0.48;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="657" y="102" opacity="0">7<tspan fill="#8a8aa0" font-size="14">★</tspan><animate attributeName="opacity" values="0;1;0;0;0;0" calcMode="discrete" keyTimes="0;0.12;0.24;0.36;0.48;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="657" y="102" opacity="0">34<tspan fill="#8a8aa0" font-size="14">★</tspan><animate attributeName="opacity" values="0;0;1;0;0;0" calcMode="discrete" keyTimes="0;0.12;0.24;0.36;0.48;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="657" y="102" opacity="0">61<tspan fill="#8a8aa0" font-size="14">★</tspan><animate attributeName="opacity" values="0;0;0;1;0;0" calcMode="discrete" keyTimes="0;0.12;0.24;0.36;0.48;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="657" y="102">ALL★<animate attributeName="opacity" values="0;0;0;0;1;1" calcMode="discrete" keyTimes="0;0.12;0.24;0.36;0.48;1" dur="6s" repeatCount="indefinite"/></text>
-  </g>
+<!-- ░ glitch displacement ░ -->
+<filter id="fGlitch" x="-12%" y="-12%" width="124%" height="124%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.00001 0.42" numOctaves="1"
+                seed="11" result="n">
+    <animate attributeName="baseFrequency" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1"
+             values="0.00001 0.42;0.00001 0.42;0.02 1.1;0.00001 0.42;0.03 0.9;0.00001 0.42"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R"
+                     yChannelSelector="G">
+    <animate attributeName="scale" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1" values="0;0;18;0;13;0"/>
+  </feDisplacementMap>
+</filter>
 
-  <!-- ══ ROW 2 (NEW) ══ -->
+<!-- ░ CRT barrel + noise ░ -->
+<filter id="fCRT" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" result="g"/>
+  <feColorMatrix in="g" type="saturate" values="0" result="gm"/>
+  <feComponentTransfer in="gm" result="gt">
+    <feFuncA type="linear" slope="0.07"/>
+  </feComponentTransfer>
+  <feBlend in="SourceGraphic" in2="gt" mode="screen"/>
+</filter>
 
-  <!-- BOX 5 : ZERO-DAYS PATCHED -->
-  <rect x="30" y="136" width="170" height="78" rx="8" fill="#0D0D15" stroke="#39FF14" stroke-width="1.2"/>
-  <text x="115" y="158" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">ZERO-DAYS PATCHED</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#39FF14">
-    <text x="115" y="190">0<animate attributeName="opacity" values="1;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="5.4s" begin="0.5s" repeatCount="indefinite"/></text>
-    <text x="115" y="190" opacity="0">1<animate attributeName="opacity" values="0;1;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="5.4s" begin="0.5s" repeatCount="indefinite"/></text>
-    <text x="115" y="190" opacity="0">3<animate attributeName="opacity" values="0;0;1;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="5.4s" begin="0.5s" repeatCount="indefinite"/></text>
-    <text x="115" y="190" opacity="0">7<animate attributeName="opacity" values="0;0;0;1;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="5.4s" begin="0.5s" repeatCount="indefinite"/></text>
-    <text x="115" y="190">13<animate attributeName="opacity" values="0;0;0;0;1;1" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="5.4s" begin="0.5s" repeatCount="indefinite"/></text>
-  </g>
+<!-- ░ inner shadow for recessed panels ░ -->
+<filter id="fInset" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset dx="0" dy="2"/><feGaussianBlur stdDeviation="3" result="o"/>
+  <feComposite in="SourceGraphic" in2="o" operator="over"/>
+</filter>
 
-  <!-- BOX 6 : COFFEE OVERDOSE -->
-  <rect x="215" y="136" width="170" height="78" rx="8" fill="#0D0D15" stroke="#00E5FF" stroke-width="1.2"/>
-  <text x="300" y="158" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">COFFEE OVERDOSE</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#00E5FF">
-    <text x="300" y="190">10%<animate attributeName="opacity" values="1;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="190" opacity="0">40%<animate attributeName="opacity" values="0;1;0;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="190" opacity="0">70%<animate attributeName="opacity" values="0;0;1;0;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="190" opacity="0">95%<animate attributeName="opacity" values="0;0;0;1;0;0" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-    <text x="300" y="190">∞<animate attributeName="opacity" values="0;0;0;0;1;1" calcMode="discrete" keyTimes="0;0.15;0.3;0.45;0.6;1" dur="6s" repeatCount="indefinite"/></text>
-  </g>
-
-  <!-- BOX 7 : DEADLINES DESTROYED (NEW) -->
-  <rect x="400" y="136" width="170" height="78" rx="8" fill="#0D0D15" stroke="#B026FF" stroke-width="1.2"/>
-  <text x="485" y="158" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">DEADLINES DESTROYED</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#B026FF">
-    <text x="485" y="190">0<animate attributeName="opacity" values="1;0;0;0;0;0" calcMode="discrete" keyTimes="0;0.18;0.36;0.54;0.72;1" dur="5.8s" begin="1s" repeatCount="indefinite"/></text>
-    <text x="485" y="190" opacity="0">42<animate attributeName="opacity" values="0;1;0;0;0;0" calcMode="discrete" keyTimes="0;0.18;0.36;0.54;0.72;1" dur="5.8s" begin="1s" repeatCount="indefinite"/></text>
-    <text x="485" y="190" opacity="0">107<animate attributeName="opacity" values="0;0;1;0;0;0" calcMode="discrete" keyTimes="0;0.18;0.36;0.54;0.72;1" dur="5.8s" begin="1s" repeatCount="indefinite"/></text>
-    <text x="485" y="190" opacity="0">666<animate attributeName="opacity" values="0;0;0;1;0;0" calcMode="discrete" keyTimes="0;0.18;0.36;0.54;0.72;1" dur="5.8s" begin="1s" repeatCount="indefinite"/></text>
-    <text x="485" y="190">ALL<tspan font-size="15" fill="#8a8aa0" dy="-2"> ☠</tspan><animate attributeName="opacity" values="0;0;0;0;1;1" calcMode="discrete" keyTimes="0;0.18;0.36;0.54;0.72;1" dur="5.8s" begin="1s" repeatCount="indefinite"/></text>
-  </g>
-
-  <!-- BOX 8 : SLEEP SCHEDULE (NEW) -->
-  <rect x="585" y="136" width="145" height="78" rx="8" fill="#0D0D15" stroke="#5c5c70" stroke-width="1.2"/>
-  <text x="657" y="158" text-anchor="middle" font-size="10.5" letter-spacing="2" fill="#8a8aa0">SLEEP SCHEDULE</text>
-  <g text-anchor="middle" font-size="24" font-weight="800" fill="#5c5c70">
-    <text x="657" y="190">8h<animate attributeName="opacity" values="1;0;0;0" calcMode="discrete" keyTimes="0;0.3;0.6;1" dur="4s" repeatCount="indefinite"/></text>
-    <text x="657" y="190" opacity="0">4h<animate attributeName="opacity" values="0;1;0;0" calcMode="discrete" keyTimes="0;0.3;0.6;1" dur="4s" repeatCount="indefinite"/></text>
-    <text x="657" y="190" opacity="0">2h<animate attributeName="opacity" values="0;0;1;0" calcMode="discrete" keyTimes="0;0.3;0.6;1" dur="4s" repeatCount="indefinite"/></text>
-    <text x="657" y="190" opacity="0">ERR<tspan font-size="14">404</tspan>
-      <animate attributeName="opacity" values="0;0;0;1" calcMode="discrete" keyTimes="0;0.3;0.6;1" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="fill" values="#FF1744;#5c5c70;#FF1744" dur="1s" repeatCount="indefinite"/>
-    </text>
-  </g>
-
-  <!-- bottom captions -->
-  <text x="380" y="240" text-anchor="middle" font-size="12" letter-spacing="3">
-    <tspan fill="#39FF14">PRECISION: DEADLY</tspan>
-    <tspan fill="#3a3a55"> · </tspan>
-    <tspan fill="#00E5FF">AVAILABILITY: 24/7</tspan>
-    <tspan fill="#3a3a55"> · </tspan>
-    <tspan fill="#DC143C" font-weight="700">MERCY: NOT FOUND</tspan>
-    <animate attributeName="opacity" values="1;1;0.4;0.4;1" keyTimes="0;0.4;0.45;0.55;1" dur="3s" repeatCount="indefinite"/>
-  </text>
-  <text x="380" y="262" text-anchor="middle" font-size="11" letter-spacing="2" fill="#5c5c70">ALL COUNTERS DRIFT UPWARD. THE RECORD NEVER STOPS RECORDING.</text>
-
-  <!-- hellfire progress strip : a thin lava bar that never finishes -->
-  <rect x="30" y="276" width="700" height="10" rx="5" fill="#12121c" stroke="#22223a"/>
-  <rect x="32" y="278" width="0" height="6" rx="3" fill="#DC143C">
-    <animate attributeName="width" values="0;120;118;340;338;620;618;696" keyTimes="0;0.15;0.17;0.38;0.40;0.68;0.70;1" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="fill" values="#DC143C;#FF4500;#FFB000;#DC143C" dur="6s" repeatCount="indefinite"/>
-  </rect>
-  <text x="380" y="301" text-anchor="middle" font-size="9" letter-spacing="4" fill="#3a3a55">ARMAMENT REARMING — ETA: NEVER</text>
-</svg>
+<!-- ░ metallic edge ░ -->
+<filter id="fEmboss" x="-10%" y="-10%" width="120%" height="120%">
+  <feConvolveMatrix order="3" kernelMatrix="1 0 0  0 0 0  0 0 -1"
+                    divisor="1" bias="0.02" preserveAlpha="true"/>
+</filter>
+</defs><rect width="1000" height="290" rx="12" fill="url(#gPanel)"/><rect width="1000" height="290" rx="12" fill="url(#pGrid)" opacity=".55"/><rect width="1000" height="290" rx="12" fill="url(#pFine)" opacity=".5"/><rect width="1000" height="290" rx="12" fill="url(#gVig)"/><rect x=".5" y=".5" width="999" height="289" rx="12" fill="none" stroke="#1b2534" stroke-width="1"/><rect x="0" y="0" width="1000" height="2.5" rx="1" fill="url(#gSpec)"/><path d="M10,2 L2,2 L2,10" fill="none" stroke="#00E5FF" stroke-width="2" opacity=".85"/><path d="M990,2 L998,2 L998,10" fill="none" stroke="#00E5FF" stroke-width="2" opacity=".85"/><path d="M10,288 L2,288 L2,280" fill="none" stroke="#00E5FF" stroke-width="2" opacity=".85"/><path d="M990,288 L998,288 L998,280" fill="none" stroke="#00E5FF" stroke-width="2" opacity=".85"/><rect x="0" y="0" width="1000" height="36" fill="#000" opacity=".35"/><line x1="0" y1="36" x2="1000" y2="36" stroke="#00E5FF" stroke-opacity=".38"/><rect x="18" y="14" width="3" height="9" fill="#00E5FF"/><text x="30" y="23" font-size="11.5" font-weight="700" letter-spacing="2.6" fill="#00E5FF">TELEMETRY — MEASURED, NOT ESTIMATED</text><text x="982" y="23" text-anchor="end" font-size="10.5" letter-spacing="1.2" fill="#7d8590">reproduce: see README</text><rect x="26" y="62" width="228" height="92" rx="8" fill="#080D14"/><rect x="26" y="62" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="26" y="62" width="228" height="92" rx="8" fill="none" stroke="#DC143C" stroke-opacity=".45"/><rect x="26" y="62" width="228" height="2.5" rx="1.2" fill="#DC143C"/><rect x="26" y="62" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="26;208;26" dur="4.6s" repeatCount="indefinite"/></rect><text x="42" y="88" font-size="9.5" letter-spacing="1.7" fill="#7d8590">PATCHES MERGED</text><text x="42" y="126" font-size="26" font-weight="700" fill="#DC143C" filter="url(#fGlowS)">13</text><circle cx="226" cy="108" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="226" cy="108" r="20" fill="none" stroke="#DC143C" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 226 108)"><animate attributeName="stroke-dashoffset" values="94;0" dur="1.5s" begin="0.0s" fill="freeze"/></circle><text x="42" y="144" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect x="269" y="62" width="228" height="92" rx="8" fill="#080D14"/><rect x="269" y="62" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="269" y="62" width="228" height="92" rx="8" fill="none" stroke="#FF6B35" stroke-opacity=".45"/><rect x="269" y="62" width="228" height="2.5" rx="1.2" fill="#FF6B35"/><rect x="269" y="62" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="269;451;269" dur="5.1s" repeatCount="indefinite"/></rect><text x="285" y="88" font-size="9.5" letter-spacing="1.7" fill="#7d8590">PULL REQUESTS</text><text x="285" y="126" font-size="26" font-weight="700" fill="#FF6B35" filter="url(#fGlowS)">48</text><circle cx="469" cy="108" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="469" cy="108" r="20" fill="none" stroke="#FF6B35" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 469 108)"><animate attributeName="stroke-dashoffset" values="94;0" dur="1.5s" begin="0.12s" fill="freeze"/></circle><text x="285" y="144" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect x="512" y="62" width="228" height="92" rx="8" fill="#080D14"/><rect x="512" y="62" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="512" y="62" width="228" height="92" rx="8" fill="none" stroke="#FFB000" stroke-opacity=".45"/><rect x="512" y="62" width="228" height="2.5" rx="1.2" fill="#FFB000"/><rect x="512" y="62" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="512;694;512" dur="5.6s" repeatCount="indefinite"/></rect><text x="528" y="88" font-size="9.5" letter-spacing="1.7" fill="#7d8590">ORGANIZATIONS</text><text x="528" y="126" font-size="26" font-weight="700" fill="#FFB000" filter="url(#fGlowS)">25</text><circle cx="712" cy="108" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="712" cy="108" r="20" fill="none" stroke="#FFB000" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 712 108)"><animate attributeName="stroke-dashoffset" values="94;0" dur="1.5s" begin="0.24s" fill="freeze"/></circle><text x="528" y="144" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect x="755" y="62" width="228" height="92" rx="8" fill="#080D14"/><rect x="755" y="62" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="755" y="62" width="228" height="92" rx="8" fill="none" stroke="#4ADE80" stroke-opacity=".45"/><rect x="755" y="62" width="228" height="2.5" rx="1.2" fill="#4ADE80"/><rect x="755" y="62" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="755;937;755" dur="6.1s" repeatCount="indefinite"/></rect><text x="771" y="88" font-size="9.5" letter-spacing="1.7" fill="#7d8590">OWASP MERGES</text><text x="771" y="126" font-size="26" font-weight="700" fill="#4ADE80" filter="url(#fGlowS)">7</text><circle cx="955" cy="108" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="955" cy="108" r="20" fill="none" stroke="#4ADE80" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 955 108)"><animate attributeName="stroke-dashoffset" values="94;0" dur="1.5s" begin="0.36s" fill="freeze"/></circle><text x="771" y="144" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect x="26" y="170" width="228" height="92" rx="8" fill="#080D14"/><rect x="26" y="170" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="26" y="170" width="228" height="92" rx="8" fill="none" stroke="#00E5FF" stroke-opacity=".45"/><rect x="26" y="170" width="228" height="2.5" rx="1.2" fill="#00E5FF"/><rect x="26" y="170" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="26;208;26" dur="6.6s" repeatCount="indefinite"/></rect><text x="42" y="196" font-size="9.5" letter-spacing="1.7" fill="#7d8590">WASM BYTES</text><text x="42" y="234" font-size="26" font-weight="700" fill="#00E5FF" filter="url(#fGlowS)">253</text><circle cx="226" cy="216" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="226" cy="216" r="20" fill="none" stroke="#00E5FF" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 226 216)"><animate attributeName="stroke-dashoffset" values="94;0" dur="1.5s" begin="0.48s" fill="freeze"/></circle><text x="42" y="252" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect x="269" y="170" width="228" height="92" rx="8" fill="#080D14"/><rect x="269" y="170" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="269" y="170" width="228" height="92" rx="8" fill="none" stroke="#B026FF" stroke-opacity=".45"/><rect x="269" y="170" width="228" height="2.5" rx="1.2" fill="#B026FF"/><rect x="269" y="170" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="269;451;269" dur="7.1s" repeatCount="indefinite"/></rect><text x="285" y="196" font-size="9.5" letter-spacing="1.7" fill="#7d8590">VM STEPS</text><text x="285" y="234" font-size="19" font-weight="700" fill="#B026FF" filter="url(#fGlowS)">218,913</text><circle cx="469" cy="216" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="469" cy="216" r="20" fill="none" stroke="#B026FF" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 469 216)"><animate attributeName="stroke-dashoffset" values="94;0" dur="1.5s" begin="0.6s" fill="freeze"/></circle><text x="285" y="252" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect x="512" y="170" width="228" height="92" rx="8" fill="#080D14"/><rect x="512" y="170" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="512" y="170" width="228" height="92" rx="8" fill="none" stroke="#4ADE80" stroke-opacity=".45"/><rect x="512" y="170" width="228" height="2.5" rx="1.2" fill="#4ADE80"/><rect x="512" y="170" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="512;694;512" dur="7.6s" repeatCount="indefinite"/></rect><text x="528" y="196" font-size="9.5" letter-spacing="1.7" fill="#7d8590">NIST VECTORS</text><text x="528" y="234" font-size="26" font-weight="700" fill="#4ADE80" filter="url(#fGlowS)">PASS</text><circle cx="712" cy="216" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="712" cy="216" r="20" fill="none" stroke="#4ADE80" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 712 216)"><animate attributeName="stroke-dashoffset" values="94;0" dur="1.5s" begin="0.72s" fill="freeze"/></circle><text x="528" y="252" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect x="755" y="170" width="228" height="92" rx="8" fill="#080D14"/><rect x="755" y="170" width="228" height="92" rx="8" fill="url(#pFine)" opacity=".6"/><rect x="755" y="170" width="228" height="92" rx="8" fill="none" stroke="#8b98a8" stroke-opacity=".45"/><rect x="755" y="170" width="228" height="2.5" rx="1.2" fill="#8b98a8"/><rect x="755" y="170" width="46" height="2.5" rx="1.2" fill="#fff" opacity=".85"><animate attributeName="x" values="755;937;755" dur="8.1s" repeatCount="indefinite"/></rect><text x="771" y="196" font-size="9.5" letter-spacing="1.7" fill="#7d8590">ENGINE DEPS</text><text x="771" y="234" font-size="26" font-weight="700" fill="#8b98a8" filter="url(#fGlowS)">0</text><circle cx="955" cy="216" r="20" fill="none" stroke="#131c28" stroke-width="4"/><circle cx="955" cy="216" r="20" fill="none" stroke="#8b98a8" stroke-width="4" stroke-linecap="round" stroke-dasharray="94 999" stroke-dashoffset="94" transform="rotate(135 955 216)"><animate attributeName="stroke-dashoffset" values="94;94" dur="1.5s" begin="0.84s" fill="freeze"/></circle><text x="771" y="252" font-size="8.5" letter-spacing="1.2" fill="#3a4653">MEASURED</text><rect width="1000" height="290" rx="12" fill="url(#pScan)"/><rect x="-1000" y="0" width="550" height="290" fill="url(#gSheen)" transform="skewX(-18)"><animate attributeName="x" values="-600;1200" dur="12s" repeatCount="indefinite"/></rect></svg>

@@ -1,17 +1,149 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="38" viewBox="0 0 760 38" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace"><title>hazard divider</title>
-  <defs>
-    <pattern id="hazard" width="28" height="38" patternUnits="userSpaceOnUse" patternTransform="skewX(-28)">
-      <rect width="14" height="38" fill="#DC143C"/>
-      <rect x="14" width="14" height="38" fill="#0A0A0F"/>
-      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="28 0" dur="1.1s" repeatCount="indefinite" additive="sum"/>
-    </pattern>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="30" viewBox="0 0 1000 30" font-family="'Cascadia Code','Fira Code','JetBrains Mono',SFMono-Regular,Consolas,Menlo,monospace" role="img" aria-label="divider"><title>divider</title><defs>
+<!-- ░ gradients ░ -->
+<linearGradient id="gFire" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#8B0020"/><stop offset="28%" stop-color="#DC143C"/>
+  <stop offset="58%" stop-color="#FF6B35"/><stop offset="82%" stop-color="#FFB000"/>
+  <stop offset="100%" stop-color="#FFE9A0"/>
+</linearGradient>
+<linearGradient id="gSpec" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#DC143C"/><stop offset="26%" stop-color="#FF6B35"/>
+  <stop offset="52%" stop-color="#FFB000"/><stop offset="76%" stop-color="#00E5FF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+  <animateTransform attributeName="gradientTransform" type="translate"
+    values="-1 0;1 0;-1 0" dur="9s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="gIce" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#5B8CFF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+</linearGradient>
+<linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="45%" stop-color="#fff" stop-opacity="0.10"/>
+  <stop offset="55%" stop-color="#fff" stop-opacity="0.16"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0.35" y2="1">
+  <stop offset="0%" stop-color="#131A25"/><stop offset="45%" stop-color="#0B1017"/>
+  <stop offset="100%" stop-color="#05080D"/>
+</linearGradient>
+<radialGradient id="gVig" cx="50%" cy="45%" r="72%">
+  <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.72"/>
+</radialGradient>
+<radialGradient id="gCore">
+  <stop offset="0%" stop-color="#FFF4D6"/><stop offset="35%" stop-color="#FFB000"/>
+  <stop offset="70%" stop-color="#DC143C"/><stop offset="100%" stop-color="#3A0010" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gFade" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="18%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="76%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
 
-  <rect x="0" y="0" width="760" height="38" rx="6" fill="url(#hazard)" opacity="0.85"/>
+<!-- ░ patterns ░ -->
+<pattern id="pGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+  <path d="M24 0H0V24" fill="none" stroke="#141D2A" stroke-width="1"/>
+  <circle cx="0" cy="0" r="1" fill="#1E2A3B"/>
+</pattern>
+<pattern id="pFine" width="6" height="6" patternUnits="userSpaceOnUse">
+  <path d="M6 0H0V6" fill="none" stroke="#0F1620" stroke-width=".6"/>
+</pattern>
+<pattern id="pScan" width="3" height="3" patternUnits="userSpaceOnUse">
+  <rect width="3" height="1.4" fill="#000" opacity="0.20"/>
+</pattern>
+<pattern id="pHex" width="28" height="48" patternUnits="userSpaceOnUse">
+  <path d="M14 0 L28 8 L28 24 L14 32 L0 24 L0 8 Z" fill="none" stroke="#121A26" stroke-width="1"/>
+</pattern>
 
-  <!-- center label plate -->
-  <rect x="170" y="6" width="420" height="26" rx="4" fill="#05050A" stroke="#DC143C" stroke-width="1.4"/>
-  <text x="380" y="24" text-anchor="middle" font-size="12.5" letter-spacing="3" fill="#F2F2F5">⚠ CAUTION :: KERNEL-LEVEL OPERATOR AT WORK
-    <animate attributeName="fill" values="#F2F2F5;#DC143C;#F2F2F5" dur="2s" repeatCount="indefinite"/>
-  </text>
-</svg>
+<!-- ░ bloom tiers ░ -->
+<filter id="fBloom" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="2" result="b1"/>
+  <feGaussianBlur stdDeviation="7" result="b2"/>
+  <feGaussianBlur stdDeviation="16" result="b3"/>
+  <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/>
+    <feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlow" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlowS" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation="1.3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fHalo" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="14"/>
+</filter>
+
+<!-- ░ chromatic aberration ░ -->
+<filter id="fChroma" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset in="SourceGraphic" dx="-2.2" dy="0" result="r"/>
+  <feColorMatrix in="r" type="matrix" result="rc"
+    values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
+  <feOffset in="SourceGraphic" dx="2.2" dy="0" result="b"/>
+  <feColorMatrix in="b" type="matrix" result="bc"
+    values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+  <feBlend in="rc" in2="bc" mode="screen" result="rb"/>
+  <feBlend in="SourceGraphic" in2="rb" mode="screen"/>
+</filter>
+
+<!-- ░ turbulence fire ░ -->
+<filter id="fFire" x="-25%" y="-45%" width="150%" height="190%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.016 0.045" numOctaves="4"
+                seed="7" result="n">
+    <animate attributeName="baseFrequency" dur="7s" repeatCount="indefinite"
+             values="0.016 0.045;0.024 0.062;0.016 0.045"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="26"
+                     xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="2.4" result="db"/>
+  <feMerge><feMergeNode in="db"/><feMergeNode in="d"/></feMerge>
+</filter>
+
+<!-- ░ plasma ░ -->
+<filter id="fPlasma" x="-20%" y="-20%" width="140%" height="140%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="5" seed="3" result="n">
+    <animate attributeName="seed" dur="10s" values="3;9;3" repeatCount="indefinite"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="14"
+                     xChannelSelector="R" yChannelSelector="B"/>
+</filter>
+
+<!-- ░ glitch displacement ░ -->
+<filter id="fGlitch" x="-12%" y="-12%" width="124%" height="124%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.00001 0.42" numOctaves="1"
+                seed="11" result="n">
+    <animate attributeName="baseFrequency" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1"
+             values="0.00001 0.42;0.00001 0.42;0.02 1.1;0.00001 0.42;0.03 0.9;0.00001 0.42"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R"
+                     yChannelSelector="G">
+    <animate attributeName="scale" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1" values="0;0;18;0;13;0"/>
+  </feDisplacementMap>
+</filter>
+
+<!-- ░ CRT barrel + noise ░ -->
+<filter id="fCRT" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" result="g"/>
+  <feColorMatrix in="g" type="saturate" values="0" result="gm"/>
+  <feComponentTransfer in="gm" result="gt">
+    <feFuncA type="linear" slope="0.07"/>
+  </feComponentTransfer>
+  <feBlend in="SourceGraphic" in2="gt" mode="screen"/>
+</filter>
+
+<!-- ░ inner shadow for recessed panels ░ -->
+<filter id="fInset" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset dx="0" dy="2"/><feGaussianBlur stdDeviation="3" result="o"/>
+  <feComposite in="SourceGraphic" in2="o" operator="over"/>
+</filter>
+
+<!-- ░ metallic edge ░ -->
+<filter id="fEmboss" x="-10%" y="-10%" width="120%" height="120%">
+  <feConvolveMatrix order="3" kernelMatrix="1 0 0  0 0 0  0 0 -1"
+                    divisor="1" bias="0.02" preserveAlpha="true"/>
+</filter>
+</defs><rect width="1000" height="30" rx="4" fill="#04070B"/><clipPath id="hzc"><rect width="1000" height="30" rx="4"/></clipPath><g clip-path="url(#hzc)"><g><rect x="-40" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="4" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="48" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="92" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="136" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="180" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="224" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="268" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="312" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="356" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="400" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="444" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="488" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="532" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="576" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="620" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="664" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="708" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="752" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="796" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="840" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="884" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="928" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="972" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1016" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1060" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1104" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1148" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1192" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1236" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1280" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><rect x="1324" y="-4" width="22" height="38" fill="#FFB000" opacity=".5" transform="skewX(-30)"/><animateTransform attributeName="transform" type="translate" values="0,0;88,0" dur="2.6s" repeatCount="indefinite"/></g><rect width="1000" height="30" fill="url(#pScan)"/></g><rect x=".5" y=".5" width="999" height="29" rx="4" fill="none" stroke="#2a2410"/></svg>

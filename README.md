@@ -1,382 +1,403 @@
-<img src="assets/wave-top.svg" width="100%" alt="hell wave top"/>
+<img src="assets/wave-top.svg" width="100%" alt=""/>
 
 <div align="center">
 
-<!-- ░░ ELITE BADGES — workflow status + social proof (shields stable, self-host rest) ░░ -->
-<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/snake.yml/badge.svg" alt="snake CI"/></a>
-<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/3d-contrib.yml/badge.svg" alt="3d CI"/></a>
-<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/metrics.yml/badge.svg" alt="metrics CI"/></a>
-<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/hell-stats.yml/badge.svg" alt="hell-stats CI"/></a>
-<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/blog-rss.yml/badge.svg" alt="blog CI"/></a>
-<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/activity.yml/badge.svg" alt="activity CI"/></a>
-<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/waka.yml/badge.svg" alt="waka CI"/></a>
-<br/>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/metrics.yml/badge.svg" alt="metrics"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/snake.yml/badge.svg" alt="snake"/></a>
+<a href="https://github.com/hesam-oxe/hesam-oxe/actions"><img src="https://github.com/hesam-oxe/hesam-oxe/actions/workflows/3d-contrib.yml/badge.svg" alt="3d"/></a>
 <a href="https://github.com/hesam-oxe?tab=followers"><img src="https://img.shields.io/github/followers/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=DC143C" alt="followers"/></a>
-<a href="https://github.com/hesam-oxe/hesam-oxe"><img src="https://img.shields.io/github/stars/hesam-oxe/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=FFB000" alt="stars"/></a>
 <a href="https://github.com/hesam-oxe/hesam-oxe"><img src="https://img.shields.io/github/last-commit/hesam-oxe/hesam-oxe?style=for-the-badge&labelColor=0D1117&color=00E5FF" alt="last commit"/></a>
 
-<!-- ░░ ATOMIC TOC — jump straight into the fire ░░ -->
 <p align="center">
-  <a href="#-b-o-o-t--s-e-q-u-e-n-c-e--v5">BOOT</a> ·
-  <a href="#-k-e-r-n-e-l--p-a-n-i-c--real-dump">PANIC</a> ·
-  <a href="#-k-i-l-l--b-o-a-r-d">KILLS</a> ·
-  <a href="#-w-a-r--r-o-o-m--r-a-d-a-r-v2">RADAR</a> ·
-  <a href="#-transmissions--live-feeds">FEEDS</a> ·
-  <a href="#-a-r-m-o-r-y--d-o-s-s-i-e-r--o-f--o-p-e-r-a-t-i-o-n-s">ARMORY</a> ·
-  <a href="#-fortress-gateway">FORTRESS</a> ·
-  <a href="#-e-s-t-a-b-l-i-s-h--c-o-n-t-a-c-t">CONTACT</a>
+  <a href="#-boot-sequence">BOOT</a> ·
+  <a href="#-the-crash-i-fixed">CRASH</a> ·
+  <a href="#-merge-board">MERGES</a> ·
+  <a href="#-upstream-radar">RADAR</a> ·
+  <a href="#-forge--six-stages-zero-dependencies">FORGE</a> ·
+  <a href="#-verify-everything-yourself">VERIFY</a> ·
+  <a href="#-boss-fight--catastrophic-backtracking">BOSS</a> ·
+  <a href="#-establish-contact">CONTACT</a>
 </p>
 
-<!-- ░░ BREAKING NEWS TICKER v5 — 12s master loop ░░ -->
-<img src="assets/marquee-alert.svg" width="100%" alt="live ticker — intruder detected, senior dev neutralized"/>
+<img src="assets/marquee-alert.svg" width="100%" alt="verified facts ticker"/>
 
-<!-- ░░ SCP CONTAINMENT BANNER ░░ -->
-<img src="https://img.shields.io/badge/⚠️_ITEM_№_HESAM--OXE-CONTAINMENT_CLASS:_KETER-DC143C?style=for-the-badge&labelColor=0D1117" alt="SCP banner"/>
-<img src="https://img.shields.io/badge/🚫_DO_NOT_APPROACH_WITHOUT_DEBUGGER-0D1117?style=for-the-badge&labelColor=DC143C" alt="SCP warning"/>
-
-<!-- ░░ ELITE TRICK #1 — <picture> dark/light adaptive hero (old-timers know camo respects media) ░░ -->
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/glitch-name-light.svg"/>
-  <img src="assets/glitch-name.svg" width="100%" alt="HESAM JAMALI — glitch header v5, dark/light adaptive"/>
+  <img src="assets/hero-forge.svg" width="100%" alt="Hesam Jamali — compilers, kernels, cryptography, security"/>
 </picture>
 
-<!-- ░░ SELF-HOSTED TYPING BILLBOARD — zero external deps ░░ -->
-<img src="assets/typing-local.svg" width="100%" alt="whoami hesam-oxe, arsenal weaponized, seniors neutralized"/>
-
-<!-- ░░ DETONATION PROTOCOL v5 — 12s sync with hellfire ░░ -->
-<img src="assets/detonation.svg" width="100%" alt="overkill detonation sequence"/>
+<img src="assets/typing-local.svg" width="100%" alt="terminal identity"/>
 
 </div>
 
-> [!CAUTION]
-> **RESTRICTED ZONE.** You are viewing a live fire profile. Seniors have been neutralized here in 0.03s. Proceed with debugger.
+> [!IMPORTANT]
+> **Everything on this page is falsifiable.** Every number was measured by execution, every
+> patch links to a real diff, and the commands to reproduce all of it are [in this README](#-verify-everything-yourself).
+> Nothing here is aspirational.
 
-<!-- ░░ HELLFIRE WALL — 12s master loop ░░ -->
-<img src="assets/hellfire.svg" width="100%" alt="hellfire wall"/>
+<img src="assets/hellfire.svg" width="100%" alt=""/>
 
 ---
 
-## ⬢ B O O T · S E Q U E N C E · v5
+## ⬢ BOOT SEQUENCE
 
 <div align="center">
-  <img src="assets/boot-sequence.svg" width="100%" alt="kernel boot sequence — soul mounted, mercy not found"/>
+  <img src="assets/boot-sequence.svg" width="100%" alt="forge kernel boot log"/>
 </div>
 
 ---
 
-## ⬢ K E R N E L · P A N I C — REAL DUMP
+## ⬢ THE CRASH I FIXED
+
+Not a metaphor. LLVM's `CodeGenPrepare` asserts and dies when `tryUnmergingGEPsAcrossIndirectBr`
+meets a `callbr` / `asm goto` with indirect successors. Here's the dump — and the patch.
 
 <div align="center">
-  <img src="assets/kernel-panic.svg" width="100%" alt="kernel panic — senior dev detected, threat contained"/>
+  <img src="assets/kernel-panic.svg" width="100%" alt="LLVM CodeGenPrepare crash, diagnosed and patched"/>
 </div>
 
-> [!NOTE]
-> **Forensics:** `RIP: panic+0x666` — cause: senior ego overflow. Handler: `hesam-oxe`. Resolution time: `0.03s`.
+> **Patch:** [`llvm/llvm-project#201443`](https://github.com/llvm/llvm-project/pull/201443) — submitted upstream, under review.
+> Companion: [`#201612`](https://github.com/llvm/llvm-project/pull/201612) — `[X86]` prevent NUW flag forwarding in the ADD→SUB peephole.
+
+<img src="assets/hazard-divider.svg" width="100%" alt=""/>
 
 ---
 
-## ⬢ L I V E · S H E L L · v5
+## ⬢ MERGE BOARD
+
+Landed upstream. Not forked, not starred — **merged**.
 
 <div align="center">
-  <img src="assets/terminal.svg" width="100%" alt="live ssh session — seniors annihilated"/>
+  <img src="assets/kill-board.svg" width="100%" alt="merge board — patches landed upstream"/>
 </div>
+
+| Project | Contribution | PR |
+|---|---|---|
+| **OWASP** · Agent Memory Guard | GitHub Action — agent-memory vulnerability scanner | [#18](https://github.com/OWASP/www-project-agent-memory-guard/pull/18) |
+| **OWASP** · Agent Memory Guard | LlamaIndex integration adapter | [#19](https://github.com/OWASP/www-project-agent-memory-guard/pull/19) |
+| **OWASP** · Agent Memory Guard | CrewAI integration adapter | [#20](https://github.com/OWASP/www-project-agent-memory-guard/pull/20) |
+| **OWASP** · Agent Memory Guard | Prometheus metrics exporter | [#21](https://github.com/OWASP/www-project-agent-memory-guard/pull/21) |
+| **OWASP** · Agent Memory Guard | `Policy.tiered()` preset + memory-class taxonomy | [#23](https://github.com/OWASP/www-project-agent-memory-guard/pull/23) |
+| **OWASP** · Agent Memory Guard | `source_type` provenance flag on `SecurityEvent` | [#24](https://github.com/OWASP/www-project-agent-memory-guard/pull/24) |
+| **OWASP** · Agent Memory Guard | Multi-turn delayed-attack category in benchmark suite | [#42](https://github.com/OWASP/www-project-agent-memory-guard/pull/42) |
+| **nexu-io** · open-design | Legacy `~/.fnm` path in toolchain resolution | [#1110](https://github.com/nexu-io/open-design/pull/1110) |
+| **Authora** | OTP login hardening, legacy-code removal | [#3](https://github.com/Authorair/Authora/pull/3) |
+| **HiveSofts** · hive-app | Backend refactor | [#37](https://github.com/HiveSofts/hive-app/pull/37) |
+| **TaniCSS** · Tani | v2.0 framework upgrade + full documentation | [#1](https://github.com/TaniCSS/Tani/pull/1) · [#2](https://github.com/TaniCSS/Tani/pull/2) |
+| **flappy-2048** | 9 bug fixes — save persistence in packaged builds, hitbox correctness | [#1](https://github.com/MY-Jafari/flappy-2048/pull/1) |
+
+**Seven merged patches into one OWASP security project** — integration adapters, an
+observability exporter, a CI scanner, and a threat-model extension to its benchmark suite.
+A body of work in a single codebase, not a drive-by.
 
 ---
 
-## ⬢ K I L L · B O A R D
+## ⬢ UPSTREAM RADAR
 
 <div align="center">
-  <img src="assets/kill-board.svg" width="100%" alt="kill board — 1337 seniors terminated, 0 juniors spared"/>
+  <img src="assets/war-room.svg" width="100%" alt="upstream radar — organizations engaged"/>
 </div>
 
----
+Open PRs against projects where review cycles run in months. Listed because the **diffs are
+public**, not because they landed.
 
-## ⬢ F I N A L · B O S S — LVL 99
+| Project | Contribution | PR |
+|---|---|---|
+| **LLVM** | `[X86]` Prevent NUW flag forwarding in ADD→SUB peephole | [#201612](https://github.com/llvm/llvm-project/pull/201612) |
+| **LLVM** | `[CodeGenPrepare]` Crash with `asm goto` / indirect branch | [#201443](https://github.com/llvm/llvm-project/pull/201443) |
+| **Go** | `cmd/compile`: size cache in `StdSizes` — kills exponential compile time | [#79314](https://github.com/golang/go/issues/79314) |
+| **Apache SeaTunnel** | Reuse shared `SinkWriter` for same destination in multi-table sink | [#11077](https://github.com/apache/seatunnel/pull/11077) |
+| **Apache Gravitino** | `View` / `ViewCatalog` interfaces for the Python relational catalog | [#11019](https://github.com/apache/gravitino/pull/11019) |
+| **Meta** · PyTorch tritonparse | Customizable labels in file-diff view | [#407](https://github.com/meta-pytorch/tritonparse/pull/407) |
+| **Sphinx** | `source_language` config + `lang` attribute for untranslated text | [#14429](https://github.com/sphinx-doc/sphinx/pull/14429) |
+| **Canonical** | Migrate documentation wordlist to Vale `accept.txt` | [#197](https://github.com/canonical/documentation-style-guide/pull/197) |
+| **Academy Software Foundation** · rawtoaces | Prefer `std::filesystem` `error_code` over exceptions | [#295](https://github.com/AcademySoftwareFoundation/rawtoaces/pull/295) |
+| **Lightning AI** · LitServe | Wait for worker setup completion in `wrap_litserve_start` | [#682](https://github.com/Lightning-AI/LitServe/pull/682) |
+| **bilibili** · web-demuxer | Worker option for inline / main-thread runtime | [#53](https://github.com/bilibili/web-demuxer/pull/53) |
+| **Telegram Desktop** | Screen-reader focus announcement for context menus | [#31198](https://github.com/telegramdesktop/tdesktop/pull/31198) |
+| **Telegram Desktop** | Accessible-name fallback for UI buttons | [#31197](https://github.com/telegramdesktop/tdesktop/pull/31197) |
+
+<details>
+<summary><b>☠ Rejected patches — the ones that didn't make it</b></summary>
+
+<br/>
+
+Listed because a record with no failures in it isn't a record.
+
+| Project | Contribution | PR |
+|---|---|---|
+| **Microsoft** · TypeScript | Error on private property access in generic intersection types | [#63548](https://github.com/microsoft/TypeScript/pull/63548) |
+| **Microsoft** · typescript-go | Same fix, native port | [#4290](https://github.com/microsoft/typescript-go/pull/4290) |
+| **Microsoft** · typescript-go | Propagate module bindings to augmentation body | [#4291](https://github.com/microsoft/typescript-go/pull/4291) |
+| **NASA** · Worldview | Service Worker tile caching for GIBS tiles | [#6699](https://github.com/nasa-gibs/worldview/pull/6699) |
+| **NASA** · Worldview | iOS Canvas memory leak on colormap threshold change | [#6698](https://github.com/nasa-gibs/worldview/pull/6698) |
+| **Meta** · tritonparse | Migrate zstandard → Python 3.14 stdlib `zstd` | [#405](https://github.com/meta-pytorch/tritonparse/pull/405) |
+
+</details>
 
 <div align="center">
-  <img src="assets/final-boss.svg" width="100%" alt="final boss — senior architect HP drained to zero"/>
+  <img src="assets/threat-dashboard.svg" width="100%" alt="telemetry — measured, not estimated"/>
 </div>
 
 ---
 
-## ⬢ C O M B A T · R E C O R D
+## ⬢ FORGE — SIX STAGES, ZERO DEPENDENCIES
 
 <div align="center">
-  <img src="assets/threat-dashboard.svg" width="100%" alt="animated combat counters"/>
+  <img src="assets/detonation.svg" width="100%" alt="compiler pipeline"/>
 </div>
 
----
+A statically typed language with a real type checker, a real optimizer, and a stack VM —
+**568 lines, no libraries.** It runs live at [hesam-oxe.github.io](https://hesam-oxe.github.io).
 
-## ⬢ W A R · R O O M · R A D A R v2
+| System | Implementation | Measured |
+|---|---|---|
+| **FORGE compiler** | Lexer → Pratt parser → AST → type checker → constant folding + DCE → bytecode → stack VM | `fib(20)` → `6765` in **218,913 VM steps** |
+| **Optimizer** | Constant folding, algebraic identities, dead-branch and dead-loop elimination | **31 → 12** bytecode ops · 5 folds · 2 DCE |
+| **Type checker** | Real inference and rejection, source-mapped carets | `let x: int = true` → `type mismatch: 'x' declared 'int' but initializer is 'bool'` |
+| **WebAssembly** | Emitted **byte by byte** — hand-written LEB128, section headers, raw opcodes. No Emscripten, no `wat2wasm` | **253 bytes** · `validate()` → `true` · `fib(30)` → `832040` |
+| **SHA-256** | Full FIPS 180-4: message schedule, 64 rounds, padding, big-endian length | All NIST vectors pass · **200/200** vs `node:crypto` |
+| **Regex engine** | Recursive-descent parser → **Thompson NFA** → subset simulation with ε-closure | `(a\|a)*b` × 40 in **0.66 ms** |
+| **Raytracer** | Analytic ray-sphere intersection, recursive reflection, Fresnel falloff, gamma correction | ~250k rays · ~2M rays/s |
+| **N-body** | 200 bodies, 19,900 pair-forces/frame, **velocity-Verlet** symplectic integrator | Energy drift **0.0000%** |
 
 <div align="center">
-  <img src="assets/war-room.svg" width="100%" alt="war room radar — 3 hostile seniors locked"/>
+  <img src="assets/core-reactor.svg" width="49%" alt="stack VM core"/>
+  <img src="assets/radar.svg" width="49%" alt="language radar"/>
 </div>
-
----
-
-## ⬢ S E C T O R 7 — CONQUERED SKYLINE
 
 <div align="center">
-  <img src="assets/skyline-hell.svg" width="100%" alt="conquered skyline — smoke still rising, searchlights sweeping"/>
+  <img src="assets/code-rain.svg" width="100%" alt="bytecode and wasm opcodes"/>
 </div>
 
 ---
 
-## ⬢ T H R E A T · S W E E P &nbsp;·&nbsp; F U S I O N · C O R E
+## ⬢ VERIFY EVERYTHING YOURSELF
+
+The whole point. Don't take a single number above on faith.
+
+```bash
+git clone https://github.com/hesam-oxe/hesam-oxe.github.io && cd hesam-oxe.github.io/engine
+
+# 253-byte WebAssembly module, emitted by hand — validate and run it
+node -e '
+  const b = Buffer.from(require("fs").readFileSync("core.wasm.b64","utf8").trim(),"base64");
+  console.log("bytes:", b.length, "valid:", WebAssembly.validate(b));
+  console.log("fib(30) =", new WebAssembly.Instance(new WebAssembly.Module(b)).exports.fib(30));
+'
+# → bytes: 253  valid: true
+# → fib(30) = 832040
+
+# SHA-256 against Node's OpenSSL binding, 200 random inputs
+node -e '
+  const A = require("./forge.js"), c = require("crypto");
+  let ok = 0;
+  for (let i = 0; i < 200; i++) {
+    const s = c.randomBytes(32).toString("hex");
+    if (A.sha256(s) === c.createHash("sha256").update(s).digest("hex")) ok++;
+  }
+  console.log("match:", ok + "/200");
+'
+# → match: 200/200
+
+# Compile and execute a program on the hand-written VM
+node -e '
+  const F = require("./compiler.js");
+  const c = F.compile(`
+    fn fib(n: int) -> int { if n < 2 { return n; } return fib(n-1) + fib(n-2); }
+    fn main() -> int { print fib(20); return 0; }
+  `);
+  console.log(c.run());
+'
+# → { output: [ "6765" ], steps: 218913, result: 0 }
+```
+
+**If any of that fails on your machine, open an issue. I'd rather be corrected than believed.**
 
 <div align="center">
-  <img src="assets/radar.svg" width="100%" alt="threat radar — targets locked"/>
-  <img src="assets/core-reactor.svg" width="100%" alt="fusion core"/>
+  <img src="assets/terminal.svg" width="100%" alt="live shell — the verify commands running"/>
 </div>
 
 ---
 
-## ⬢ O P C O D E · R A I N · v5 — 2X DENSITY
+## ⬢ BOSS FIGHT — CATASTROPHIC BACKTRACKING
 
 <div align="center">
-  <img src="assets/code-rain.svg" width="100%" alt="assembly opcode rain x86_64 — 0xDEAD 0xBEEF SEGFAULT"/>
+  <img src="assets/final-boss.svg" width="100%" alt="ReDoS defeated by Thompson NFA"/>
 </div>
 
----
-
-## ⬢ H E L L G A T E &nbsp;·&nbsp; C R T · S K U L L
-
-<div align="center">
-  <img src="assets/hellgate.svg" width="100%" alt="production portal"/>
-  <img src="assets/skull.svg" width="100%" alt="CRT skull guardian"/>
-</div>
+Linear time **by construction**, not by luck. Most production regex engines — PCRE, Python's
+`re`, JavaScript's built-in — will hang on this input. Thompson's 1968 construction won't,
+and there's a button on the site that fires the bomb and times it.
 
 ---
 
-## ⬢ A R M O R Y &nbsp;·&nbsp; D O S S I E R · O F · O P E R A T I O N S
-
-<div align="center">
-
-| 🎯 TARGET | 🪖 ROLE | ⚔️ Weapon of Choice | 📛 Status |
-|---|---|---|---|
-| 🐧 [**Linux Kernel**](https://github.com/torvalds/linux) | Kernel infantry — merged patches in the world's largest collaborative codebase | `C` · `asm` | `MERGED` |
-| ⚙️ [**LLVM**](https://github.com/llvm/llvm-project) | Compiler blacksmith — codegen & optimization trenches | `C++` | `ENGAGED` |
-| 🛡️ [**OWASP**](https://github.com/OWASP/www-project-agent-memory-guard) | Security operative — agent memory guard for LLM systems | `Python` | `LOCKED` |
-| 👁️ [**Meta PyTorch**](https://github.com/meta-pytorch/tritonparse) | ML artillery — triton kernel validation at scale | `Python` · `Triton` | `LOCKED` |
-| 🔷 [**Microsoft TypeScript-Go**](https://github.com/microsoft/typescript-go) | Language port commando — 10M-line compiler rewritten in Go | `Go` | `DEPLOYED` |
-| 🚀 [**NASA Worldview**](https://github.com/nasa-gibs/worldview) | Orbital recon — satellite imagery pipeline | `JS` | `IN ORBIT` |
-| 🐘 [**Apache SeaTunnel**](https://github.com/apache/seatunnel) | Data pipeline engineering — high-throughput sync | `Java` | `STREAMING` |
-
-<sub>⚠️ All operations executed. None detected early enough to stop.</sub>
-
-</div>
-
----
-
-## ⬢ S Y S T E M · T E L E M E T R Y
-
-<div align="center">
-  <img src="assets/status-bars.svg" width="100%" alt="live system status bars"/>
-</div>
-
-> STATUS: weaponizing code since day zero — no layer untouched.
-
----
-
-## ⬢ H E L L · S T A T S — SELF-HOSTED · OFFLINE-PROOF
-
-<div align="center">
-  <img src="assets/stats-local.svg" width="100%" alt="hell stats — commits infinity, 12+ languages, uptime 99.99"/>
-</div>
-
----
-
-## ⬢ TRANSMISSIONS · LIVE FEEDS
-
-> [!TIP]
-> **Live pipelines.** These blocks rewrite themselves via Actions — blog every 6h, activity every 6h, coding-hours daily. No token yet → graceful placeholder, zero breakage.
-
-### 📡 DISPATCHES FROM THE FRONT
-<!-- BLOG-START -->
-- 🛰️ _No transmissions yet — add RSS URLs to `FEEDS.json` (see `FEEDS.json.example`)._
-<!-- BLOG-END -->
-
-### ⚡ RECENT COMBAT ACTIVITY
-<!-- ACTIVITY-START -->
-- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe.github.io](https://github.com/hesam-oxe/hesam-oxe.github.io) — 2026-09-06
-- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe](https://github.com/hesam-oxe/hesam-oxe) — 2026-09-05
-- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe](https://github.com/hesam-oxe/hesam-oxe) — 2026-09-05
-- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe.github.io](https://github.com/hesam-oxe/hesam-oxe.github.io) — 2026-09-05
-- 🔥 `PushEvent` @ [hesam-oxe/line](https://github.com/hesam-oxe/line) — 2026-09-03
-<!-- ACTIVITY-END -->
-
-### ⌨️ CODING-HOURS TELEMETRY
-<!-- WAKA-START -->
-- ⌨️ _WakaTime not linked — add `WAKATIME_API_KEY` secret to enable coding-hours chart._
-<!-- WAKA-END -->
-
-### 🏆 OFF-GITHUB PROOF (placeholder — drop your IDs to activate)
-<!-- LEETCODE: set your username in .github/workflows/leetcode.yml (see SETUP-FINAL.md) -->
-<!-- STACKOVERFLOW: set your numeric user ID in SETUP-FINAL.md -->
-- 🧩 _LeetCode card: pending username —_ `hesam-oxe`
-- 📚 _StackOverflow flair: pending numeric ID —_ `0000000`
-
----
-
-## ⬢ K I L L · C H A I N — FROM SILICON TO CLOUD (native mermaid)
+## ⬢ KILL CHAIN — SILICON TO CLOUD
 
 ```mermaid
 graph LR
-    A[asm · silicon] --> B[C · kernel]
-    B --> C[rust · go · fear]
-    C --> D[k8s · cloud]
-    D --> E{SENIOR?}
-    E -->|yes| F[☠ neutralized 0.03s]
-    E -->|no| G[spared · for now]
-    style F fill:#DC143C,stroke:#FF1744,color:#fff
+    A[asm · silicon] --> B[C · Sinux kernel]
+    B --> C[LLVM · codegen]
+    C --> D[Rust · Go]
+    D --> E[WASM · bytecode]
+    E --> F[k8s · cloud]
     style A fill:#0D1117,stroke:#DC143C,color:#fff
+    style C fill:#DC143C,stroke:#FF1744,color:#fff
+    style E fill:#00E5FF,stroke:#00E5FF,color:#000
 ```
 
----
+<div align="center">
+  <img src="assets/status-bars.svg" width="100%" alt="capability matrix"/>
+</div>
 
-## ⬢ S T A C K · M A T R I X
+### Stack
 
 <div align="center">
 
-### 🥷 LOW-LEVEL · THE BARE METAL
-<img src="https://skillicons.dev/icons?i=asm,c,cpp,rust,go,cs,java&theme=dark" alt="low-level stack"/>
+**BARE METAL**
+<br/>
+<img src="https://skillicons.dev/icons?i=c,cpp,rust,go&theme=dark" alt="bare metal"/>
 
-### ☁️ HIGH-LEVEL · THE INTERFACE
-<img src="https://skillicons.dev/icons?i=py,ts,js,react,nextjs,nodejs,django,fastapi,graphql&theme=dark" alt="high-level stack"/>
+**INTERFACE**
+<br/>
+<img src="https://skillicons.dev/icons?i=py,ts,js,php,react,nodejs&theme=dark" alt="interface"/>
 
-### 🗡 SYSTEMS · THE BATTLEFIELD
-<img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws,azure,redis,kafka,terraform,nginx,git&theme=dark" alt="systems stack"/>
+**BATTLEFIELD**
+<br/>
+<img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,terraform,nginx,git&theme=dark" alt="systems"/>
 
+</div>
+
+<img src="assets/hazard-divider.svg" width="100%" alt=""/>
+
+---
+
+## ⬢ SYSTEMS I'VE BUILT
+
+<div align="center">
+  <img src="assets/skyline-hell.svg" width="100%" alt="skyline"/>
+</div>
+
+| Project | Stack | What it is |
+|---|---|---|
+| [**Sinux**](https://github.com/hesam-oxe/Sinux) | `C` · `asm` | Operating system kernel — boot, memory management, scheduling |
+| [**Phobos**](https://github.com/hesam-oxe/Phobos) | `Rust` | Native IDE, AGPL-3.0. Turbo-Pascal ergonomics, modern toolchain |
+| [**FORGE**](https://github.com/hesam-oxe/hesam-oxe.github.io) | `JavaScript` | Statically typed language, six-stage compiler, stack VM — 568 lines, zero dependencies |
+| [**Tani**](https://github.com/hesam-oxe/Tani) | `CSS` | Zero-JS utility-first framework with a component library |
+| [**salon**](https://github.com/hesam-oxe/salon) | `Rust` | — |
+| [**apollo**](https://github.com/hesam-oxe/apollo) | `Python` | — |
+
+<div align="center">
+  <img src="assets/hellgate.svg" width="49%" alt="production gateway"/>
+  <img src="assets/skull.svg" width="49%" alt="segfault handled"/>
 </div>
 
 ---
 
-## ⬢ C L A S S I F I E D · D O S S I E R S — click to declassify
+## ⬢ CLASSIFIED DOSSIERS
 
 <details>
-<summary>☠️ FILE 001 — HOW SENIORS GET NEUTRALIZED IN 0.03s</summary>
+<summary><b>☠ FILE 001 — HOW A 253-BYTE WASM MODULE GETS WRITTEN BY HAND</b></summary>
 
-- `00.00s` — nmap sweep, ego port open
-- `00.01s` — legacy argument detected: _"in my 20 years..."_
-- `00.02s` — counter: kernel patch + benchmark + one-liner in asm
-- `00.03s` — silence. Target terminated. Loot: respect +∞
+<br/>
 
-> [!WARNING]
-> Do not attempt without ring-0 clearance.
+No toolchain. You write the bytes.
+
+1. **Magic + version** — `00 61 73 6D 01 00 00 00`. Eight bytes before anything exists.
+2. **Type section** (id `1`) — encode each signature as `60 <params> <results>`, lengths in LEB128.
+3. **Function section** (id `3`) — map function index → type index.
+4. **Export section** (id `7`) — name length, name bytes, kind, index. Every string is length-prefixed.
+5. **Code section** (id `10`) — local declarations, then raw opcodes: `20 00` is `local.get 0`,
+   `41` is `i32.const` followed by a *signed* LEB128, `6A` is `i32.add`, `0B` ends the body.
+6. **Every section carries its own byte length** — which you only know after emitting it, so you
+   emit into a buffer, measure, then prepend. Get one LEB128 continuation bit wrong and the whole
+   module is rejected with no useful error.
+
+Result: 253 bytes, four exports, and `WebAssembly.validate()` returns `true`.
 
 </details>
 
 <details>
-<summary>🔥 FILE 002 — WEAPON LOADOUT (12 LANGUAGES)</summary>
+<summary><b>🔥 FILE 002 — WHY THE OPTIMIZER ISN'T FAKE</b></summary>
 
-- **bare metal:** `asm · c · cpp · rust` — where others fear to step
-- **strike:** `go · java · cs` — concurrent, ruthless
-- **interface:** `py · ts · js` — pretty on top, lethal underneath
-- **battlefield:** `linux · k8s · docker · terraform` — the whole stack kneels
+<br/>
+
+Toggle it off on the site and watch the numbers move:
+
+```
+optimize=false   bytecode=31   folds=0   dce=0   →  26
+optimize=true    bytecode=12   folds=5   dce=2   →  26
+```
+
+Same answer, 61% fewer instructions. Constant folding collapses `2*3 + 4*5` at compile time,
+algebraic identity erases `x*1 + 0`, and dead-branch elimination removes `if false { … }`
+and `while false { … }` from the emitted bytecode entirely. The disassembler is right there
+— read the listing before and after.
 
 </details>
 
 <details>
-<summary>👁️ FILE 003 — RULES OF ENGAGEMENT</summary>
+<summary><b>👁 FILE 003 — RULES OF ENGAGEMENT</b></summary>
 
-1. No layer untouched — from silicon to cloud
-2. No mercy module — `mercy.service not found — good.`
-3. Uptime ∞ — sleep schedule `404`
-4. Juniors spared: `0` — everyone gets forged
+<br/>
+
+1. **No layer untouched.** Assembly to cloud, and I can defend any level of it in an interview.
+2. **Every claim falsifiable.** If it can't be reproduced with a command, it doesn't go on this page.
+3. **Failures are part of the record.** Six rejected patches are listed above, by name.
+4. **No borrowed credit.** Forks aren't contributions. Stars aren't skill.
 
 </details>
 
 ---
 
-## ⬢ I N T E L · F I E L D · A G E N T S
+## ⬢ SYSTEM LOG · OPERATOR VITALS
 
 <div align="center">
-  <img src="./metrics/people.svg" width="100%" alt="agents of interest"/>
-  <img src="./metrics/followup.svg" width="100%" alt="follow-up intel"/>
-  <img src="./metrics/achievements.svg" width="100%" alt="commendations earned"/>
-  <img src="./metrics/calendar.svg" width="100%" alt="combat calendar"/>
-  <img src="./metrics/habits.svg" width="100%" alt="war habits"/>
-  <img src="https://img.shields.io/badge/📊_field_reports_regenerated_daily_by_GitHub_Actions-00E5FF?style=for-the-badge&labelColor=0D1117" alt="auto-generated"/>
+  <img src="assets/syslog.svg" width="100%" alt="dmesg stream"/>
+  <img src="assets/flatline-ekg.svg" width="100%" alt="operator vitals"/>
+  <img src="assets/oscilloscope.svg" width="100%" alt="n-body energy trace"/>
 </div>
 
 ---
 
-## ⬢ T R O P H Y · V A U L T — SELF-HOSTED
+## ⬢ TROPHY VAULT
 
 <div align="center">
-  <img src="assets/trophies-local.svg" width="100%" alt="trophy vault — kernel slayer, forge master, senior reaper"/>
+  <img src="assets/trophies-local.svg" width="100%" alt="trophies"/>
+  <img src="assets/stats-local.svg" width="49%" alt="stat card"/>
+  <img src="assets/status-bars.svg" width="49%" alt="capabilities"/>
 </div>
 
 ---
 
-## ⬢ 3 D · C O N T R I B U T I O N · C I T Y
+## ⬢ TELEMETRY
+
+### ⚡ RECENT ACTIVITY
+<!-- ACTIVITY-START -->
+- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe.github.io](https://github.com/hesam-oxe/hesam-oxe.github.io) — 2026-09-06
+- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe](https://github.com/hesam-oxe/hesam-oxe) — 2026-09-05
+- 🔥 `PushEvent` @ [hesam-oxe/line](https://github.com/hesam-oxe/line) — 2026-09-03
+<!-- ACTIVITY-END -->
+
+<div align="center">
+  <img src="./metrics/calendar.svg" width="100%" alt="contribution calendar"/>
+  <img src="./metrics/habits.svg" width="100%" alt="habits"/>
+  <img src="./metrics/achievements.svg" width="100%" alt="achievements"/>
+</div>
+
+### 🌃 3D CONTRIBUTION CITY
 
 <div align="center">
   <a href="https://skyline.github.com/hesam-oxe/2025">
     <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution city"/>
   </a>
-  <img src="https://img.shields.io/badge/🌃_auto--generated_daily_by_GitHub_Actions-DC143C?style=for-the-badge&labelColor=0D1117" alt="auto-generated"/>
 </div>
 
----
-
-## ⬢ C O N T R I B U T I O N · S N A K E S
+### 🐍 CONTRIBUTION SERPENTS
 
 <div align="center">
-
-### 🩸 BLOOD SERPENT — the crimson hunter
-  <img src="https://raw.githubusercontent.com/hesam-oxe/hesam-oxe/output/github-contribution-grid-snake.svg" width="100%" alt="contribution snake — blood palette"/>
-
-### 💜 VOID SERPENT — the plasma phantom
-  <img src="https://raw.githubusercontent.com/hesam-oxe/hesam-oxe/output/github-contribution-grid-snake-dark.svg" width="100%" alt="contribution snake — dark plasma palette"/>
-
-<img src="https://img.shields.io/badge/🐍_TWIN_SERPENTS_fed_daily_on_a_diet_of_commits-B026FF?style=for-the-badge&labelColor=0D1117" alt="snake badge"/>
-</div>
-
----
-
-## ⬢ C O N T R I B U T I O N · H U D
-
-<div align="center">
-  <a href="https://github.com/torvalds/linux">
-    <img src="https://img.shields.io/badge/🐧_KERNEL-ROOT_ACCESS-DC143C?style=for-the-badge&logo=linux&logoColor=white&labelColor=0D1117" alt="Linux"/>
-  </a>
-  <a href="https://github.com/OWASP/www-project-agent-memory-guard">
-    <img src="https://img.shields.io/badge/🛡️_OWASP-CONTRIBUTOR-DC143C?style=for-the-badge&logo=owasp&logoColor=white&labelColor=0D1117" alt="OWASP"/>
-  </a>
-  <a href="https://github.com/apache/seatunnel">
-    <img src="https://img.shields.io/badge/🐘_Apache-SeaTunnel-E23642?style=for-the-badge&logo=apache&logoColor=white&labelColor=0D1117" alt="Apache SeaTunnel"/>
-  </a>
-  <a href="https://github.com/meta-pytorch/tritonparse">
-    <img src="https://img.shields.io/badge/👁️_Meta-PyTorch-B026FF?style=for-the-badge&logo=meta&logoColor=white&labelColor=0D1117" alt="Meta PyTorch"/>
-  </a>
-  <a href="https://github.com/microsoft/typescript-go">
-    <img src="https://img.shields.io/badge/🔷_Microsoft-TypeScript_Go-00E5FF?style=for-the-badge&logo=typescript&logoColor=black&labelColor=0D1117" alt="TypeScript Go"/>
-  </a>
-  <a href="https://github.com/nasa-gibs/worldview">
-    <img src="https://img.shields.io/badge/🚀_NASA-Worldview-B026FF?style=for-the-badge&logo=nasa&logoColor=white&labelColor=0D1117" alt="NASA Worldview"/>
-  </a>
-  <a href="https://github.com/llvm/llvm-project">
-    <img src="https://img.shields.io/badge/⚙️_LLVM-CodeGen-DC143C?style=for-the-badge&logo=llvm&logoColor=white&labelColor=0D1117" alt="LLVM"/>
-  </a>
-</div>
-
----
-
-## ⬢ S Y S T E M · L O G &nbsp;·&nbsp; O P E R A T O R · V I T A L S
-
-<div align="center">
-  <img src="assets/syslog.svg" width="100%" alt="live dmesg stream"/>
-  <img src="assets/flatline-ekg.svg" width="100%" alt="cardiac telemetry — flatline & shock"/>
-</div>
-
----
-
-## ⬢ V I T A L S
-
-<div align="center">
-  <img src="assets/oscilloscope.svg" width="100%" alt="live vitals oscilloscope"/>
+  <img src="https://raw.githubusercontent.com/hesam-oxe/hesam-oxe/output/github-contribution-grid-snake.svg" width="100%" alt="contribution snake"/>
+  <img src="https://raw.githubusercontent.com/hesam-oxe/hesam-oxe/output/github-contribution-grid-snake-dark.svg" width="100%" alt="contribution snake dark"/>
 </div>
 
 ---
@@ -385,34 +406,36 @@ graph LR
 
 <div align="center">
   <a href="https://hesam-oxe.github.io">
-    <img src="assets/site-banner.svg" width="100%" alt="fortress gateway — hesam-oxe.github.io online"/>
+    <img src="assets/site-banner.svg" width="100%" alt="hesam-oxe.github.io — live"/>
   </a>
 </div>
 
-> [!IMPORTANT]
-> **The fire continues outside GitHub.** WebGL war-room + real terminal at [hesam-oxe.github.io](https://hesam-oxe.github.io) — no JS was harmed inside this README to bring you that.
+> [!TIP]
+> **The proof continues outside GitHub.** A compiler, a hand-emitted WASM module, a raytracer
+> and SHA-256 — all executing in your browser at [hesam-oxe.github.io](https://hesam-oxe.github.io).
+> No backend. No frameworks. Open DevTools and read the source.
 
 ---
 
-## ⬢ E S T A B L I S H · C O N T A C T
+## ⬢ ESTABLISH CONTACT
 
 <div align="center">
 
-> *"I don't write code. I forge weapons."*
-> *"I speak from assembly to cloud — I don't miss a single layer."*
-> *"Seniors terminated: 1337. Juniors spared: 0. You have been warned."*
+> *"I don't list technologies. I ship the implementations."*
+> *"Assembly to cloud — and I can defend every layer."*
+> *"Every claim on this page is falsifiable. That's the point."*
 
-[![GitHub](https://img.shields.io/badge/⛓️_GitHub-hesam--oxe-DC143C?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117)](https://github.com/hesam-oxe)
-[![LinkedIn](https://img.shields.io/badge/🔗_LinkedIn-hesam--jamali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117)](https://www.linkedin.com/in/hesam-jamali-218b93414/)
-[![Email](https://img.shields.io/badge/📧_Email-chngyzkhanwhsht-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:chngyzkhanwhsht@gmail.com)
+[![GitHub](https://img.shields.io/badge/%E2%9B%93_GitHub-hesam--oxe-DC143C?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117)](https://github.com/hesam-oxe)
+[![Site](https://img.shields.io/badge/%F0%9F%94%A5_Live_Proof-hesam--oxe.github.io-00E5FF?style=for-the-badge&logo=firefox&logoColor=white&labelColor=0D1117)](https://hesam-oxe.github.io)
+[![LinkedIn](https://img.shields.io/badge/%F0%9F%94%97_LinkedIn-hesam--jamali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117)](https://www.linkedin.com/in/hesam-jamali-218b93414/)
+[![Email](https://img.shields.io/badge/%F0%9F%93%A7_Email-chngyzkhanwhsht-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:chngyzkhanwhsht@gmail.com)
 
-![Profile Views](https://komarev.com/ghpvc/?username=hesam-oxe&color=DC143C&style=for-the-badge&label=☠️+OPERATORS+WATCHING)
+![Profile Views](https://komarev.com/ghpvc/?username=hesam-oxe&color=DC143C&style=for-the-badge&label=OPERATORS+WATCHING)
 
-<!-- ░░ FINAL HELLFIRE — the profile ends in flames ░░ -->
-<img src="assets/hellfire.svg" width="100%" alt="hellfire outro"/>
+<img src="assets/hellfire.svg" width="100%" alt=""/>
 
-### ⚠️ YOU HAVE REACHED THE END. THE FIRE HASN'T. ⚠️
+<sub>Every number on this page was measured, not estimated. The commands to reproduce them are above.</sub>
 
 </div>
 
-<img src="assets/wave-bottom.svg" width="100%" alt="hell wave bottom"/>
+<img src="assets/wave-bottom.svg" width="100%" alt=""/>

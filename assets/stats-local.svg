@@ -1,49 +1,149 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace"><title>hell stats — self-hosted offline-proof</title>
-  <defs>
-    <linearGradient id="slBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0A0A10"/>
-      <stop offset="1" stop-color="#07070C"/>
-    </linearGradient>
-  </defs>
-  <rect x="0" y="0" width="760" height="210" rx="10" fill="url(#slBg)" stroke="#DC143C" stroke-width="1.2"/>
-  <text x="30" y="32" font-size="14" letter-spacing="4" fill="#F2F2F5">// HELL STATS <tspan fill="#5c5c70">— self-hosted · updated nightly · no vercel</tspan></text>
-  <circle cx="722" cy="27" r="4" fill="#39FF14">
-    <animate attributeName="opacity" values="1;1;0.1;0.1" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
-  </circle>
-  <g font-size="11" letter-spacing="2" fill="#8a8aa0" text-anchor="middle">
-    <text x="120" y="62">COMMITS FIRED</text>
-    <text x="310" y="62">LANGUAGES</text>
-    <text x="490" y="62">UPTIME</text>
-    <text x="660" y="62">FEAR INDUCED</text>
-  </g>
-  <g font-size="30" font-weight="800" text-anchor="middle">
-    <text x="120" y="100" fill="#DC143C">∞</text>
-    <text x="310" y="100" fill="#B026FF">12+</text>
-    <text x="490" y="100" fill="#39FF14">99.99%</text>
-    <text x="660" y="100" fill="#FFB000">100%</text>
-  </g>
-  <g>
-    <rect x="30" y="120" width="165" height="8" rx="4" fill="#12121c"/>
-    <rect x="30" y="120" width="0" height="8" rx="4" fill="#DC143C">
-      <animate attributeName="width" values="0;165" keyTimes="0;1" dur="3s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="215" y="120" width="165" height="8" rx="4" fill="#12121c"/>
-    <rect x="215" y="120" width="0" height="8" rx="4" fill="#B026FF">
-      <animate attributeName="width" values="0;150" keyTimes="0;1" dur="3.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="400" y="120" width="165" height="8" rx="4" fill="#12121c"/>
-    <rect x="400" y="120" width="0" height="8" rx="4" fill="#39FF14">
-      <animate attributeName="width" values="0;163" keyTimes="0;1" dur="2.8s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="585" y="120" width="145" height="8" rx="4" fill="#12121c"/>
-    <rect x="585" y="120" width="0" height="8" rx="4" fill="#FFB000">
-      <animate attributeName="width" values="0;145" keyTimes="0;1" dur="3.1s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-  <text x="380" y="160" text-anchor="middle" font-size="12" letter-spacing="2" fill="#5c5c70">asm · rust · go · c · cpp · py · ts · js · java — <tspan fill="#DC143C">no layer untouched</tspan></text>
-  <text x="380" y="184" text-anchor="middle" font-size="11" letter-spacing="3" fill="#3a3a55">PRIVATE COMMITS COUNTED · OFFLINE-PROOF · CAMO-SAFE</text>
-  <rect x="30" y="193" width="700" height="6" rx="3" fill="#12121c"/>
-  <rect x="30" y="193" width="0" height="6" rx="3" fill="#DC143C">
-    <animate attributeName="width" values="0;700" keyTimes="0;1" dur="12s" repeatCount="indefinite"/>
-  </rect>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="340" viewBox="0 0 490 340" font-family="'Cascadia Code','Fira Code','JetBrains Mono',SFMono-Regular,Consolas,Menlo,monospace" role="img" aria-label="stat card"><title>stat card</title><defs>
+<!-- ░ gradients ░ -->
+<linearGradient id="gFire" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#8B0020"/><stop offset="28%" stop-color="#DC143C"/>
+  <stop offset="58%" stop-color="#FF6B35"/><stop offset="82%" stop-color="#FFB000"/>
+  <stop offset="100%" stop-color="#FFE9A0"/>
+</linearGradient>
+<linearGradient id="gSpec" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#DC143C"/><stop offset="26%" stop-color="#FF6B35"/>
+  <stop offset="52%" stop-color="#FFB000"/><stop offset="76%" stop-color="#00E5FF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+  <animateTransform attributeName="gradientTransform" type="translate"
+    values="-1 0;1 0;-1 0" dur="9s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="gIce" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#5B8CFF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+</linearGradient>
+<linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="45%" stop-color="#fff" stop-opacity="0.10"/>
+  <stop offset="55%" stop-color="#fff" stop-opacity="0.16"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0.35" y2="1">
+  <stop offset="0%" stop-color="#131A25"/><stop offset="45%" stop-color="#0B1017"/>
+  <stop offset="100%" stop-color="#05080D"/>
+</linearGradient>
+<radialGradient id="gVig" cx="50%" cy="45%" r="72%">
+  <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.72"/>
+</radialGradient>
+<radialGradient id="gCore">
+  <stop offset="0%" stop-color="#FFF4D6"/><stop offset="35%" stop-color="#FFB000"/>
+  <stop offset="70%" stop-color="#DC143C"/><stop offset="100%" stop-color="#3A0010" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gFade" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="18%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="76%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+
+<!-- ░ patterns ░ -->
+<pattern id="pGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+  <path d="M24 0H0V24" fill="none" stroke="#141D2A" stroke-width="1"/>
+  <circle cx="0" cy="0" r="1" fill="#1E2A3B"/>
+</pattern>
+<pattern id="pFine" width="6" height="6" patternUnits="userSpaceOnUse">
+  <path d="M6 0H0V6" fill="none" stroke="#0F1620" stroke-width=".6"/>
+</pattern>
+<pattern id="pScan" width="3" height="3" patternUnits="userSpaceOnUse">
+  <rect width="3" height="1.4" fill="#000" opacity="0.20"/>
+</pattern>
+<pattern id="pHex" width="28" height="48" patternUnits="userSpaceOnUse">
+  <path d="M14 0 L28 8 L28 24 L14 32 L0 24 L0 8 Z" fill="none" stroke="#121A26" stroke-width="1"/>
+</pattern>
+
+<!-- ░ bloom tiers ░ -->
+<filter id="fBloom" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="2" result="b1"/>
+  <feGaussianBlur stdDeviation="7" result="b2"/>
+  <feGaussianBlur stdDeviation="16" result="b3"/>
+  <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/>
+    <feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlow" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlowS" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation="1.3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fHalo" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="14"/>
+</filter>
+
+<!-- ░ chromatic aberration ░ -->
+<filter id="fChroma" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset in="SourceGraphic" dx="-2.2" dy="0" result="r"/>
+  <feColorMatrix in="r" type="matrix" result="rc"
+    values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
+  <feOffset in="SourceGraphic" dx="2.2" dy="0" result="b"/>
+  <feColorMatrix in="b" type="matrix" result="bc"
+    values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+  <feBlend in="rc" in2="bc" mode="screen" result="rb"/>
+  <feBlend in="SourceGraphic" in2="rb" mode="screen"/>
+</filter>
+
+<!-- ░ turbulence fire ░ -->
+<filter id="fFire" x="-25%" y="-45%" width="150%" height="190%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.016 0.045" numOctaves="4"
+                seed="7" result="n">
+    <animate attributeName="baseFrequency" dur="7s" repeatCount="indefinite"
+             values="0.016 0.045;0.024 0.062;0.016 0.045"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="26"
+                     xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="2.4" result="db"/>
+  <feMerge><feMergeNode in="db"/><feMergeNode in="d"/></feMerge>
+</filter>
+
+<!-- ░ plasma ░ -->
+<filter id="fPlasma" x="-20%" y="-20%" width="140%" height="140%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="5" seed="3" result="n">
+    <animate attributeName="seed" dur="10s" values="3;9;3" repeatCount="indefinite"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="14"
+                     xChannelSelector="R" yChannelSelector="B"/>
+</filter>
+
+<!-- ░ glitch displacement ░ -->
+<filter id="fGlitch" x="-12%" y="-12%" width="124%" height="124%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.00001 0.42" numOctaves="1"
+                seed="11" result="n">
+    <animate attributeName="baseFrequency" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1"
+             values="0.00001 0.42;0.00001 0.42;0.02 1.1;0.00001 0.42;0.03 0.9;0.00001 0.42"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R"
+                     yChannelSelector="G">
+    <animate attributeName="scale" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1" values="0;0;18;0;13;0"/>
+  </feDisplacementMap>
+</filter>
+
+<!-- ░ CRT barrel + noise ░ -->
+<filter id="fCRT" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" result="g"/>
+  <feColorMatrix in="g" type="saturate" values="0" result="gm"/>
+  <feComponentTransfer in="gm" result="gt">
+    <feFuncA type="linear" slope="0.07"/>
+  </feComponentTransfer>
+  <feBlend in="SourceGraphic" in2="gt" mode="screen"/>
+</filter>
+
+<!-- ░ inner shadow for recessed panels ░ -->
+<filter id="fInset" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset dx="0" dy="2"/><feGaussianBlur stdDeviation="3" result="o"/>
+  <feComposite in="SourceGraphic" in2="o" operator="over"/>
+</filter>
+
+<!-- ░ metallic edge ░ -->
+<filter id="fEmboss" x="-10%" y="-10%" width="120%" height="120%">
+  <feConvolveMatrix order="3" kernelMatrix="1 0 0  0 0 0  0 0 -1"
+                    divisor="1" bias="0.02" preserveAlpha="true"/>
+</filter>
+</defs><rect width="490" height="340" rx="12" fill="url(#gPanel)"/><rect width="490" height="340" rx="12" fill="url(#pGrid)" opacity=".55"/><rect width="490" height="340" rx="12" fill="url(#pFine)" opacity=".5"/><rect width="490" height="340" rx="12" fill="url(#gVig)"/><rect x=".5" y=".5" width="489" height="339" rx="12" fill="none" stroke="#1b2534" stroke-width="1"/><rect x="0" y="0" width="490" height="2.5" rx="1" fill="url(#gSpec)"/><path d="M10,2 L2,2 L2,10" fill="none" stroke="#FFB000" stroke-width="2" opacity=".85"/><path d="M480,2 L488,2 L488,10" fill="none" stroke="#FFB000" stroke-width="2" opacity=".85"/><path d="M10,338 L2,338 L2,330" fill="none" stroke="#FFB000" stroke-width="2" opacity=".85"/><path d="M480,338 L488,338 L488,330" fill="none" stroke="#FFB000" stroke-width="2" opacity=".85"/><rect x="0" y="0" width="490" height="36" fill="#000" opacity=".35"/><line x1="0" y1="36" x2="490" y2="36" stroke="#FFB000" stroke-opacity=".38"/><rect x="18" y="14" width="3" height="9" fill="#FFB000"/><text x="30" y="23" font-size="11.5" font-weight="700" letter-spacing="2.6" fill="#FFB000">BY THE NUMBERS</text><text x="472" y="23" text-anchor="end" font-size="10.5" letter-spacing="1.2" fill="#7d8590">GitHub API</text><g opacity="1"><circle cx="32" cy="80" r="2.6" fill="#FF6B35"/><text x="46" y="84" font-size="12" fill="#9aa7b5">Pull requests submitted</text><text x="464" y="84" text-anchor="end" font-size="14.5" font-weight="700" fill="#FF6B35">48</text><line x1="46" y1="93" x2="464" y2="93" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0357;0.0537;1" dur="7s" repeatCount="indefinite"/></g><g opacity="1"><circle cx="32" cy="109" r="2.6" fill="#4ADE80"/><text x="46" y="113" font-size="12" fill="#9aa7b5">Merged upstream</text><text x="464" y="113" text-anchor="end" font-size="14.5" font-weight="700" fill="#4ADE80">13</text><line x1="46" y1="122" x2="464" y2="122" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0671;0.0851;1" dur="7s" repeatCount="indefinite"/></g><g opacity="1"><circle cx="32" cy="138" r="2.6" fill="#FFB000"/><text x="46" y="142" font-size="12" fill="#9aa7b5">Organizations engaged</text><text x="464" y="142" text-anchor="end" font-size="14.5" font-weight="700" fill="#FFB000">25</text><line x1="46" y1="151" x2="464" y2="151" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0986;0.1166;1" dur="7s" repeatCount="indefinite"/></g><g opacity="1"><circle cx="32" cy="167" r="2.6" fill="#4ADE80"/><text x="46" y="171" font-size="12" fill="#9aa7b5">OWASP merges</text><text x="464" y="171" text-anchor="end" font-size="14.5" font-weight="700" fill="#4ADE80">7</text><line x1="46" y1="180" x2="464" y2="180" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1300;0.1480;1" dur="7s" repeatCount="indefinite"/></g><g opacity="1"><circle cx="32" cy="196" r="2.6" fill="#00E5FF"/><text x="46" y="200" font-size="12" fill="#9aa7b5">Original repositories</text><text x="464" y="200" text-anchor="end" font-size="14.5" font-weight="700" fill="#00E5FF">10</text><line x1="46" y1="209" x2="464" y2="209" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1614;0.1794;1" dur="7s" repeatCount="indefinite"/></g><g opacity="1"><circle cx="32" cy="225" r="2.6" fill="#B026FF"/><text x="46" y="229" font-size="12" fill="#9aa7b5">Compiler stages</text><text x="464" y="229" text-anchor="end" font-size="14.5" font-weight="700" fill="#B026FF">6</text><line x1="46" y1="238" x2="464" y2="238" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1929;0.2109;1" dur="7s" repeatCount="indefinite"/></g><g opacity="1"><circle cx="32" cy="254" r="2.6" fill="#B026FF"/><text x="46" y="258" font-size="12" fill="#9aa7b5">Compiler source lines</text><text x="464" y="258" text-anchor="end" font-size="14.5" font-weight="700" fill="#B026FF">568</text><line x1="46" y1="267" x2="464" y2="267" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2243;0.2423;1" dur="7s" repeatCount="indefinite"/></g><g opacity="1"><circle cx="32" cy="283" r="2.6" fill="#8b98a8"/><text x="46" y="287" font-size="12" fill="#9aa7b5">Engine dependencies</text><text x="464" y="287" text-anchor="end" font-size="14.5" font-weight="700" fill="#8b98a8">0</text><line x1="46" y1="296" x2="464" y2="296" stroke="#101823"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2557;0.2737;1" dur="7s" repeatCount="indefinite"/></g><text x="26" y="320" font-size="9.5" fill="#3d4956">every value pulled from the public API</text><rect width="490" height="340" rx="12" fill="url(#pScan)"/></svg>

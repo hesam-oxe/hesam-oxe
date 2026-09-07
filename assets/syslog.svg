@@ -1,58 +1,149 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" font-family="'Cascadia Code','Fira Code',Consolas,Menlo,monospace"><title>live dmesg stream</title>
-  <defs>
-    <linearGradient id="sysBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0A0A10"/>
-      <stop offset="1" stop-color="#050508"/>
-    </linearGradient>
-    <linearGradient id="fadeMask2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-      <stop offset="0.12" stop-color="#fff" stop-opacity="1"/>
-      <stop offset="0.88" stop-color="#fff" stop-opacity="1"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </linearGradient>
-    <mask id="sysfade"><rect x="0" y="0" width="760" height="240" fill="url(#fadeMask2)"/></mask>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="270" viewBox="0 0 1000 270" font-family="'Cascadia Code','Fira Code','JetBrains Mono',SFMono-Regular,Consolas,Menlo,monospace" role="img" aria-label="syslog stream"><title>syslog stream</title><defs>
+<!-- ░ gradients ░ -->
+<linearGradient id="gFire" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#8B0020"/><stop offset="28%" stop-color="#DC143C"/>
+  <stop offset="58%" stop-color="#FF6B35"/><stop offset="82%" stop-color="#FFB000"/>
+  <stop offset="100%" stop-color="#FFE9A0"/>
+</linearGradient>
+<linearGradient id="gSpec" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#DC143C"/><stop offset="26%" stop-color="#FF6B35"/>
+  <stop offset="52%" stop-color="#FFB000"/><stop offset="76%" stop-color="#00E5FF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+  <animateTransform attributeName="gradientTransform" type="translate"
+    values="-1 0;1 0;-1 0" dur="9s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="gIce" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#00E5FF"/><stop offset="50%" stop-color="#5B8CFF"/>
+  <stop offset="100%" stop-color="#B026FF"/>
+</linearGradient>
+<linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="45%" stop-color="#fff" stop-opacity="0.10"/>
+  <stop offset="55%" stop-color="#fff" stop-opacity="0.16"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0.35" y2="1">
+  <stop offset="0%" stop-color="#131A25"/><stop offset="45%" stop-color="#0B1017"/>
+  <stop offset="100%" stop-color="#05080D"/>
+</linearGradient>
+<radialGradient id="gVig" cx="50%" cy="45%" r="72%">
+  <stop offset="55%" stop-color="#000" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#000" stop-opacity="0.72"/>
+</radialGradient>
+<radialGradient id="gCore">
+  <stop offset="0%" stop-color="#FFF4D6"/><stop offset="35%" stop-color="#FFB000"/>
+  <stop offset="70%" stop-color="#DC143C"/><stop offset="100%" stop-color="#3A0010" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gFade" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+  <stop offset="18%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="76%" stop-color="#fff" stop-opacity="1"/>
+  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
 
-  <rect x="0" y="0" width="760" height="240" rx="10" fill="url(#sysBg)" stroke="#00E5FF" stroke-width="1"/>
-  <text x="30" y="28" font-size="13" letter-spacing="4" fill="#00E5FF">// DMESG — HELLBEAST SYSTEM LOG <tspan fill="#5c5c70">· tail -f /var/log/wrath</tspan></text>
-  <circle cx="722" cy="23" r="4" fill="#FF1744">
-    <animate attributeName="opacity" values="1;1;0.1;0.1" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
-  </circle>
+<!-- ░ patterns ░ -->
+<pattern id="pGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+  <path d="M24 0H0V24" fill="none" stroke="#141D2A" stroke-width="1"/>
+  <circle cx="0" cy="0" r="1" fill="#1E2A3B"/>
+</pattern>
+<pattern id="pFine" width="6" height="6" patternUnits="userSpaceOnUse">
+  <path d="M6 0H0V6" fill="none" stroke="#0F1620" stroke-width=".6"/>
+</pattern>
+<pattern id="pScan" width="3" height="3" patternUnits="userSpaceOnUse">
+  <rect width="3" height="1.4" fill="#000" opacity="0.20"/>
+</pattern>
+<pattern id="pHex" width="28" height="48" patternUnits="userSpaceOnUse">
+  <path d="M14 0 L28 8 L28 24 L14 32 L0 24 L0 8 Z" fill="none" stroke="#121A26" stroke-width="1"/>
+</pattern>
 
-  <g mask="url(#sysfade)" font-size="12.5">
-    <!-- stream 1 : scrolls up, replaced by stream 2 seamlessly -->
-    <text x="30" y="0">
-      <tspan x="30" fill="#39FF14">[  0.000000] Linux HellBeast 6.6.6-hellfire x86_64 booting…</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000001] CPU: 13th Gen Hesam i9-99999K @ 6.66GHz</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000042] Memory: 666TB RAM, all of it swapped to rage</tspan>
-      <tspan x="30" dy="17" fill="#DC143C">[  0.001337] WARN: caffeine levels critical — overclocking</tspan>
-      <tspan x="30" dy="17" fill="#39FF14">[  0.002000] init: weaponized-code.service started</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  0.666000] usb 6-6:0x66: keyboard connected — deploy mode</tspan>
-      <tspan x="30" dy="17" fill="#B026FF">[  1.337000] threat detected: deadline approaching</tspan>
-      <tspan x="30" dy="17" fill="#DC143C">[  1.337001] threat neutralized. deadline deleted.</tspan>
-      <tspan x="30" dy="17" fill="#39FF14">[  2.000000] watchdog: operator still alive (impossible)</tspan>
-      <tspan x="30" dy="17" fill="#00E5FF">[  3.141592] cloud: k8s cluster responding to commands</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  4.044000] filesystem: /dev/fear not found — good.</tspan>
-      <tspan x="30" dy="17" fill="#DC143C">[  5.000000] OVERKILL protocol armed and unapologetic</tspan>
-      <animateTransform attributeName="transform" type="translate" values="0 40;0 -220" dur="6s" repeatCount="indefinite"/>
-    </text>
-    <!-- stream 2 : identical, follows behind for seamless loop -->
-    <text x="30" y="0">
-      <tspan x="30" fill="#39FF14">[  0.000000] Linux HellBeast 6.6.6-hellfire x86_64 booting…</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000001] CPU: 13th Gen Hesam i9-99999K @ 6.66GHz</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  0.000042] Memory: 666TB RAM, all of it swapped to rage</tspan>
-      <tspan x="30" dy="17" fill="#DC143C">[  0.001337] WARN: caffeine levels critical — overclocking</tspan>
-      <tspan x="30" dy="17" fill="#39FF14">[  0.002000] init: weaponized-code.service started</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  0.666000] usb 6-6:0x66: keyboard connected — deploy mode</tspan>
-      <tspan x="30" dy="17" fill="#B026FF">[  1.337000] threat detected: deadline approaching</tspan>
-      <tspan x="30" dy="17" fill="#DC143C">[  1.337001] threat neutralized. deadline deleted.</tspan>
-      <tspan x="30" dy="17" fill="#39FF14">[  2.000000] watchdog: operator still alive (impossible)</tspan>
-      <tspan x="30" dy="17" fill="#00E5FF">[  3.141592] cloud: k8s cluster responding to commands</tspan>
-      <tspan x="30" dy="17" fill="#8a8aa0">[  4.044000] filesystem: /dev/fear not found — good.</tspan>
-      <tspan x="30" dy="17" fill="#DC143C">[  5.000000] OVERKILL protocol armed and unapologetic</tspan>
-      <animateTransform attributeName="transform" type="translate" values="0 244;0 -16" dur="6s" repeatCount="indefinite"/>
-    </text>
-  </g>
+<!-- ░ bloom tiers ░ -->
+<filter id="fBloom" x="-40%" y="-40%" width="180%" height="180%">
+  <feGaussianBlur stdDeviation="2" result="b1"/>
+  <feGaussianBlur stdDeviation="7" result="b2"/>
+  <feGaussianBlur stdDeviation="16" result="b3"/>
+  <feMerge><feMergeNode in="b3"/><feMergeNode in="b2"/><feMergeNode in="b1"/>
+    <feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlow" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fGlowS" x="-25%" y="-25%" width="150%" height="150%">
+  <feGaussianBlur stdDeviation="1.3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<filter id="fHalo" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="14"/>
+</filter>
 
-  <text x="380" y="226" text-anchor="middle" font-size="11" letter-spacing="3" fill="#5c5c70">12 EVENTS/SEC · <tspan fill="#DC143C">0 REGRETS LOGGED</tspan></text>
-</svg>
+<!-- ░ chromatic aberration ░ -->
+<filter id="fChroma" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset in="SourceGraphic" dx="-2.2" dy="0" result="r"/>
+  <feColorMatrix in="r" type="matrix" result="rc"
+    values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
+  <feOffset in="SourceGraphic" dx="2.2" dy="0" result="b"/>
+  <feColorMatrix in="b" type="matrix" result="bc"
+    values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+  <feBlend in="rc" in2="bc" mode="screen" result="rb"/>
+  <feBlend in="SourceGraphic" in2="rb" mode="screen"/>
+</filter>
+
+<!-- ░ turbulence fire ░ -->
+<filter id="fFire" x="-25%" y="-45%" width="150%" height="190%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.016 0.045" numOctaves="4"
+                seed="7" result="n">
+    <animate attributeName="baseFrequency" dur="7s" repeatCount="indefinite"
+             values="0.016 0.045;0.024 0.062;0.016 0.045"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="26"
+                     xChannelSelector="R" yChannelSelector="G" result="d"/>
+  <feGaussianBlur in="d" stdDeviation="2.4" result="db"/>
+  <feMerge><feMergeNode in="db"/><feMergeNode in="d"/></feMerge>
+</filter>
+
+<!-- ░ plasma ░ -->
+<filter id="fPlasma" x="-20%" y="-20%" width="140%" height="140%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="5" seed="3" result="n">
+    <animate attributeName="seed" dur="10s" values="3;9;3" repeatCount="indefinite"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="14"
+                     xChannelSelector="R" yChannelSelector="B"/>
+</filter>
+
+<!-- ░ glitch displacement ░ -->
+<filter id="fGlitch" x="-12%" y="-12%" width="124%" height="124%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.00001 0.42" numOctaves="1"
+                seed="11" result="n">
+    <animate attributeName="baseFrequency" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1"
+             values="0.00001 0.42;0.00001 0.42;0.02 1.1;0.00001 0.42;0.03 0.9;0.00001 0.42"/>
+  </feTurbulence>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R"
+                     yChannelSelector="G">
+    <animate attributeName="scale" dur="4.5s" repeatCount="indefinite"
+             keyTimes="0;0.72;0.75;0.79;0.83;1" values="0;0;18;0;13;0"/>
+  </feDisplacementMap>
+</filter>
+
+<!-- ░ CRT barrel + noise ░ -->
+<filter id="fCRT" x="-5%" y="-5%" width="110%" height="110%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" result="g"/>
+  <feColorMatrix in="g" type="saturate" values="0" result="gm"/>
+  <feComponentTransfer in="gm" result="gt">
+    <feFuncA type="linear" slope="0.07"/>
+  </feComponentTransfer>
+  <feBlend in="SourceGraphic" in2="gt" mode="screen"/>
+</filter>
+
+<!-- ░ inner shadow for recessed panels ░ -->
+<filter id="fInset" x="-10%" y="-10%" width="120%" height="120%">
+  <feOffset dx="0" dy="2"/><feGaussianBlur stdDeviation="3" result="o"/>
+  <feComposite in="SourceGraphic" in2="o" operator="over"/>
+</filter>
+
+<!-- ░ metallic edge ░ -->
+<filter id="fEmboss" x="-10%" y="-10%" width="120%" height="120%">
+  <feConvolveMatrix order="3" kernelMatrix="1 0 0  0 0 0  0 0 -1"
+                    divisor="1" bias="0.02" preserveAlpha="true"/>
+</filter>
+</defs><rect width="1000" height="270" rx="12" fill="url(#gPanel)"/><rect width="1000" height="270" rx="12" fill="url(#pGrid)" opacity=".55"/><rect width="1000" height="270" rx="12" fill="url(#pFine)" opacity=".5"/><rect width="1000" height="270" rx="12" fill="url(#gVig)"/><rect x=".5" y=".5" width="999" height="269" rx="12" fill="none" stroke="#1b2534" stroke-width="1"/><rect x="0" y="0" width="1000" height="2.5" rx="1" fill="url(#gSpec)"/><path d="M10,2 L2,2 L2,10" fill="none" stroke="#4ADE80" stroke-width="2" opacity=".85"/><path d="M990,2 L998,2 L998,10" fill="none" stroke="#4ADE80" stroke-width="2" opacity=".85"/><path d="M10,268 L2,268 L2,260" fill="none" stroke="#4ADE80" stroke-width="2" opacity=".85"/><path d="M990,268 L998,268 L998,260" fill="none" stroke="#4ADE80" stroke-width="2" opacity=".85"/><rect x="0" y="0" width="1000" height="36" fill="#000" opacity=".35"/><line x1="0" y1="36" x2="1000" y2="36" stroke="#4ADE80" stroke-opacity=".38"/><rect x="18" y="14" width="3" height="9" fill="#4ADE80"/><text x="30" y="23" font-size="11.5" font-weight="700" letter-spacing="2.6" fill="#4ADE80">/var/log/forge — tail -f</text><text x="982" y="23" text-anchor="end" font-size="10.5" letter-spacing="1.2" fill="#7d8590">streaming</text><mask id="slm"><rect x="0" y="46" width="1000" height="208" fill="url(#gFade)"/></mask><clipPath id="slc"><rect x="0" y="46" width="1000" height="208"/></clipPath><g clip-path="url(#slc)"><g mask="url(#slm)"><g transform="translate(0,66)"><text x="26" y="0" font-size="11.5" fill="#39485a">[   4.200]</text><text x="122" y="0" font-size="12" fill="#4ADE80">forge  compiled 2 functions · 12 ops after DCE</text><text x="26" y="23" font-size="11.5" fill="#39485a">[   4.570]</text><text x="122" y="23" font-size="12" fill="#00E5FF">wasm   module 253B validated · exports=[add,fib,mandel,memory]</text><text x="26" y="46" font-size="11.5" fill="#39485a">[   4.940]</text><text x="122" y="46" font-size="12" fill="#00E5FF">sha    NIST vectors OK · 200/200 vs openssl</text><text x="26" y="69" font-size="11.5" fill="#39485a">[   5.310]</text><text x="122" y="69" font-size="12" fill="#B026FF">nfa    (a|a)*b ×40 matched=false states=10 t=0.66ms</text><text x="26" y="92" font-size="11.5" fill="#39485a">[   5.680]</text><text x="122" y="92" font-size="12" fill="#4ADE80">nbody  200 bodies · 19,900 pairs/frame · drift 0.0000%</text><text x="26" y="115" font-size="11.5" fill="#39485a">[   6.050]</text><text x="122" y="115" font-size="12" fill="#FFB000">rt     250k rays · depth=3 · ~2M rays/s</text><text x="26" y="138" font-size="11.5" fill="#39485a">[   6.420]</text><text x="122" y="138" font-size="12" fill="#FF6B35">llvm   PR #201443 submitted — asm goto crash</text><text x="26" y="161" font-size="11.5" fill="#39485a">[   6.790]</text><text x="122" y="161" font-size="12" fill="#FF6B35">llvm   PR #201612 submitted — X86 NUW peephole</text><text x="26" y="184" font-size="11.5" fill="#39485a">[   7.160]</text><text x="122" y="184" font-size="12" fill="#FF6B35">go     issue #79314 — StdSizes exponential blowup</text><text x="26" y="207" font-size="11.5" fill="#39485a">[   7.530]</text><text x="122" y="207" font-size="12" fill="#4ADE80">owasp  7 patches merged into agent-memory-guard</text><text x="26" y="230" font-size="11.5" fill="#39485a">[   7.900]</text><text x="122" y="230" font-size="12" fill="#DC143C">forge  mercy.service not found — continuing</text><text x="26" y="253" font-size="11.5" fill="#39485a">[   8.270]</text><text x="122" y="253" font-size="12" fill="#4ADE80">forge  compiled 2 functions · 12 ops after DCE</text><text x="26" y="276" font-size="11.5" fill="#39485a">[   8.640]</text><text x="122" y="276" font-size="12" fill="#00E5FF">wasm   module 253B validated · exports=[add,fib,mandel,memory]</text><text x="26" y="299" font-size="11.5" fill="#39485a">[   9.010]</text><text x="122" y="299" font-size="12" fill="#00E5FF">sha    NIST vectors OK · 200/200 vs openssl</text><text x="26" y="322" font-size="11.5" fill="#39485a">[   9.380]</text><text x="122" y="322" font-size="12" fill="#B026FF">nfa    (a|a)*b ×40 matched=false states=10 t=0.66ms</text><text x="26" y="345" font-size="11.5" fill="#39485a">[   9.750]</text><text x="122" y="345" font-size="12" fill="#4ADE80">nbody  200 bodies · 19,900 pairs/frame · drift 0.0000%</text><text x="26" y="368" font-size="11.5" fill="#39485a">[  10.120]</text><text x="122" y="368" font-size="12" fill="#FFB000">rt     250k rays · depth=3 · ~2M rays/s</text><text x="26" y="391" font-size="11.5" fill="#39485a">[  10.490]</text><text x="122" y="391" font-size="12" fill="#FF6B35">llvm   PR #201443 submitted — asm goto crash</text><text x="26" y="414" font-size="11.5" fill="#39485a">[  10.860]</text><text x="122" y="414" font-size="12" fill="#FF6B35">llvm   PR #201612 submitted — X86 NUW peephole</text><text x="26" y="437" font-size="11.5" fill="#39485a">[  11.230]</text><text x="122" y="437" font-size="12" fill="#FF6B35">go     issue #79314 — StdSizes exponential blowup</text><text x="26" y="460" font-size="11.5" fill="#39485a">[  11.600]</text><text x="122" y="460" font-size="12" fill="#4ADE80">owasp  7 patches merged into agent-memory-guard</text><text x="26" y="483" font-size="11.5" fill="#39485a">[  11.970]</text><text x="122" y="483" font-size="12" fill="#DC143C">forge  mercy.service not found — continuing</text><animateTransform attributeName="transform" type="translate" values="0,66;0,-187" dur="19s" repeatCount="indefinite"/></g></g></g><rect width="1000" height="270" rx="12" fill="url(#pScan)"/></svg>
