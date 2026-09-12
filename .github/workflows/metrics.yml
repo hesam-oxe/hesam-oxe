@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: People panel
-        uses: lowlighter/metrics@v3.34
+        uses: ShawnXxy/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1  # lowlighter/metrics v3.34 + PR #1834 (projectsV2 fix); upstream unmaintained since 2023
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           filename: metrics/people.svg
@@ -29,7 +29,7 @@ jobs:
           config_timezone: Asia/Tehran
 
       - name: Follow-up panel
-        uses: lowlighter/metrics@v3.34
+        uses: ShawnXxy/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1  # lowlighter/metrics v3.34 + PR #1834 (projectsV2 fix); upstream unmaintained since 2023
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           filename: metrics/followup.svg
@@ -40,7 +40,7 @@ jobs:
           config_timezone: Asia/Tehran
 
       - name: Achievements panel
-        uses: lowlighter/metrics@v3.34
+        uses: ShawnXxy/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1  # lowlighter/metrics v3.34 + PR #1834 (projectsV2 fix); upstream unmaintained since 2023
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           filename: metrics/achievements.svg
@@ -53,7 +53,7 @@ jobs:
           config_timezone: Asia/Tehran
 
       - name: Calendar panel
-        uses: lowlighter/metrics@v3.34
+        uses: ShawnXxy/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1  # lowlighter/metrics v3.34 + PR #1834 (projectsV2 fix); upstream unmaintained since 2023
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           filename: metrics/calendar.svg
@@ -64,7 +64,7 @@ jobs:
           config_timezone: Asia/Tehran
 
       - name: Habits panel
-        uses: lowlighter/metrics@v3.34
+        uses: ShawnXxy/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1  # lowlighter/metrics v3.34 + PR #1834 (projectsV2 fix); upstream unmaintained since 2023
         with:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           filename: metrics/habits.svg
