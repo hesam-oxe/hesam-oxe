@@ -2,7 +2,7 @@ name: "📊 Generate Metrics Panels"
 
 on:
   schedule:
-    - cron: "0 3 * * *" # daily at 03:00 UTC
+    - cron: "23 3 * * *" # daily at 03:23 UTC (off the busy top-of-hour window)
   workflow_dispatch:
 
 permissions:
@@ -85,5 +85,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add metrics/ || true
-          git commit -m "ci: regenerate metrics panels [skip ci]" || echo "nothing to commit"
+          if git diff --staged --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "ci: regenerate metrics panels [skip ci]"
+          git pull --rebase origin main
           git push
