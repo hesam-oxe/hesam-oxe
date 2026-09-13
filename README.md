@@ -374,11 +374,11 @@ and `while false { … }` from the emitted bytecode entirely. The disassembler i
 
 ### ⚡ RECENT ACTIVITY
 <!-- ACTIVITY-START -->
-- 🔥 `PushEvent` @ [hesam-oxe/tritonparse](https://github.com/hesam-oxe/tritonparse) — 2026-09-13
-- 🔥 `PushEvent` @ [hesam-oxe/openmct](https://github.com/hesam-oxe/openmct) — 2026-09-13
-- 🔥 `PushEvent` @ [hesam-oxe/rawtoaces](https://github.com/hesam-oxe/rawtoaces) — 2026-09-13
-- 🔥 `PushEvent` @ [hesam-oxe/hesam-oxe](https://github.com/hesam-oxe/hesam-oxe) — 2026-09-13
-- 🔥 `PushEvent` @ [hesam-oxe/Sinux](https://github.com/hesam-oxe/Sinux) — 2026-09-13
+- 🔥 `PushEvent` @ [hesam-oxe/smart-money-bot](https://github.com/hesam-oxe/smart-money-bot) — 2026-09-13
+- 🔥 `PushEvent` @ [hesam-oxe/smart-money-bot](https://github.com/hesam-oxe/smart-money-bot) — 2026-09-13
+- 🔥 `PushEvent` @ [hesam-oxe/smart-money-bot](https://github.com/hesam-oxe/smart-money-bot) — 2026-09-13
+- 🔥 `PushEvent` @ [hesam-oxe/hive-app](https://github.com/hesam-oxe/hive-app) — 2026-09-13
+- ⚔️ `PullRequestEvent` @ [HiveSofts/hive-app](https://github.com/HiveSofts/hive-app) — 2026-09-13
 <!-- ACTIVITY-END -->
 
 <div align="center">
