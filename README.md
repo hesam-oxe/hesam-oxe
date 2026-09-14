@@ -49,15 +49,15 @@
 
 ## ⬢ THE CRASH I FIXED
 
-Not a metaphor. LLVM's `CodeGenPrepare` asserts and dies when `tryUnmergingGEPsAcrossIndirectBr`
-meets a `callbr` / `asm goto` with indirect successors. Here's the dump — and the patch.
+Not a metaphor — the crash was real. The patch didn't survive review, and this section
+stays up as a record of the attempt, not a trophy. Here's the dump — and what happened.
 
 <div align="center">
   <img src="assets/kernel-panic.svg" width="100%" alt="LLVM CodeGenPrepare crash, diagnosed and patched"/>
 </div>
 
-> **Patch:** [`llvm/llvm-project#201443`](https://github.com/llvm/llvm-project/pull/201443) — submitted upstream, under review.
-> Companion: [`#201612`](https://github.com/llvm/llvm-project/pull/201612) — `[X86]` prevent NUW flag forwarding in the ADD→SUB peephole.
+> **Patch:** [`llvm/llvm-project#201443`](https://github.com/llvm/llvm-project/pull/201443) — closed by maintainer. My crash premise didn't hold up under review (`callbr` is a terminator; my reproducer didn't prove otherwise) — claim retracted, lesson kept.
+> Companion: [`#201612`](https://github.com/llvm/llvm-project/pull/201612) — closed by me per reviewer direction. The targeted X86 stopgap is being retooled into the general poison-flag mechanism they asked for.
 
 <img src="assets/hazard-divider.svg" width="100%" alt=""/>
 
@@ -103,18 +103,14 @@ public**, not because they landed.
 
 | Project | Contribution | PR |
 |---|---|---|
-| **LLVM** | `[X86]` Prevent NUW flag forwarding in ADD→SUB peephole | [#201612](https://github.com/llvm/llvm-project/pull/201612) |
-| **LLVM** | `[CodeGenPrepare]` Crash with `asm goto` / indirect branch | [#201443](https://github.com/llvm/llvm-project/pull/201443) |
 | **Go** | `cmd/compile`: size cache in `StdSizes` — kills exponential compile time | [#79314](https://github.com/golang/go/issues/79314) |
 | **Apache SeaTunnel** | Reuse shared `SinkWriter` for same destination in multi-table sink | [#11077](https://github.com/apache/seatunnel/pull/11077) |
-| **Apache Gravitino** | `View` / `ViewCatalog` interfaces for the Python relational catalog | [#11019](https://github.com/apache/gravitino/pull/11019) |
 | **Meta** · PyTorch tritonparse | Customizable labels in file-diff view | [#407](https://github.com/meta-pytorch/tritonparse/pull/407) |
 | **Sphinx** | `source_language` config + `lang` attribute for untranslated text | [#14429](https://github.com/sphinx-doc/sphinx/pull/14429) |
 | **Canonical** | Migrate documentation wordlist to Vale `accept.txt` | [#197](https://github.com/canonical/documentation-style-guide/pull/197) |
 | **Academy Software Foundation** · rawtoaces | Prefer `std::filesystem` `error_code` over exceptions | [#295](https://github.com/AcademySoftwareFoundation/rawtoaces/pull/295) |
 | **Lightning AI** · LitServe | Wait for worker setup completion in `wrap_litserve_start` | [#682](https://github.com/Lightning-AI/LitServe/pull/682) |
 | **bilibili** · web-demuxer | Worker option for inline / main-thread runtime | [#53](https://github.com/bilibili/web-demuxer/pull/53) |
-| **Telegram Desktop** | Screen-reader focus announcement for context menus | [#31198](https://github.com/telegramdesktop/tdesktop/pull/31198) |
 | **Telegram Desktop** | Accessible-name fallback for UI buttons | [#31197](https://github.com/telegramdesktop/tdesktop/pull/31197) |
 
 <details>
@@ -132,6 +128,10 @@ Listed because a record with no failures in it isn't a record.
 | **NASA** · Worldview | Service Worker tile caching for GIBS tiles | [#6699](https://github.com/nasa-gibs/worldview/pull/6699) |
 | **NASA** · Worldview | iOS Canvas memory leak on colormap threshold change | [#6698](https://github.com/nasa-gibs/worldview/pull/6698) |
 | **Meta** · tritonparse | Migrate zstandard → Python 3.14 stdlib `zstd` | [#405](https://github.com/meta-pytorch/tritonparse/pull/405) |
+| **LLVM** | `[CodeGenPrepare]` crash with `asm goto` — premise withdrawn, closed by maintainer | [#201443](https://github.com/llvm/llvm-project/pull/201443) |
+| **LLVM** | `[X86]` NUW stopgap — closed by author per reviewer direction, general mechanism in progress | [#201612](https://github.com/llvm/llvm-project/pull/201612) |
+| **Apache Gravitino** | Python `View` / `ViewCatalog` — closed by author, superseded by upstream implementation | [#11019](https://github.com/apache/gravitino/pull/11019) |
+| **Telegram Desktop** | Context-menu focus announcement — closed, reviewer deemed unneeded | [#31198](https://github.com/telegramdesktop/tdesktop/pull/31198) |
 
 </details>
 
@@ -280,7 +280,7 @@ graph LR
 
 | Project | Stack | What it is |
 |---|---|---|
-| [**Sinux**](https://github.com/hesam-oxe/Sinux) | `C` · `asm` | Operating system kernel — boot, memory management, scheduling |
+| [**Sinux**](https://github.com/hesam-oxe/Sinux) | `C` · `asm` | Operating system kernel — boot, memory management, scheduling · [v1.0-alpha](https://github.com/hesam-oxe/Sinux/releases/tag/v1.0-alpha) released |
 | [**Phobos**](https://github.com/hesam-oxe/Phobos) | `Rust` | Native IDE, AGPL-3.0. Turbo-Pascal ergonomics, modern toolchain |
 | [**FORGE**](https://github.com/hesam-oxe/hesam-oxe.github.io) | `JavaScript` | Statically typed language, six-stage compiler, stack VM — 568 lines, zero dependencies |
 | [**Tani**](https://github.com/hesam-oxe/Tani) | `CSS` | Zero-JS utility-first framework with a component library |
