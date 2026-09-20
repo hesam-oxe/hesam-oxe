@@ -374,11 +374,11 @@ and `while false { … }` from the emitted bytecode entirely. The disassembler i
 
 ### ⚡ RECENT ACTIVITY
 <!-- ACTIVITY-START -->
-- 🔥 `PushEvent` @ [hesam-oxe/web-demuxer](https://github.com/hesam-oxe/web-demuxer) — 2026-09-19
-- 🔥 `PushEvent` @ [hesam-oxe/hive-app](https://github.com/hesam-oxe/hive-app) — 2026-09-19
-- 🔥 `PushEvent` @ [hesam-oxe/tritonparse](https://github.com/hesam-oxe/tritonparse) — 2026-09-18
-- 🔥 `PushEvent` @ [hesam-oxe/go](https://github.com/hesam-oxe/go) — 2026-09-19
-- 🔥 `PushEvent` @ [hesam-oxe/sphinx](https://github.com/hesam-oxe/sphinx) — 2026-09-19
+- ⚔️ `PullRequestEvent` @ [astral-sh/uv](https://github.com/astral-sh/uv) — 2026-09-20
+- ⚔️ `PullRequestEvent` @ [desktop-app/lib_ui](https://github.com/desktop-app/lib_ui) — 2026-09-20
+- ⚔️ `PullRequestEvent` @ [desktop-app/lib_ui](https://github.com/desktop-app/lib_ui) — 2026-09-20
+- ⚔️ `PullRequestEvent` @ [desktop-app/lib_ui](https://github.com/desktop-app/lib_ui) — 2026-09-20
+- ⚔️ `PullRequestEvent` @ [unlikelyzero/openmct](https://github.com/unlikelyzero/openmct) — 2026-09-08
 <!-- ACTIVITY-END -->
 
 <div align="center">
