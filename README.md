@@ -374,11 +374,11 @@ and `while false { … }` from the emitted bytecode entirely. The disassembler i
 
 ### ⚡ RECENT ACTIVITY
 <!-- ACTIVITY-START -->
-- ⚔️ `PullRequestEvent` @ [HiveSofts/hive-app](https://github.com/HiveSofts/hive-app) — 2026-09-28
-- ⚔️ `PullRequestEvent` @ [OWASP/www-project-agent-memory-guard](https://github.com/OWASP/www-project-agent-memory-guard) — 2026-09-28
-- ⚔️ `PullRequestEvent` @ [AcademySoftwareFoundation/rawtoaces](https://github.com/AcademySoftwareFoundation/rawtoaces) — 2026-09-22
-- 🔥 `PushEvent` @ [hesam-oxe/line](https://github.com/hesam-oxe/line) — 2026-09-20
-- ⚔️ `PullRequestEvent` @ [astral-sh/uv](https://github.com/astral-sh/uv) — 2026-09-20
+- 🔥 `PushEvent` @ [hesam-oxe/TypeScript](https://github.com/hesam-oxe/TypeScript) — 2026-09-28
+- 🔥 `PushEvent` @ [hesam-oxe/tdesktop](https://github.com/hesam-oxe/tdesktop) — 2026-09-28
+- 🔥 `PushEvent` @ [hesam-oxe/lib_ui](https://github.com/hesam-oxe/lib_ui) — 2026-09-28
+- ⚔️ `PullRequestEvent` @ [microsoft/TypeScript](https://github.com/microsoft/TypeScript) — 2026-09-28
+- ⚔️ `PullRequestEvent` @ [microsoft/TypeScript](https://github.com/microsoft/TypeScript) — 2026-09-28
 <!-- ACTIVITY-END -->
 
 <div align="center">
