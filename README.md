@@ -516,6 +516,7 @@ sha256sum README.md
 [![Site](https://img.shields.io/badge/%F0%9F%94%A5_Live_Proof-hesam--oxe.github.io-00E5FF?style=for-the-badge&logo=firefox&logoColor=white&labelColor=0D1117)](https://hesam-oxe.github.io)
 [![LinkedIn](https://img.shields.io/badge/%F0%9F%94%97_LinkedIn-hesam--jamali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117)](https://www.linkedin.com/in/hesam-jamali-218b93414/)
 [![Email](https://img.shields.io/badge/%F0%9F%93%A7_Email-chngyzkhanwhsht-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117)](mailto:chngyzkhanwhsht@gmail.com)
+[![Resume](https://img.shields.io/badge/☠️_Full_Metal_Stack_Resume-RESUME.md-00E5FF?style=for-the-badge&labelColor=0D1117)](./RESUME.md)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=hesam-oxe&color=DC143C&style=for-the-badge&label=OPERATORS+WATCHING)
 
