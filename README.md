@@ -13,9 +13,14 @@
   <a href="#-the-crash-i-fixed">CRASH</a> ·
   <a href="#-merge-board">MERGES</a> ·
   <a href="#-upstream-radar">RADAR</a> ·
+  <a href="#-mission-log">LOG</a> ·
   <a href="#-forge--six-stages-zero-dependencies">FORGE</a> ·
+  <a href="#-core-memory--253-bytes-raw">CORE</a> ·
+  <a href="#-lab-telemetry">TELEMETRY</a> ·
   <a href="#-verify-everything-yourself">VERIFY</a> ·
+  <a href="#-shell-session">SHELL</a> ·
   <a href="#-boss-fight--catastrophic-backtracking">BOSS</a> ·
+  <a href="#-seal-of-record">SEAL</a> ·
   <a href="#-establish-contact">CONTACT</a>
 </p>
 
@@ -141,6 +146,16 @@ Listed because a record with no failures in it isn't a record.
 
 ---
 
+## ⬢ MISSION LOG
+
+The campaign, top-down. Every node is already linked above — here it is as a single chain.
+
+<div align="center">
+  <img src="assets/mission-log.svg" width="100%" alt="mission log — the campaign chain"/>
+</div>
+
+---
+
 ## ⬢ FORGE — SIX STAGES, ZERO DEPENDENCIES
 
 <div align="center">
@@ -168,6 +183,40 @@ A statically typed language with a real type checker, a real optimizer, and a st
 
 <div align="center">
   <img src="assets/code-rain.svg" width="100%" alt="bytecode and wasm opcodes"/>
+</div>
+
+---
+
+## ⬢ CORE MEMORY — 253 BYTES, RAW
+
+The whole WASM module, one dump, every byte present. The highlighted lanes are the
+section table (`TYPE@08 · FUNC@1D · MEM@23 · EXPORT@28 · CODE@49`) — positions parsed
+from the bytes themselves, not transcribed. This panel is generated from
+`sha256(core.wasm.b64) = c06fde31…b377d`, the seal-of-record hash below. If the site's
+module ever changes, the dump regenerates differently and [this file](#-seal-of-record)
+immediately proves it.
+
+<div align="center">
+  <img src="assets/hex-core.svg" width="100%" alt="core memory — raw 253-byte dump of the hand-emitted wasm module"/>
+</div>
+
+```bash
+# reproduce the dump above
+git clone -q https://github.com/hesam-oxe/hesam-oxe.github.io && cd hesam-oxe.github.io/engine
+base64 -d core.wasm.b64 | sha256sum
+# → c06fde310b4c5cae97be1617f44cdabef567f738e84984e742e945b8d1ab377d
+# decoded locally — no need to trust this README's characters
+```
+
+---
+
+## ⬢ LAB TELEMETRY
+
+Fresh numbers, measured by execution on `2026-10-18` — the same machines any visitor
+can run the VERIFY commands on.
+
+<div align="center">
+  <img src="assets/telemetry-live.svg" width="100%" alt="lab telemetry — measured row by row"/>
 </div>
 
 ---
@@ -220,10 +269,27 @@ node -e '
 
 ---
 
+## ⬢ SHELL SESSION
+
+The same commands, as a session — copy them, run them, and if a single line disagrees
+with the panels above, the README loses and reality wins.
+
+<div align="center">
+  <img src="assets/shell-session.svg" width="100%" alt="shell session — reproducible command stream"/>
+</div>
+
+---
+
 ## ⬢ BOSS FIGHT — CATASTROPHIC BACKTRACKING
 
 <div align="center">
   <img src="assets/final-boss.svg" width="100%" alt="ReDoS defeated by Thompson NFA"/>
+</div>
+
+### LIVE FIRE
+
+<div align="center">
+  <img src="assets/boss-live.svg" width="100%" alt="boss fight live fire — adversarial chain vs Thompson NFA wall"/>
 </div>
 
 Linear time **by construction**, not by luck. Most production regex engines — PCRE, Python's
@@ -416,6 +482,25 @@ and `while false { … }` from the emitted bytecode entirely. The disassembler i
 > **The proof continues outside GitHub.** A compiler, a hand-emitted WASM module, a raytracer
 > and SHA-256 — all executing in your browser at [hesam-oxe.github.io](https://hesam-oxe.github.io).
 > No backend. No frameworks. Open DevTools and read the source.
+
+---
+
+## ⬢ SEAL OF RECORD
+
+This document signs itself. A CI workflow hashes `README.md` at every push and
+re-stamps [`assets/seal.svg`](assets/seal.svg) with the digest, its Shannon entropy in
+bits/byte, and the exact byte count. If anyone edits this page without a proper push,
+the seal stops matching `sha256sum README.md` and the record is provably broken —
+*this is a signed, self-auditing profile, not a brochure.*
+
+<div align="center">
+  <a href="assets/seal.svg"><img src="assets/seal.svg" width="100%" alt="seal of record — sha256 of README.md, recomputed by CI on every push"/></a>
+</div>
+
+```bash
+sha256sum README.md
+# must equal the digest stamped in the seal above — verify, don't trust
+```
 
 ---
 

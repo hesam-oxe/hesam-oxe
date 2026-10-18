@@ -1,0 +1,42 @@
+name: seal-of-record
+# ═══════════════════════════════════════════════════════════════════════════
+# The README signs itself. Every push that touches README.md re-hashes the
+# file and re-stamps assets/seal.svg with the digest + entropy + byte count.
+# The seal commit touches ONLY the seal asset, so it never re-triggers this
+# workflow ([skip ci] is belt & braces). Idempotent shell = no loops, ever.
+# ═══════════════════════════════════════════════════════════════════════════
+on:
+  push:
+    branches: [main]
+    paths: ["README.md"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  seal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: stamp the seal
+        run: python scripts/update_seal.py
+
+      - name: commit if the record moved
+        run: |
+          if git diff --quiet -- assets/seal.svg; then
+            echo "seal already current — nothing to commit"
+          else
+            git config user.name  "seal-of-record[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/seal.svg
+            git commit -m "◉ seal re-stamped [skip ci]"
+            git push
+          fi

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" font-family="'Cascadia Code','Fira Code','JetBrains Mono',SFMono-Regular,Consolas,Menlo,monospace" role="img" aria-label="▤ MISSION LOG"><title>▤ MISSION LOG</title>
+<defs>
+<linearGradient id="gFire" x1="0" x2="1"><stop offset="0" stop-color="#8B0020"/><stop offset=".28" stop-color="#DC143C"/><stop offset=".58" stop-color="#FF6B35"/><stop offset=".82" stop-color="#FFB000"/><stop offset="1" stop-color="#FFE9A0"/></linearGradient>
+<linearGradient id="gSpec" x1="0" x2="1"><stop offset="0" stop-color="#DC143C"/><stop offset=".26" stop-color="#FF6B35"/><stop offset=".52" stop-color="#FFB000"/><stop offset=".76" stop-color="#00E5FF"/><stop offset="1" stop-color="#B026FF"/>
+ <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="9s" repeatCount="indefinite"/>
+</linearGradient>
+<linearGradient id="gIce" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00E5FF"/><stop offset=".5" stop-color="#5B8CFF"/><stop offset="1" stop-color="#B026FF"/></linearGradient>
+<linearGradient id="gPanel" x1="0" y1="0" x2=".35" y2="1"><stop offset="0" stop-color="#131A25"/><stop offset=".45" stop-color="#0B1017"/><stop offset="1" stop-color="#05080D"/></linearGradient>
+<radialGradient id="gVig" cx="50%" cy="45%" r="72%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".72"/></radialGradient>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>
+ .big{{fill:#E9F4FF;font-size:16px;font-weight:800;letter-spacing:1.5px}}
+ .lbl{{fill:#8FA3BF;font-size:11px;letter-spacing:2px}}
+ .lbl2{{fill:#5A6B84;font-size:10.5px;letter-spacing:1px}}
+ .val{{font-size:13px;font-weight:700}}
+ .mono{{font-size:12.5px}}
+</style>
+</defs>
+<rect width="1000" height="470" fill="url(#gPanel)"/>
+<rect x="14" y="14" width="972" height="3" fill="url(#gSpec)" opacity=".9"/>
+<rect x="14" y="453" width="972" height="3" fill="url(#gSpec)" opacity=".9"/>
+<text x="500.0" y="46" text-anchor="middle" class="big" fill="url(#gSpec)">▤ MISSION LOG</text>
+<text x="500.0" y="66" text-anchor="middle" class="lbl">THE CAMPAIGN — kernel → compiles → shipped upstream → engines → boss</text>
+<rect x="57" y="104" width="4" height="288" fill="#1B2533"/><animate attributeName="opacity" values=".8;1;.8" dur="4s" repeatCount="indefinite"/><circle cx="59" cy="118" r="6" fill="#DC143C" filter="url(#fGlow)"><animate attributeName="r" values="6;7.5;6" dur="2.0s" repeatCount="indefinite"/></circle><text x="80" y="116" font-size="14" font-weight="800" fill="#E9F4FF">SINUX KERNEL</text><text x="80" y="133" font-size="11.5" fill="#8FA3BF">v1.0-alpha · boot, memory management, scheduling — C + asm</text><text x="926" y="172" text-anchor="end" font-size="14" font-weight="800" fill="#E9F4FF">LLVM · CodeGenPrepare</text><text x="926" y="189" text-anchor="end" font-size="11.5" fill="#8FA3BF">crash diagnosed · patch #201443 — premise retracted, lesson kept</text><circle cx="941" cy="174" r="6" fill="#FF6B35" filter="url(#fGlow)"><animate attributeName="r" values="6;7.5;6" dur="2.3s" repeatCount="indefinite"/></circle><circle cx="59" cy="230" r="6" fill="#FFB000" filter="url(#fGlow)"><animate attributeName="r" values="6;7.5;6" dur="2.6s" repeatCount="indefinite"/></circle><text x="80" y="228" font-size="14" font-weight="800" fill="#E9F4FF">OWASP Agent Memory Guard</text><text x="80" y="245" font-size="11.5" fill="#8FA3BF">7 merged patches · #18…#42 · scanner, adapters, exporter, taxonomy</text><text x="926" y="284" text-anchor="end" font-size="14" font-weight="800" fill="#E9F4FF">GO COMPILER</text><text x="926" y="301" text-anchor="end" font-size="11.5" fill="#8FA3BF">size-cache in StdSizes · exponential compile time killed · #79314 open</text><circle cx="941" cy="286" r="6" fill="#00E5FF" filter="url(#fGlow)"><animate attributeName="r" values="6;7.5;6" dur="2.9s" repeatCount="indefinite"/></circle><circle cx="59" cy="342" r="6" fill="#B026FF" filter="url(#fGlow)"><animate attributeName="r" values="6;7.5;6" dur="3.2s" repeatCount="indefinite"/></circle><text x="80" y="340" font-size="14" font-weight="800" fill="#E9F4FF">SITE LIVE — FORGE</text><text x="80" y="357" font-size="11.5" fill="#8FA3BF">compiler · wasm · sha-256 · nfa · raytracer · n-body + nn · deflate · ci, in-browser</text><text x="926" y="396" text-anchor="end" font-size="14" font-weight="800" fill="#E9F4FF">BOSS: ReDoS</text><text x="926" y="413" text-anchor="end" font-size="11.5" fill="#8FA3BF">(a|a)*b ×40 — Thompson NFA · 0.66 ms · linear by construction</text><circle cx="941" cy="398" r="6" fill="#8BFF9B" filter="url(#fGlow)"><animate attributeName="r" values="6;7.5;6" dur="3.5s" repeatCount="indefinite"/></circle><text x="60" y="94" class="lbl">▟ CAMPAIGN LOG — KILL CHAIN, top-down</text>
+<text x="500.0" y="444" text-anchor="middle" font-size="11" fill="#5A6B84">every node links from README — PR numbers are real, nothing is aspirational</text>
+<rect width="1000" height="470" fill="url(#gVig)" pointer-events="none"/>
+</svg>
