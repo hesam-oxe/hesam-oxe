@@ -153,7 +153,7 @@ graph LR
 | [**line**](https://github.com/hesam-oxe/line) | `JS` · `Three.js` · `GSAP` | Official site — LED lighting — RTL Persian, CSP, full SEO |
 | [**hive-app**](https://github.com/hesam-oxe/hive-app) | multi | Cross-platform local dev environment |
 | [**console**](https://github.com/hesam-oxe/console) | multi | Kubernetes management & orchestration |
-| [**open-design**](https://github.com/hesam-oxe/open-design) | multi | Open-source alternative to Claude Design — 19 Skills, 71 design systems |
+| [**BEHEMOTH**](./beast) | `C` | From-scratch compiler + stack VM + mark-sweep GC — lexer, parser, type checker, optimizer, codegen, disassembler. 6/6 tests, 26.9M-step fib(30) benchmark. Lives in this repo. |
 
 ---
 

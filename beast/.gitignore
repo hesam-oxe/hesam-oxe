@@ -1,0 +1,5 @@
+# build artifacts
+*.o
+behemoth
+*.bst.tmp
+EOF

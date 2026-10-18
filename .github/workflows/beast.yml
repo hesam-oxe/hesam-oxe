@@ -1,0 +1,20 @@
+name: BEHEMOTH — build & test
+on:
+  push:
+    paths: ["beast/**"]
+  pull_request:
+    paths: ["beast/**"]
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: cd beast && make
+      - name: Test
+        run: cd beast && make test
+      - name: Bench (smoke)
+        run: cd beast && bash tests/bench.sh
+EOF
