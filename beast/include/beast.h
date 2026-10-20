@@ -45,7 +45,7 @@ typedef enum {
     OP_COUNT
 } OpCode;
 
-static const char* opcode_name(OpCode o) {
+static inline const char* opcode_name(OpCode o) {
     static const char* names[] = {
         "HALT","NOP","PUSH_CONST","POP","DUP","LOAD","STORE",
         "LOAD_GLOBAL","STORE_GLOBAL","ADD","SUB","MUL","DIV","MOD","NEG",

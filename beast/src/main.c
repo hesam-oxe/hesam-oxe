@@ -11,7 +11,10 @@ static char* read_file(const char* path, size_t* outlen) {
     long sz = ftell(f);
     fseek(f, 0, SEEK_SET);
     char* buf = malloc(sz+1);
-    fread(buf, 1, sz, f);
+    size_t rd = fread(buf, 1, sz, f);
+    if (rd != (size_t)sz) {          /* short read: pad with NULs, keep going */
+        memset(buf + rd, 0, sz - rd);
+    }
     buf[sz]=0;
     fclose(f);
     *outlen = (size_t)sz;
