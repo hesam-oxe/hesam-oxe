@@ -470,11 +470,11 @@ and `while false { … }` from the emitted bytecode entirely. The disassembler i
 
 ### ⚡ RECENT ACTIVITY
 <!-- ACTIVITY-START -->
+- 🔥 `PushEvent` @ [hesam-oxe/seatunnel](https://github.com/hesam-oxe/seatunnel) — 2026-11-11
+- ⚔️ `PullRequestEvent` @ [llvm/llvm-project](https://github.com/llvm/llvm-project) — 2026-11-13
+- ⚔️ `PullRequestEvent` @ [openssl/openssl](https://github.com/openssl/openssl) — 2026-11-13
+- 🔥 `PushEvent` @ [hesam-oxe/seatunnel](https://github.com/hesam-oxe/seatunnel) — 2026-11-11
 - 🔥 `PushEvent` @ [hesam-oxe/seatunnel](https://github.com/hesam-oxe/seatunnel) — 2026-11-12
-- 🔥 `PushEvent` @ [hesam-oxe/seatunnel](https://github.com/hesam-oxe/seatunnel) — 2026-11-12
-- ⚔️ `PullRequestEvent` @ [0ldev/tradecraft](https://github.com/0ldev/tradecraft) — 2026-11-12
-- ⚔️ `PullRequestEvent` @ [parchlinux/parch-iso-plasma](https://github.com/parchlinux/parch-iso-plasma) — 2026-11-10
-- ⚔️ `PullRequestEvent` @ [parchlinux/parch-iso-plasma](https://github.com/parchlinux/parch-iso-plasma) — 2026-11-10
 <!-- ACTIVITY-END -->
 
 <div align="center">
